@@ -1,0 +1,21 @@
+@import "animations/toopLogo.css";
+@import "animations/smiley.css";
+@import "animations/sun.css";
+
+body {
+  background-color: #222;
+  padding: 0px;
+  margin: 0px;
+}
+
+#panoramaContent {
+  background-image: url('../img/background.jpg');
+  background-size: 100% 100%;
+  width: 10000px;
+  height: 600px;
+
+  /* Vertically center the panorama */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

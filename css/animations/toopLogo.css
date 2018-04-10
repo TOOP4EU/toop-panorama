@@ -1,0 +1,14 @@
+#toopLogo {
+  width: 201px;
+  height: 70px;
+  left: 200px;
+  top: 200px;
+  background-image: url('../../img/toopLogo.png');
+  position: absolute;
+  animation: toopLogoKeyframes 1s;
+}
+
+@keyframes toopLogoKeyframes {
+  0% {top: 0px; left: 0px;}
+  100% {top: 200px; left: 200px;}
+}

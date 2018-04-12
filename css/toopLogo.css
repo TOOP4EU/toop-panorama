@@ -3,7 +3,7 @@
   height: 70px;
   left: 200px;
   top: 200px;
-  background-image: url('../../img/toopLogo.png');
+  background-image: url('../images/toopLogo.png');
   position: absolute;
   animation: toopLogoKeyframes 1s;
 }

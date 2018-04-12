@@ -1,9 +1,10 @@
+
 #smiley {
   width: 256px;
   height: 243px;
   left: 800px;
   top: 180px;
-  background-image: url('../../img/smiley.png');
+  background-image: url('../images/smiley.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;

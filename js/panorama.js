@@ -1,3 +1,5 @@
+var sliceWidth = 1000;
+
 function panorama(content) {
   console.log("Panorama: ", content);
 
@@ -26,6 +28,13 @@ function panorama(content) {
     if (offset.x >= 6400) { spawnItem('FreePackageThree'); }
     if (offset.x >= 6400) { spawnItem('TOOPPackageOne'); }
   });
+
+  $(document).click(function(e) { 
+    // Check for left button
+    if (e.button == 0) {
+      scrollToNextSlice();
+    }
+  });
 }
 
 function spawnItem(id) {
@@ -34,6 +43,13 @@ function spawnItem(id) {
     newDiv.attr('id', id);
     $('#panoramaContent').append(newDiv);
   }
+}
+
+function scrollToNextSlice() {
+  var currentSliceIndex = Math.floor($("body").scrollLeft() / sliceWidth);
+  var newScrollLeft = currentSliceIndex * sliceWidth + sliceWidth;
+
+  $('html, body').animate({scrollLeft: newScrollLeft}, 800);
 }
 
 $(document).ready(function() {

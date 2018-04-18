@@ -86,14 +86,39 @@ height: 79px;
 
 #CraneOne {
 background: url('../images/crane.png') no-repeat left;
-left: 5200px;
+left: 6200px;
 bottom: 71px;
 position: absolute;
 width: 436px;
 height: 549px;
 }
 
+#CraneTwo {
+background: url('../images/crane.png') no-repeat left;
+left: 11500px;
+bottom: 71px;
+position: absolute;
+width: 436px;
+height: 549px;
+}
 
+#CraneThree {
+background: url('../images/crane.png') no-repeat left;
+left: 13000px;
+bottom: 71px;
+position: absolute;
+width: 436px;
+height: 549px;
+}
+
+#CraneFour {
+background: url('../images/crane.png') no-repeat left;
+left: 16800px;
+bottom: 71px;
+position: absolute;
+width: 436px;
+height: 549px;
+}
 
 /* Sceneries */
 #SceneryOne {
@@ -107,7 +132,7 @@ height: 381px;
 
 #SceneryTwo {
 background: url('../images/scenery-2.png') no-repeat left;
-left: 2000px;
+left: 2100px;
 bottom: 70px;
 position: absolute;
 width: 566px;
@@ -116,7 +141,7 @@ height: 308px;
 
 #SceneryThree {
 background: url('../images/scenery-3.png') no-repeat left;
-left: 2800px;
+left: 3000px;
 bottom: 70px;
 position: absolute;
 width: 417px;
@@ -125,7 +150,7 @@ height: 325px;
 
 #SceneryFour {
 background: url('../images/scenery-4.png') no-repeat left;
-left: 3200px;
+left: 4100px;
 bottom: 70px;
 position: absolute;
 width: 1608px;
@@ -134,13 +159,30 @@ height: 426px;
 
 #SceneryFive {
 background: url('../images/scenery-5.png') no-repeat left;
-left: 5800px;
+left: 6900px;
 bottom: 70px;
 position: absolute;
 width: 435px;
 height: 185px;
 }
 
+#ScenerySix {
+background: url('../images/scenery-6.png') no-repeat left;
+left: 11000px;
+bottom: 70px;
+position: absolute;
+width: 330px;
+height: 424px;
+}
+
+#ScenerySeven {
+background: url('../images/scenery-7.png') no-repeat left;
+left: 17700px;
+bottom: 70px;
+position: absolute;
+width: 987px;
+height: 494px;
+}
 
 /* ENDOF Sceneries */
 
@@ -156,7 +198,7 @@ height: 105px;
 
 #ScreenTwoEloniaPin {
 background: url('../images/Elonia-flag-pin.png') no-repeat left;
-left: 2400px;
+left: 2940px;
 bottom: 71px;
 position: absolute;
 width: 74px;
@@ -165,7 +207,7 @@ height: 105px;
 
 #ScreenFourFreedoniaPin {
 background: url('../images/Freedonia-flag-pin.png') no-repeat left;
-left: 3290px;
+left: 3560px;
 bottom: 71px;
 position: absolute;
 width: 74px;
@@ -174,7 +216,52 @@ height: 105px;
 
 #ScreenFiveFreedoniaPin {
 background: url('../images/Freedonia-flag-pin.png') no-repeat left;
-left: 4780px;
+left: 4380px;
+bottom: 71px;
+position: absolute;
+width: 74px;
+height: 105px;
+}
+
+#ScreenElevenFreedoniaPin {
+background: url('../images/Freedonia-flag-pin-r.png') no-repeat left;
+left: 17400px;
+bottom: 71px;
+position: absolute;
+width: 74px;
+height: 105px;
+}
+
+#ScreenTwelveFreedoniaPin {
+background: url('../images/Freedonia-flag-pin.png') no-repeat left;
+left: 17490px;
+bottom: 71px;
+position: absolute;
+width: 74px;
+height: 105px;
+}
+
+#ScreenThirteenFreedoniaPin {
+background: url('../images/Freedonia-flag-pin.png') no-repeat left;
+left: 19000px;
+bottom: 71px;
+position: absolute;
+width: 74px;
+height: 105px;
+}
+
+#ScreenSevenEloniaPin {
+background: url('../images/Elonia-flag-pin.png') no-repeat left;
+left: 10200px;
+bottom: 71px;
+position: absolute;
+width: 74px;
+height: 105px;
+}
+
+#ScreenNineEloniaPin {
+background: url('../images/Elonia-flag-pin-r.png') no-repeat left;
+left: 14320px;
 bottom: 71px;
 position: absolute;
 width: 74px;
@@ -183,7 +270,7 @@ height: 105px;
 
 #ScreenSixFreedoniaPinBorder {
 background: url('../images/Freedonia-border-r.png') no-repeat left;
-left: 7200px;
+left: 9450px;
 bottom: 71px;
 position: absolute;
 width: 160px;
@@ -192,13 +279,30 @@ height: 317px;
 
 #ScreenSixEloniaPinBorder {
 background: url('../images/Elonia-border-l.png') no-repeat left;
-left: 7860px;
+left: 10030px;
 bottom: 71px;
 position: absolute;
 width: 160px;
 height: 317px;
 }
 
+#ScreenTenFreedoniaPinBorder {
+background: url('../images/Freedonia-border-r.png') no-repeat left;
+left: 14400px;
+bottom: 71px;
+position: absolute;
+width: 160px;
+height: 317px;
+}
+
+#ScreenTenEloniaPinBorder {
+background: url('../images/Elonia-border-l.png') no-repeat left;
+left: 15000px;
+bottom: 71px;
+position: absolute;
+width: 160px;
+height: 317px;
+}
 /*ENDOF Pins*/
 
 /* Roads*/
@@ -207,13 +311,13 @@ background: url('../images/road-freedonia.png') repeat-x left;
 left: 1440px;
 bottom: 0;
 position: absolute;
-width: 940px;
+width: 1500px;
 height: 70px;
 }
 
 #ScreenTwoThreeEloniaRoad {
 background: url('../images/road-elonia.png') repeat-x left;
-left: 2380px;
+left: 2920px;
 bottom: 0;
 position: absolute;
 width: 1040px;
@@ -222,10 +326,19 @@ height: 70px;
 
 #ScreenThreeSixFreedoniaRoad {
 background: url('../images/road-freedonia.png') repeat-x left;
-left: 3275px;
+left: 3545px;
 bottom: 0;
 position: absolute;
 width: 3930px;
+height: 70px;
+}
+
+#ScreenElevenFreedoniaRoad {
+background: url('../images/road-freedonia.png') repeat-x left;
+left: 13700px;
+bottom: 0;
+position: absolute;
+width: 4100px;
 height: 70px;
 }
 
@@ -234,7 +347,16 @@ background: url('../images/road-elonia.png') repeat-x left;
 left: 8020px;
 bottom: 0;
 position: absolute;
-width: 4000px;
+width: 3990px;
+height: 70px;
+}
+
+#ScreenTenEloniaRoad {
+background: url('../images/road-elonia.png') repeat-x left;
+left: 12850px;
+bottom: 0;
+position: absolute;
+width: 850px;
 height: 70px;
 }
 /* ENDOF Roads*/

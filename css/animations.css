@@ -3,7 +3,7 @@
 
 
 #FreedMap {
-    width: 339px;
+  width: 339px;
   height: 283px;
   left: 500px;
   top: 100px;
@@ -261,31 +261,531 @@ opacity: 0;
         opacity: 1;
     }
 }
-/* ENDOF Screen 1 Maps of Freedonia and Elonia entrance */
+
+
+/* EndOf Screen 1 Maps of Freedonia and Elonia entrance */
+
+
+/* Screen 2 Authentication screens */
+
+#AuthenticationMethOne {
+  background: url('../images/monitor-1.png') no-repeat left;
+  left: 1600px;
+  bottom: 71px;
+  position: absolute;
+  width: 621px;
+  height: 517px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: AuthOneEnterKeyframes 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes AuthOneEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+
+#AuthenticationMethTwo {
+  background: url('../images/eID-screen.png') no-repeat left;
+  left: 2300px;
+  top: 71px;
+  position: absolute;
+  width: 369px;
+  height: 257px;
+  z-index: 2;
+  background-size: 0% 0%;
+  animation: AuthTwoEnterKeyframes 2s 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes AuthTwoEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+#AuthenticationMethThree {
+  background: url('../images/login-screen.png') no-repeat left;
+  left: 2500px;
+  top: 271px;
+  position: absolute;
+  width: 369px;
+  height: 257px;
+  z-index: 2;
+  background-size: 0% 0%;
+  animation: AuthThreeEnterKeyframes 2s 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes AuthThreeEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+/* EndOf Screen 2 Authentication screens */
+
+/* Screen 3 Authentication screens */
+
+#eIDASNode{
+  background: url('../images/confirm-screen.png') no-repeat left;
+  left: 3040px;
+  top: 100px;
+  position: absolute;
+  width: 401px;
+  height: 258px;
+  z-index: 3;
+  background-size: 0% 0%;
+  animation: eIDASNodeEnterKeyframes 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes eIDASNodeEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+
+#eIDASNodeOK{
+  background: url('../images/ok-right.png') no-repeat left;
+  left: 3240px;
+  top: 150px;
+  position: absolute;
+  width: 130px;
+  height: 171px;
+  z-index: 2;
+  background-size: 0% 0%;
+  animation: eIDASNodeOKEnterKeyframes 2s 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes eIDASNodeOKEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+    left: 3240px;
+  }
+  100% {
+    background-size: 100% 100%;
+    left: 3440px;
+  }
+}
+
+#MaxsAuthenticated {
+  background: url('../images/monitor-2.png') no-repeat left;
+  left: 3700px;
+  bottom: 71px;
+  position: absolute;
+  width: 616px;
+  height: 512px;
+  z-index: 2;
+  background-size: 0% 0%;
+  animation: MaxsAuthenticatedEnterKeyframes 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes MaxsAuthenticatedEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+/* EndOf Screen 3 Authentication screens */
+
+/* Screen 4 Authentication screens */
+
+#GetCompanyInfo {
+  background: url('../images/reg-magnifying-screen.png') no-repeat left;
+  left: 0px;
+  top: 180px;
+  position: absolute;
+  width: 418px;
+  height: 281px;
+  z-index: 2;
+  background-size: 0% 0%;
+  animation: GetCompanyInfoEnterKeyframes 2s 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes GetCompanyInfoEnterKeyframes {
+  0% {
+    left: 4200px;
+    background-size: 0% 0%;
+  }
+  100% {
+    left: 4450px;
+    background-size: 100% 100%;
+  }
+}
+
+#GetCompanyInfoOk {
+  background: url('../images/check-list.png') no-repeat left;
+  left: 0px;
+  top: 180px;
+  position: absolute;
+  width: 281px;
+  height: 247px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: GetCompanyInfoOkEnterKeyframes 2s 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes GetCompanyInfoOkEnterKeyframes {
+  0% {
+    left: 4500px;
+    background-size: 0% 0%;
+  }
+  100% {
+    left: 4870px;
+    background-size: 100% 100%;
+  }
+}
+
+#Consent{
+  background: url('../images/consent-screen.png') no-repeat left;
+  left: 5300px;
+  top: 110px;
+  position: absolute;
+  width: 422px;
+  height: 377px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: ConsentEnterKeyframes 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ConsentEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+/* EndOf Screen 4 Authentication screens */
+
+/* Screen 5 Authentication screens */
+
+#TruckFreeBMOne {
+  background: url('../images/Freedonia-Truck-BM.png') no-repeat left;
+  left: 0px;
+  bottom: 71px;
+  position: absolute;
+  width: 282px;
+  height: 145px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TruckFreeBMOneEnterKeyframes 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TruckFreeBMOneEnterKeyframes {
+  0% {
+    left: 0px;
+    background-size: 0% 0%;
+  }
+
+  100% {
+    left: 5900px;
+    background-size: 100% 100%;
+  }
+
+}
+
+#FreePackageOne{
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 6044px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: FreePackageOneEnterKeyframes 1s 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FreePackageOneEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+#TruckTOOPBMOne {
+  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
+  left: 0px;
+  bottom: 71px;
+  position: absolute;
+  width: 281px;
+  height: 145px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TruckTOOPBMOneEnterKeyframes 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TruckTOOPBMOneEnterKeyframes {
+  0% {
+    left: 0px;
+    background-size: 0% 0%;
+  }
+
+  100% {
+    left: 6500px;
+    background-size: 100% 100%;
+  }
+
+}
+
+#FreePackageTwo{
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 6645px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: FreePackageOneEnterKeyframes 1s 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FreePackageOneEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
 
 #SemanticMappingOne {
-background: url('../images/Semantic-mapping-FT.png') no-repeat left;
-left: 5800px;
+  background: url('../images/Semantic-mapping-FT.png') no-repeat left;
+  left: 6900px;
+  top: 71px;
+  position: absolute;
+  width: 394px;
+  height: 389px;
+  z-index: 1;
+  background-size: 100% 100%;
+  opacity: 0;
+  animation: SemanticMappingOneEnterKeyframes 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+
+@keyframes SemanticMappingOneEnterKeyframes {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+
+}
+
+#TruckTOOPBMTwo {
+  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
+  left: 7300px;
+  bottom: 71px;
+  position: absolute;
+  width: 281px;
+  height: 145px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TruckTOOPBMTwoEnterKeyframes 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TruckTOOPBMTwoEnterKeyframes {
+  0% {
+    left: 0px;
+    background-size: 0% 0%;
+  }
+
+  100% {
+    left: 7300px;
+    background-size: 100% 100%;
+  }
+
+}
+
+#FreePackageThree{
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 7445px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: FreePackageOneEnterKeyframes 1s 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FreePackageOneEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+#TOOPPackageOne{
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 7395px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TOOPPackageOneEnterKeyframes 1s 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageOneEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+/* EndOf Screen 5 Authentication screens */
+
+#SemanticMappingTwo {
+background: url('../images/Semantic-mapping-TE.png') no-repeat left;
+left: 10400px;
 top: 71px;
 position: absolute;
 width: 394px;
 height: 389px;
 }
 
-#DataDiscovery {
+#DataDiscoveryOne {
 background: url('../images/Data-Discovery.png') no-repeat left;
-left: 6400px;
+left: 8600;
 top: 71px;
 position: absolute;
 width: 655px;
 height: 391px;
 }
 
-#Baloon {
+#DataDiscoveryTwo {
+background: url('../images/Data-Discovery.png') no-repeat left;
+left: 15300px;
+top: 71px;
+position: absolute;
+width: 655px;
+height: 391px;
+}
+
+#BaloonOne {
 background: url('../images/Baloon.png') no-repeat left;
-left: 7420px;
+left: 9650px;
 top: 71px;
 position: absolute;
 width: 363px;
 height: 538px;
+}
+
+#BaloonTwo {
+background: url('../images/Baloon.png') no-repeat left;
+left: 14600px;
+top: 71px;
+position: absolute;
+width: 363px;
+height: 538px;
+}
+
+#EloniasBusinessRegisterOne {
+background: url('../images/Business-Register.png') no-repeat left;
+left: 12200px;
+top: 71px;
+position: absolute;
+width: 509px;
+height: 356px;
+}
+
+#EloniasBusinessRegisterTwo {
+background: url('../images/Business-Register.png') no-repeat left;
+left: 13700px;
+top: 71px;
+position: absolute;
+width: 509px;
+height: 356px;
+}
+
+#RegWEEEOne {
+background: url('../images/Reg-WEEE-screen.png') no-repeat left;
+left: 16050px;
+top: 71px;
+position: absolute;
+width: 421px;
+height: 530px;
+}
+
+#RegWEEETwo {
+background: url('../images/Reg-WEEE-screen-2.png') no-repeat left;
+left: 17780px;
+top: 71px;
+position: absolute;
+width: 423px;
+height: 267px;
+}
+
+#SubmissionScr {
+background: url('../images/Submission-screen.png') no-repeat left;
+left: 18500px;
+top: 71px;
+position: absolute;
+width: 425px;
+height: 562px;
+}
+
+#SuccessScr {
+background: url('../images/success-screen.png') no-repeat left;
+left: 19200px;
+top: 71px;
+position: absolute;
+width: 426px;
+height: 407px;
 }

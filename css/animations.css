@@ -545,7 +545,7 @@ opacity: 0;
   height: 145px;
   z-index: 1;
   background-size: 0% 0%;
-  animation: TruckTOOPBMOneEnterKeyframes 2s;
+  animation: TruckTOOPBMOneEnterKeyframes 2s 3s;
   animation-fill-mode: forwards;
 }
 
@@ -571,7 +571,7 @@ opacity: 0;
   height: 46px;
   z-index: 1;
   background-size: 0% 0%;
-  animation: FreePackageOneEnterKeyframes 1s 2s;
+  animation: FreePackageOneEnterKeyframes 1s 4.5s;
   animation-fill-mode: forwards;
 }
 

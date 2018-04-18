@@ -18,10 +18,11 @@ function panorama(content) {
     if (offset.x >= 3200) { spawnItem('GetCompanyInfo'); }
     if (offset.x >= 3200) { spawnItem('GetCompanyInfoOk'); }
     if (offset.x >= 4700) { spawnItem('Consent'); }
+
     if (offset.x >= 5000) { spawnItem('TruckFreeBMOne'); }
     if (offset.x >= 5000) { spawnItem('FreePackageOne'); }
-    if (offset.x >= 5600) { spawnItem('TruckTOOPBMOne'); }
-    if (offset.x >= 5600) { spawnItem('FreePackageTwo'); }
+    if (offset.x >= 5000) { spawnItem('TruckTOOPBMOne'); }
+    if (offset.x >= 5000) { spawnItem('FreePackageTwo'); }
     if (offset.x >= 6100) { spawnItem('SemanticMappingOne'); }
 
     if (offset.x >= 6400) { spawnItem('TruckTOOPBMTwo'); }
@@ -29,7 +30,7 @@ function panorama(content) {
     if (offset.x >= 6400) { spawnItem('TOOPPackageOne'); }
   });
 
-  $(document).click(function(e) { 
+  $(document).click(function(e) {
     // Check for left button
     if (e.button == 0) {
       scrollToNextSlice();

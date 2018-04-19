@@ -76,8 +76,7 @@ function spawnItem(id) {
 function scrollToNextSlice() {
 
   var viewportWidth = $(window).width();
-  var edgeWidth = (viewportWidth - sliceWidth) / 2;
-
+  var edgeWidth = Math.floor((viewportWidth - sliceWidth) / 2);
   var currentSliceIndex = Math.floor(($("body").scrollLeft() + edgeWidth) / sliceWidth);
   var newScrollLeft = currentSliceIndex * sliceWidth + sliceWidth;
 

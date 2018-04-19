@@ -74,10 +74,14 @@ function spawnItem(id) {
 }
 
 function scrollToNextSlice() {
-  var currentSliceIndex = Math.floor(($("body").scrollLeft() + 250) / sliceWidth);
+
+  var viewportWidth = $(window).width();
+  var edgeWidth = (viewportWidth - sliceWidth) / 2;
+
+  var currentSliceIndex = Math.floor(($("body").scrollLeft() + edgeWidth) / sliceWidth);
   var newScrollLeft = currentSliceIndex * sliceWidth + sliceWidth;
 
-  $('html, body').animate({scrollLeft: newScrollLeft - 250}, 800);
+  $('html, body').animate({scrollLeft: newScrollLeft - edgeWidth}, 800);
   items({x: newScrollLeft});
 }
 

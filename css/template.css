@@ -1,0 +1,163 @@
+/*Template*/
+.lineZero {
+  border-right: 2px solid #FFCC00;
+  left: 0px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineOne {
+  border-right: 2px solid #FFCC00;
+  left: 1366px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineTwo {
+  border-right: 2px solid #FFCC00;
+  left: 2732px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineThree {
+  border-right: 2px solid #FFCC00;
+  left: 4098px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineFour {
+  border-right: 2px solid #FFCC00;
+  left: 5464px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineFive {
+  border-right: 2px solid #FFCC00;
+  left: 6830px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineSix {
+  border-right: 2px solid #FFCC00;
+  left: 8196px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineSeven {
+  border-right: 2px solid #FFCC00;
+  left: 9562px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineEight {
+  border-right: 2px solid #FFCC00;
+  left: 10928px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineNine {
+  border-right: 2px solid #FFCC00;
+  left: 12294px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+
+.lineTen {
+  border-right: 2px solid #FFCC00;
+  left: 13660px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineEleven {
+  border-right: 2px solid #FFCC00;
+  left: 15026px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineTwelve {
+  border-right: 2px solid #FFCC00;
+  left: 16392px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineTherteen {
+  border-right: 2px solid #FFCC00;
+  left: 17758px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineFourteen {
+  border-right: 2px solid #FFCC00;
+  left: 19124px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+.lineFifteen {
+  border-right: 2px solid #FFCC00;
+  left: 20490px;
+  top: 0;
+  width: 2px;
+  height: 1000px;
+  position: absolute;
+  z-index: 100;
+}
+
+/* EndOf Template */

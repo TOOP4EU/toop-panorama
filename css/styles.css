@@ -13,7 +13,7 @@ body {
   color: #000000;
 }
 p {
-  font-size: .9em;
+  font-size: .7em;
 }
 
 #panoramaContent {
@@ -28,7 +28,7 @@ p {
     /* end of bg pattern*/
   background-size: 100% 100%;
   width: 20000px;
-  height: 700px;
+  height: 750px;
 
   /* Vertically center the panorama */
   position: absolute;
@@ -38,9 +38,9 @@ p {
 
 #MaxsHome {
 background: url('../images/circuit.png') no-repeat #909e9f center;
-left: 40px;
+left: 0;
 position: absolute;
-width: 400px;
+width: 300px;
 height: 100%;
 }
 
@@ -61,23 +61,23 @@ height: 100%;
   background-color: rgba(200, 210, 210, 0.8);
   border-top: 25px solid #727d7e;
   height: 53%;
-  padding: 0 0 0 3%;
+  padding: 3% 10% 3% 10%;
   font-weight: bold;
 }
 
 #ScreenOneDots {
 background: url('../images/dot.png') repeat-x left;
-left: 440px;
+left: 300px;
 bottom: 0;
 position: absolute;
-width: 882px;
+width: 960px;
 height: 32px;
 padding-bottom: 45px;
 }
 
 #ScreenOneArrow {
 background: url('../images/arrow-r.png') no-repeat left;
-left: 1330px;
+left: 1270px;
 bottom: 0;
 position: absolute;
 width: 93px;
@@ -123,7 +123,7 @@ height: 549px;
 /* Sceneries */
 #SceneryOne {
 background: url('../images/scenery-1.png') no-repeat left;
-left: 440px;
+left: 300px;
 bottom: 70px;
 position: absolute;
 width: 1256px;
@@ -141,7 +141,7 @@ height: 308px;
 
 #SceneryThree {
 background: url('../images/scenery-3.png') no-repeat left;
-left: 3000px;
+left: 2840px;
 bottom: 70px;
 position: absolute;
 width: 417px;
@@ -189,7 +189,7 @@ height: 494px;
 /* Pins */
 #ScreenTwoFreedoniaPin {
 background: url('../images/Freedonia-flag-pin.png') no-repeat left;
-left: 1450px;
+left: 1370px;
 bottom: 71px;
 position: absolute;
 width: 74px;
@@ -198,7 +198,7 @@ height: 105px;
 
 #ScreenTwoEloniaPin {
 background: url('../images/Elonia-flag-pin.png') no-repeat left;
-left: 2940px;
+left: 2740px;
 bottom: 71px;
 position: absolute;
 width: 74px;
@@ -252,7 +252,7 @@ height: 105px;
 
 #ScreenSevenEloniaPin {
 background: url('../images/Elonia-flag-pin.png') no-repeat left;
-left: 10200px;
+left: 9670px;
 bottom: 71px;
 position: absolute;
 width: 74px;
@@ -270,7 +270,7 @@ height: 105px;
 
 #ScreenSixFreedoniaPinBorder {
 background: url('../images/Freedonia-border-r.png') no-repeat left;
-left: 9450px;
+left: 8800px;
 bottom: 71px;
 position: absolute;
 width: 160px;
@@ -279,7 +279,7 @@ height: 317px;
 
 #ScreenSixEloniaPinBorder {
 background: url('../images/Elonia-border-l.png') no-repeat left;
-left: 10030px;
+left: 9500px;
 bottom: 71px;
 position: absolute;
 width: 160px;
@@ -308,16 +308,16 @@ height: 317px;
 /* Roads*/
 #ScreenTwoFreedoniaRoad {
 background: url('../images/road-freedonia.png') repeat-x left;
-left: 1440px;
+left: 1366px;
 bottom: 0;
 position: absolute;
-width: 1500px;
+width: 1366px;
 height: 70px;
 }
 
 #ScreenTwoThreeEloniaRoad {
 background: url('../images/road-elonia.png') repeat-x left;
-left: 2920px;
+left: 2734px;
 bottom: 0;
 position: absolute;
 width: 1040px;

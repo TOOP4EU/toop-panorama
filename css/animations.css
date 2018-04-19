@@ -5,7 +5,7 @@
 #FreedMap {
   width: 339px;
   height: 283px;
-  left: 500px;
+  left: 400px;
   top: 100px;
   background-image: url('../images/Freedonia-map.png');
   background-size: 0% 0%;
@@ -28,7 +28,7 @@
 #FreedoniaPin {
   width: 117px;
   height: 193px;
-  left: 650px;
+  left: 550px;
   top: 10px;
   background-image: url('../images/Freedonia-pin.png');
   background-size: 0% 0%;
@@ -50,7 +50,7 @@
 
 #FreedMapTitle {
   top: 180px;
-  left: 550px;
+  left: 450px;
   opacity: 0;
   position: absolute;
   font-weight: bold;
@@ -85,7 +85,7 @@
 #EloniaMap {
   width: 408px;
   height: 318px;
-  left: 1050px;
+  left: 850px;
   top: 20px;
   background-image: url('../images/Elonia-map.png');
   background-size: 0% 0%;
@@ -108,7 +108,7 @@
 #EloniaPin {
   width: 118px;
   height: 194px;
-  left: 1150px;
+  left: 950px;
   top: 10px;
   background-image: url('../images/Elonia-pin.png');
   background-size: 0% 0%;
@@ -129,7 +129,7 @@
 }
 
 #EloniaMapTitle {
-  left: 1230px;
+  left: 1030px;
   top: 180px;
   position: absolute;;
   font-weight: bold;
@@ -163,7 +163,7 @@ opacity: 0;
 #MapsLine{
   height:0px;
   width:1px;
-  left: 700px;
+  left: 600px;
   top: 200px;
   position: absolute;
   border-bottom: 2px dashed #ff0000;
@@ -177,16 +177,17 @@ opacity: 0;
 
 @keyframes increase {
     100% {
-        width: 480px;
+        width: 380px;
     }
 }
 
 #DCUIOne{
   height:200px;
   width:290px;
-  left: 450px;
-  top: 420px;
+  left: 340px;
+  top: 460px;
   position: absolute;
+  box-shadow: 0px 6px 5px 0px #C4C4C4;
   opacity: 0;
   background-image: url('../images/dc-ui-1.png');
   background-size: 100% 100%;
@@ -211,9 +212,10 @@ opacity: 0;
 #DCUITwo{
   height:200px;
   width:290px;
-  left: 800px;
-  top: 420px;
+  left: 660px;
+  top: 460px;
   position: absolute;
+  box-shadow: 0px 6px 5px 0px #C4C4C4;
   opacity: 0;
   background-image: url('../images/dc-ui-2.png');
   background-size: 100% 100%;
@@ -238,9 +240,10 @@ opacity: 0;
 #DCUIThree{
   height:200px;
   width:290px;
-  left: 1150px;
-  top: 420px;
+  left: 980px;
+  top: 460px;
   position: absolute;
+  box-shadow: 0px 6px 5px 0px #C4C4C4;
   opacity: 0;
   background-image: url('../images/dc-ui-3.png');
   background-size: 100% 100%;
@@ -270,7 +273,7 @@ opacity: 0;
 
 #AuthenticationMethOne {
   background: url('../images/monitor-1.png') no-repeat left;
-  left: 1600px;
+  left: 1480px;
   bottom: 71px;
   position: absolute;
   width: 621px;
@@ -293,7 +296,7 @@ opacity: 0;
 
 #AuthenticationMethTwo {
   background: url('../images/eID-screen.png') no-repeat left;
-  left: 2300px;
+  left: 2180px;
   top: 71px;
   position: absolute;
   width: 369px;
@@ -315,7 +318,7 @@ opacity: 0;
 
 #AuthenticationMethThree {
   background: url('../images/login-screen.png') no-repeat left;
-  left: 2500px;
+  left: 2350px;
   top: 271px;
   position: absolute;
   width: 369px;
@@ -341,7 +344,7 @@ opacity: 0;
 
 #eIDASNode{
   background: url('../images/confirm-screen.png') no-repeat left;
-  left: 3040px;
+  left: 2800px;
   top: 100px;
   position: absolute;
   width: 401px;
@@ -364,7 +367,7 @@ opacity: 0;
 
 #eIDASNodeOK{
   background: url('../images/ok-right.png') no-repeat left;
-  left: 3240px;
+  left: 2800px;
   top: 150px;
   position: absolute;
   width: 130px;
@@ -378,17 +381,17 @@ opacity: 0;
 @keyframes eIDASNodeOKEnterKeyframes {
   0% {
     background-size: 0% 0%;
-    left: 3240px;
+    left: 2800px;
   }
   100% {
     background-size: 100% 100%;
-    left: 3440px;
+    left: 3200px;
   }
 }
 
 #MaxsAuthenticated {
   background: url('../images/monitor-2.png') no-repeat left;
-  left: 3700px;
+  left: 3400px;
   bottom: 71px;
   position: absolute;
   width: 616px;
@@ -545,7 +548,7 @@ opacity: 0;
   height: 145px;
   z-index: 1;
   background-size: 0% 0%;
-  animation: TruckTOOPBMOneEnterKeyframes 2s 3s;
+  animation: TruckTOOPBMOneEnterKeyframes 2s 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -556,7 +559,7 @@ opacity: 0;
   }
 
   100% {
-    left: 6500px;
+    left: 6400px;
     background-size: 100% 100%;
   }
 
@@ -564,14 +567,14 @@ opacity: 0;
 
 #FreePackageTwo{
   background: url('../images/Freedonia-package.png') no-repeat left;
-  left: 6645px;
+  left: 6545px;
   bottom: 153px;
   position: absolute;
   width: 46px;
   height: 46px;
   z-index: 1;
   background-size: 0% 0%;
-  animation: FreePackageOneEnterKeyframes 1s 4.5s;
+  animation: FreePackageOneEnterKeyframes 1s 3.5s;
   animation-fill-mode: forwards;
 }
 
@@ -624,7 +627,7 @@ opacity: 0;
   height: 145px;
   z-index: 1;
   background-size: 0% 0%;
-  animation: TruckTOOPBMTwoEnterKeyframes 2s;
+  animation: TruckTOOPBMTwoEnterKeyframes 2s 2.5s;
   animation-fill-mode: forwards;
 }
 
@@ -650,7 +653,7 @@ opacity: 0;
   height: 46px;
   z-index: 1;
   background-size: 0% 0%;
-  animation: FreePackageOneEnterKeyframes 1s 2s;
+  animation: FreePackageOneEnterKeyframes 1s 4s;
   animation-fill-mode: forwards;
 }
 
@@ -674,7 +677,7 @@ opacity: 0;
   height: 46px;
   z-index: 1;
   background-size: 0% 0%;
-  animation: TOOPPackageOneEnterKeyframes 1s 2s;
+  animation: TOOPPackageOneEnterKeyframes 1s 4s;
   animation-fill-mode: forwards;
 }
 
@@ -691,23 +694,497 @@ opacity: 0;
 
 /* EndOf Screen 5 Authentication screens */
 
-#SemanticMappingTwo {
-background: url('../images/Semantic-mapping-TE.png') no-repeat left;
-left: 10400px;
-top: 71px;
-position: absolute;
-width: 394px;
-height: 389px;
-}
+/* Screen 6 Authentication screens */
 
 #DataDiscoveryOne {
-background: url('../images/Data-Discovery.png') no-repeat left;
-left: 8600;
-top: 71px;
-position: absolute;
-width: 655px;
-height: 391px;
+  background: url('../images/Data-Discovery.png') no-repeat left;
+  left: 7700;
+  top: 120px;
+  position: absolute;
+  width: 655px;
+  height: 391px;
+  z-index: 1;
+  opacity: 0;
+  background-size: 0% 0%;
+  animation: DataDiscoveryOneEnterKeyframes 1s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes DataDiscoveryOneEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    background-size: 100% 100%;
+  }
+
+}
+
+#TruckTOOPBMThree {
+  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
+  left: 8000px;
+  bottom: 71px;
+  position: absolute;
+  width: 281px;
+  height: 145px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TruckTOOPBMThreeEnterKeyframes 2s 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TruckTOOPBMThreeEnterKeyframes {
+  0% {
+    left: 0px;
+    background-size: 0% 0%;
+  }
+
+  100% {
+    left: 8400px;
+    background-size: 100% 100%;
+  }
+
+}
+
+#FreePackageFour{
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 8449px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: FreePackageFourEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FreePackageFourEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+#TOOPPackageTwo{
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 8546px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TOOPPackageTwoEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageTwoEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+#TOOPPackageThree{
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 8497px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TOOPPackageThreeOneEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageThreeOneEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+#BaloonOne {
+  background: url('../images/Baloon.png') no-repeat left;
+  left: 9050px;
+  top: 71px;
+  position: absolute;
+  width: 363px;
+  height: 538px;
+  z-index: 1;
+  /*animation: BaloonOneEnterKeyframes 4s 2.5s;
+  opacity: 0;
+  */
+  animation: BaloonOneEnterKeyframes ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes BaloonOneEnterKeyframes {
+
+   0% {
+    transform: rotate(3deg);
+  }
+    100% {
+      transform: rotate(-3deg);
+    }
+
+  /*0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }*/
+
+}
+
+#FreePackageFive{
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 9217px;
+  bottom: 130px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 65% 65%;
+  animation: FreePackageFiveEnterKeyframes ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FreePackageFiveEnterKeyframes {
+  0% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(-3deg);
+  }
+
+}
+
+#TOOPPackageFour {
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 9200px;
+  bottom: 100px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 65% 65%;
+  animation: TOOPPackageFourEnterKeyframes ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageFourEnterKeyframes {
+  0% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(-3deg);
+  }
+
+}
+
+#TOOPPackageFive{
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 9235px;
+  bottom: 100px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TOOPPackageFiveEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageFiveEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 65% 65%;
+  }
+
+}
+
+/* EndOf Screen 6 Authentication screens */
+
+/* Screen 7 Elonia Trip */
+
+#TruckTOOPBMFour {
+  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
+  left: 9800px;
+  bottom: 71px;
+  position: absolute;
+  width: 281px;
+  height: 145px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TruckTOOPBMFourEnterKeyframes 2s 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TruckTOOPBMFourEnterKeyframes {
+  0% {
+    left: 0px;
+    background-size: 0% 0%;
+  }
+
+  100% {
+    left: 9800px;
+    background-size: 100% 100%;
+  }
+
+}
+
+#FreePackageSix {
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 9845px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: FreePackageSixEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FreePackageSixEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+#TOOPPackageSix{
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 9895px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TOOPPackageSixEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageSixEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+#TOOPPackageSeven {
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 9945px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TOOPPackageSevenEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageSevenEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+#SemanticMappingTwo {
+background: url('../images/Semantic-mapping-TE.png') no-repeat left;
+left: 10200px;
+  top: 71px;
+  position: absolute;
+  width: 394px;
+  height: 389px;
+  z-index: 1;
+  background-size: 100% 100%;
+  opacity: 0;
+  animation: SemanticMappingTwoEnterKeyframes 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+
+@keyframes SemanticMappingTwoEnterKeyframes {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+
+}
+
+#TruckTOOPBMFive {
+  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
+  left: 10600px;
+  bottom: 71px;
+  position: absolute;
+  width: 281px;
+  height: 145px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TruckTOOPBMFiveEnterKeyframes 2s 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TruckTOOPBMFiveEnterKeyframes {
+  0% {
+    left: 0px;
+    background-size: 0% 0%;
+  }
+
+  100% {
+    left: 10600px;
+    background-size: 100% 100%;
+  }
+
+}
+
+#FreePackageSeven {
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 9845px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: FreePackageSevenEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FreePackageSevenEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+#TOOPPackageSeven{
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 9895px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TOOPPackageSevenEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageSevenEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+#TOOPPackageEight {
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 9945px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TOOPPackageEightEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageEightEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+
+#EloniaPackageOne {
+  background: url('../images/Elonia-package.png') no-repeat left;
+  left: 9945px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: EloniaPackageOneEnterKeyframes 1s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes EloniaPackageOneEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+  }
+
+  100% {
+    background-size: 100% 100%;
+  }
+
+}
+
+/* EndOf Screen 7 Elonia Trip */
 
 #DataDiscoveryTwo {
 background: url('../images/Data-Discovery.png') no-repeat left;
@@ -718,14 +1195,6 @@ width: 655px;
 height: 391px;
 }
 
-#BaloonOne {
-background: url('../images/Baloon.png') no-repeat left;
-left: 9650px;
-top: 71px;
-position: absolute;
-width: 363px;
-height: 538px;
-}
 
 #BaloonTwo {
 background: url('../images/Baloon.png') no-repeat left;

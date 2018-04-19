@@ -10,8 +10,8 @@ function items(offset) {
 
   if (offset.x >= 2000) { spawnItem('eIDASNode'); }
   if (offset.x >= 2000) { spawnItem('eIDASNodeOK'); }
+  if (offset.x >= 2000) { spawnItem('MaxsAuthenticated'); }
 
-  if (offset.x >= 3000) { spawnItem('MaxsAuthenticated'); }
   if (offset.x >= 3000) { spawnItem('GetCompanyInfo'); }
   if (offset.x >= 3000) { spawnItem('GetCompanyInfoOk'); }
 
@@ -21,33 +21,43 @@ function items(offset) {
   if (offset.x >= 5000) { spawnItem('FreePackageOne'); }
   if (offset.x >= 5000) { spawnItem('TruckTOOPBMOne'); }
   if (offset.x >= 5000) { spawnItem('FreePackageTwo'); }
+  if (offset.x >= 5000) { spawnItem('SemanticMappingOne'); }
+  if (offset.x >= 5000) { spawnItem('TruckTOOPBMTwo'); }
+  if (offset.x >= 5000) { spawnItem('FreePackageThree'); }
+  if (offset.x >= 5000) { spawnItem('TOOPPackageOne'); }
 
-  if (offset.x >= 5500) { spawnItem('SemanticMappingOne'); }
+  if (offset.x >= 6000) { spawnItem('DataDiscoveryOne'); }
+  if (offset.x >= 6000) { spawnItem('TruckTOOPBMThree'); }
+  if (offset.x >= 6000) { spawnItem('FreePackageFour'); }
+  if (offset.x >= 6000) { spawnItem('TOOPPackageTwo'); }
+  if (offset.x >= 6000) { spawnItem('TOOPPackageThree'); }
+  if (offset.x >= 6000) { spawnItem('BaloonOne'); }
+  if (offset.x >= 6000) { spawnItem('FreePackageFive'); }
+  if (offset.x >= 6000) { spawnItem('TOOPPackageFour'); }
+  if (offset.x >= 6000) { spawnItem('TOOPPackageFive'); }
 
-  if (offset.x >= 6000) { spawnItem('TruckTOOPBMTwo'); }
-  if (offset.x >= 6000) { spawnItem('FreePackageThree'); }
-  if (offset.x >= 6000) { spawnItem('TOOPPackageOne'); }
+  if (offset.x >= 7000) { spawnItem('TruckTOOPBMFour'); }
+  if (offset.x >= 7000) { spawnItem('FreePackageSix'); }
+  if (offset.x >= 7000) { spawnItem('TOOPPackageSix'); }
+  if (offset.x >= 7000) { spawnItem('TOOPPackageSeven'); }
 
-  if (offset.x >= 7000) { spawnItem('DataDiscoveryOne'); }
+  if (offset.x >= 8000) { spawnItem('SemanticMappingTwo'); }
+  if (offset.x >= 8000) { spawnItem('TruckTOOPBMFive'); }
+  if (offset.x >= 8000) { spawnItem('FreePackageSeven'); }
+  if (offset.x >= 8000) { spawnItem('TOOPPackageEight'); }
+  if (offset.x >= 8000) { spawnItem('TOOPPackageNine'); }
+  if (offset.x >= 8000) { spawnItem('EloniaPackageOne'); }
 
-  if (offset.x >= 7000) { spawnItem('TruckTOOPBMThree'); }
-  if (offset.x >= 7000) { spawnItem('FreePackageFour'); }
-  if (offset.x >= 7000) { spawnItem('TOOPPackageTwo'); }
-  if (offset.x >= 7000) { spawnItem('TOOPPackageThree'); }
+  if (offset.x >= 9000) { spawnItem('TruckTOOPBMSix'); }
+  if (offset.x >= 9000) { spawnItem('FreePackageEight'); }
+  if (offset.x >= 9000) { spawnItem('TOOPPackageTen'); }
+  if (offset.x >= 9000) { spawnItem('TOOPPackageEleven'); }
+  if (offset.x >= 9000) { spawnItem('EloniaPackageTwo'); }
 
-  if (offset.x >= 8000) { spawnItem('BaloonOne'); }
-  if (offset.x >= 8000) { spawnItem('FreePackageFive'); }
-  if (offset.x >= 8000) { spawnItem('TOOPPackageFour'); }
-  if (offset.x >= 8000) { spawnItem('TOOPPackageFive'); }
-
-  if (offset.x >= 9000) { spawnItem('TruckTOOPBMFour'); }
-  if (offset.x >= 9000) { spawnItem('FreePackageSix'); }
-  if (offset.x >= 9000) { spawnItem('TOOPPackageSix'); }
-  if (offset.x >= 9000) { spawnItem('TOOPPackageSeven'); }
-
-  if (offset.x >= 10000) { spawnItem('SemanticMappingTwo'); }
-
-  if (offset.x >= 11000) { spawnItem('TruckTOOPBMFive'); }
+  if (offset.x >= 9000) { spawnItem('TruckEloniaBMOne'); }
+  if (offset.x >= 9000) { spawnItem('FreePackageNine'); }
+  if (offset.x >= 9000) { spawnItem('TOOPPackageTwelve'); }
+  if (offset.x >= 9000) { spawnItem('EloniaPackageThree'); }
 }
 
 function panorama(content) {

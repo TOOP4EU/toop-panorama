@@ -1409,6 +1409,317 @@ opacity: 1;
 
 /*EnOf Screen 8 */
 
+/* Screen 9 */
+/* Elonias Truck */
+#TruckEloniaBMTwo {
+  background: url('../images/Elonia-Truck-BM.png') no-repeat left;
+  left: 9600px;
+  bottom: 71px;
+  position: absolute;
+  width: 281px;
+  height: 146px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TruckEloniaBMTwoEnterKeyframes 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TruckEloniaBMTwoEnterKeyframes {
+  0% {
+    left: 0px;
+    background-size: 0% 0%;
+  }
+
+  100% {
+    left: 11000px;
+    background-size: 100% 100%;
+  }
+
+}
+
+#FreePackageTen {
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 11145px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation: FreePackageTenEnterKeyframes 2s 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FreePackageTenEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+#TOOPPackageThirteen {
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 11095px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation: TOOPPackageThirteenEnterKeyframes 2s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageThirteenEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+#EloniaPackageFour {
+  background: url('../images/Elonia-package.png') no-repeat left;
+  left: 11120px;
+  bottom: 203px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation: EloniaPackageFourEnterKeyframes 2s 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes EloniaPackageFourEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+#DataPackageOne {
+  background: url('../images/data.png') no-repeat left;
+  left: 11030px;
+  bottom: 153px;
+  position: absolute;
+  width: 54px;
+  height: 67px;
+  z-index: 1;
+  opacity: 0;
+  animation: DataPackageOneEnterKeyframes 2s 3.5s ease-in-out alternate;
+  animation-iteration-count: 1;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+}
+
+@keyframes DataPackageOneEnterKeyframes {
+  0% {
+    opacity: 0;
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+      opacity: 1;
+      transform: rotate(0deg);
+  }
+}
+/* EndOf Elonias Truck */
+
+/* TOOP Truck */
+
+#TruckTOOPBMSeven {
+  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
+  left: 11000px;
+  bottom: 71px;
+  position: absolute;
+  width: 281px;
+  height: 145px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TruckTOOPBMSevenEnterKeyframes 2s 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TruckTOOPBMSevenEnterKeyframes {
+  0% {
+    left: 0px;
+    background-size: 0% 0%;
+  }
+
+  100% {
+    left: 11560px;
+    background-size: 100% 100%;
+  }
+
+}
+
+#FreePackageEleven {
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 11700px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation: FreePackageElevenEnterKeyframes 2s 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FreePackageElevenEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+#TOOPPackageFourteen {
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 11650px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation: TOOPPackageFourteenEnterKeyframes 2s 6.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageFourteenEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+#EloniaPackageFive {
+  background: url('../images/Elonia-package.png') no-repeat left;
+  left: 11675px;
+  bottom: 203px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation: EloniaPackageFiveEnterKeyframes 2s 7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes EloniaPackageFiveEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+#DataPackageTwo {
+  background: url('../images/data.png') no-repeat left;
+  left: 11585px;
+  bottom: 153px;
+  position: absolute;
+  width: 54px;
+  height: 67px;
+  z-index: 1;
+  opacity: 0;
+  animation: DataPackageTwoEnterKeyframes 2s 7.5s ease-in-out alternate;
+  animation-iteration-count: 1;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+}
+
+@keyframes DataPackageTwoEnterKeyframes {
+  0% {
+    opacity: 0;
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+      opacity: 1;
+      transform: rotate(0deg);
+  }
+}
+
+/* EndOf TOOP Truck */
+/* EndOf Screen 9 */
+
+/* Screen 10 */
+
+#BaloonTwo {
+  background: url('../images/Baloon.png') no-repeat left;
+  left: 12450px;
+  top: 71px;
+  position: absolute;
+  width: 363px;
+  height: 538px;
+  z-index: 1;
+  animation: BaloonTwoEnterKeyframes ease-in-out 1s alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+}
+
+@keyframes BaloonTwoEnterKeyframes {
+   0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+#FreePackageTwelve{
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 12635px;
+  bottom: 150px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  background-size: 65% 65%;
+  animation: FreePackageTwelveEnterKeyframes ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+}
+
+@keyframes FreePackageTwelveEnterKeyframes {
+   0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+/* EndOf Screen 10 */
 
 #DataDiscoveryTwo {
 background: url('../images/Data-Discovery.png') no-repeat left;
@@ -1419,14 +1730,6 @@ width: 655px;
 height: 391px;
 }
 
-#BaloonTwo {
-background: url('../images/Baloon.png') no-repeat left;
-left: 12450px;
-top: 71px;
-position: absolute;
-width: 363px;
-height: 538px;
-}
 
 #EloniasBusinessRegisterOne {
 background: url('../images/Business-Register.png') no-repeat left;

@@ -58,6 +58,21 @@ function items(offset) {
   if (offset.x >= 9000) { spawnItem('FreePackageNine'); }
   if (offset.x >= 9000) { spawnItem('TOOPPackageTwelve'); }
   if (offset.x >= 9000) { spawnItem('EloniaPackageThree'); }
+
+  if (offset.x >= 10000) { spawnItem('TruckEloniaBMTwo'); }
+  if (offset.x >= 10000) { spawnItem('FreePackageTen'); }
+  if (offset.x >= 10000) { spawnItem('TOOPPackageThirteen'); }
+  if (offset.x >= 10000) { spawnItem('EloniaPackageFour'); }
+  if (offset.x >= 10000) { spawnItem('DataPackageOne'); }
+
+  if (offset.x >= 10000) { spawnItem('TruckTOOPBMSeven'); }
+  if (offset.x >= 10000) { spawnItem('FreePackageEleven'); }
+  if (offset.x >= 10000) { spawnItem('TOOPPackageFourteen'); }
+  if (offset.x >= 10000) { spawnItem('EloniaPackageFive'); }
+  if (offset.x >= 10000) { spawnItem('DataPackageTwo'); }
+
+  if (offset.x >= 11000) { spawnItem('BaloonTwo'); }
+  if (offset.x >= 11000) { spawnItem('FreePackageTwelve'); }
 }
 
 function panorama(content) {

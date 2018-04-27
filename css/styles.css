@@ -113,7 +113,7 @@ p {
 
 #CraneFour {
   background: url('../images/crane.png') no-repeat left;
-  left: 14400px;
+  left: 13920px;
   bottom: 71px;
   position: absolute;
   width: 436px;
@@ -288,7 +288,7 @@ height: 105px;
 
 #ScreenTenFreedoniaPinBorder {
   background: url('../images/Freedonia-border-r.png') no-repeat left;
-  left: 12300px;
+  left: 13000px;
   bottom: 0;
   position: absolute;
   width: 160px;
@@ -297,7 +297,7 @@ height: 105px;
 
 #ScreenTenEloniaPinBorder {
   background: url('../images/Elonia-border-l.png') no-repeat left;
-  left: 12800px;
+  left: 13500px;
   bottom: 0;
   position: absolute;
   width: 160px;
@@ -335,7 +335,7 @@ height: 105px;
 
 #ScreenElevenFreedoniaRoad {
   background: url('../images/road-freedonia.png') repeat-x left;
-  left: 13700px;
+  left: 13650px;
   bottom: 0;
   position: absolute;
   width: 4100px;
@@ -353,10 +353,10 @@ height: 105px;
 
 #ScreenTenEloniaRoad {
   background: url('../images/road-elonia.png') repeat-x left;
-  left: 12960px;
+  left: 13000px;
   bottom: 0;
   position: absolute;
-  width: 850px;
+  width: 650px;
   height: 70px;
 }
 /* ENDOF Roads*/

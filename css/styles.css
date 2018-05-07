@@ -1,6 +1,7 @@
  /* @import "toopLogo.css";*/
-@import "smiley.css";
-@import "sun.css";
+@import "template.css";
+/*@import "clouds.css";*/
+@import "clouds2.css";
 @import "animations.css";
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
@@ -27,7 +28,7 @@ p {
   );
     /* end of bg pattern*/
   background-size: 100% 100%;
-  width: 20000px;
+  width: 17758px;
   height: 750px;
 
   /* Vertically center the panorama */
@@ -35,6 +36,17 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
+
+#background-wrap {
+  bottom: 0;
+  left: 0;
+  padding-top: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
 
 #MaxsHome {
   background: url('../images/circuit.png') no-repeat #909e9f center;
@@ -353,10 +365,155 @@ height: 105px;
 
 #ScreenTenEloniaRoad {
   background: url('../images/road-elonia.png') repeat-x left;
-  left: 13000px;
+  left: 12300px;
   bottom: 0;
   position: absolute;
-  width: 650px;
+  width: 700px;
   height: 70px;
 }
 /* ENDOF Roads*/
+
+/* Titles */
+
+#Titles {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.TitleOne {
+  left: 1900px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwo {
+  left: 2900px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleThree {
+  left: 3500px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleFour {
+  left: 4200px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleFive {
+  left: 4990px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleSix {
+  left: 5700px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleSeven {
+  left: 6400px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleEight {
+  left: 6900px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleNine {
+  left: 7500px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTen {
+  left: 7900px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleEleven {
+  left: 8550px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwelve {
+  left: 9860px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleThirtenn {
+  left: 10500px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleFourteen {
+  left: 11300px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleFifteen {
+  left: 11900px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleSixteen {
+  left: 12400px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleSeventeen {
+  left: 13000px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleEightteen {
+  left: 13400px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleNineteen {
+  left: 13850px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwenty {
+  left: 14550px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwentyOne {
+  left: 15230px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwentyTwo {
+  left: 15860px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwentyThree {
+  left: 16950px;
+  top: 20px;
+  position: absolute;
+}

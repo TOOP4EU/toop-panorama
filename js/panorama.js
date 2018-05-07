@@ -3,7 +3,6 @@ var sliceWidth = 1366;
 function items(offset) {
   console.log(offset.x); // Logs the current horizontal scroll offset
 
-  if (offset.x >= 200) { spawnItem('smiley'); }
   if (offset.x >= 1366) { spawnItem('AuthenticationMethOne'); }
   if (offset.x >= 1366) { spawnItem('AuthenticationMethTwo'); }
   if (offset.x >= 1366) { spawnItem('AuthenticationMethThree'); }
@@ -77,8 +76,8 @@ function items(offset) {
 
   if (offset.x >= 13660) { spawnItem('TruckTOOPBMEight'); }
   if (offset.x >= 13660) { spawnItem('FreePackageThirteen'); }
-  if (offset.x >= 13660) { spawnItem('TOOPPackageSixteen'); }
   if (offset.x >= 13660) { spawnItem('TOOPPackageSeventeen'); }
+  if (offset.x >= 13660) { spawnItem('TOOPPackageEighteen'); }
   if (offset.x >= 13660) { spawnItem('EloniaPackageSeven'); }
   if (offset.x >= 13660) { spawnItem('DataPackageFour'); }
   if (offset.x >= 13660) { spawnItem('TruckFreeBMTwo'); }
@@ -90,7 +89,8 @@ function items(offset) {
   if (offset.x >= 15026) { spawnItem('SubmissionScr'); }
 
   if (offset.x >= 16392) { spawnItem('SuccessScr'); }
-
+  if (offset.x >= 16392) { spawnItem('eIDASNodeOKTwo'); }
+  if (offset.x >= 16392) { spawnItem('eIDASNodeOKTwoLeft'); }
 }
 
 function panorama(content) {

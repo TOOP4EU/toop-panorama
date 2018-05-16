@@ -547,23 +547,103 @@ opacity: 1;
 
 #FreePackageOne {
   background: url('../images/Freedonia-package.png') no-repeat left;
-  left: 5635px;
-  bottom: 153px;
+  left: 0;
+  bottom: 150px;
   position: absolute;
   width: 46px;
   height: 46px;
   opacity: 0;
   z-index: 1;
-  animation: FreePackageOneEnterKeyframes 2s 2s;
   animation-fill-mode: forwards;
+}
+
+.FreePackageMoveOne {
+  animation: FreePackageOneEnterKeyframes 7.2s 2s;
 }
 
 @keyframes FreePackageOneEnterKeyframes {
   0% {
     opacity: 0;
+    left: 5635px;
+  }
+
+  30% {
+    opacity: .5;
+    left: 5635px;
+  }
+  40% {
+    left: 6085px;
+    opacity: .5;
+  }
+
+  60% {
+    opacity: 1;
+    left: 6085px;
+  }
+
+  80% {
+    opacity: .5;
+    left: 6625px;
+  }
+
+  100% {
+    opacity: 1;
+    left: 6625px;
+  }
+}
+
+.FreePackageMoveTwo {
+  animation: FreePackageMoveTwoEnterKeyframes 8s 2s;
+}
+
+@keyframes FreePackageMoveTwoEnterKeyframes {
+  0% {
+    opacity: 1;
+    background-size: 100% 100%;
+    left: 6625px;
+    bottom: 150px;
+  }
+  25% {
+    opacity: 1;
+    background-size: 100% 100%;
+    left: 7345px;
+    bottom: 150px;
+  }
+  50% {
+    opacity: 1;
+    background-size: 100% 100%;
+    left: 7345px;
+    bottom: 150px;
+  }
+  75% {
+    opacity: 1;
+    background-size: 100% 100%;
+    left: 7345px;
+    bottom: 150px;
+  }
+100% {
+  opacity: 1;
+  background-size: 65% 65%;
+  left: 7820px;
+  bottom: 180px;
+  }
+}
+
+.FreePackageMoveThree {
+  animation: FreePackageMoveThreeEnterKeyframes 2s 2s;
+}
+@keyframes FreePackageMoveThreeEnterKeyframes {
+  0% {
+    opacity: 1;
+    left: 7820px;
+    bottom: 150px;
+    background-size: 100% 100%;
   }
   100% {
     opacity: 1;
+    left: 8945px;
+    bottom: 150px;
+    background-size: 100% 100%;
   }
 }
 
@@ -575,46 +655,220 @@ opacity: 1;
   width: 281px;
   height: 145px;
   z-index: 2;
-  background-size: 0% 0%;
-  animation: TruckTOOPBMOneEnterKeyframes 2s 1.5s;
+  background-size: 100% 100%;
   animation-fill-mode: forwards;
+}
+
+.TruckTOOPBMMoveOne {
+    animation: TruckTOOPBMOneEnterKeyframes 8s 2s;
 }
 
 @keyframes TruckTOOPBMOneEnterKeyframes {
   0% {
     left: 0px;
-    background-size: 0% 0%;
   }
 
-  100% {
+  25% {
     left: 5940px;
-    background-size: 100% 100%;
+  }
+
+  50% {
+    left: 5940px;
+  }
+
+75% {
+  left: 6480px;
+  }
+
+100% {
+    left: 6480px;
   }
 
 }
 
-#FreePackageTwo{
-  background: url('../images/Freedonia-package.png') no-repeat left;
-  left: 6085px;
-  bottom: 153px;
+.TruckTOOPBMMoveTwo {
+    animation: TruckTOOPBMMoveTwoEnterKeyframes 2s 2s;
+}
+
+@keyframes TruckTOOPBMMoveTwoEnterKeyframes {
+  0% {
+    left: 6480px;
+  }
+
+  100% {
+    left: 7200px;
+  }
+}
+
+.TruckTOOPBMMoveThree {
+    animation: TruckTOOPBMMoveThreeEnterKeyframes 2s 2s;
+}
+
+@keyframes TruckTOOPBMMoveThreeEnterKeyframes {
+  0% {
+    left: 7500;
+  }
+
+  100% {
+    left: 8800px;
+  }
+}
+
+#TOOPPackageOne{
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 6575px;
+  bottom: 353px;
   position: absolute;
   width: 46px;
   height: 46px;
-  z-index: 2;
+  z-index: 1;
   opacity: 0;
-  animation: FreePackageTwoEnterKeyframes 2s 3.5s;
   animation-fill-mode: forwards;
 }
 
-@keyframes FreePackageTwoEnterKeyframes {
+.TOOPPackageMoveOne {
+    animation: TOOPPackageOneEnterKeyframes 2s 8s;
+}
+
+@keyframes TOOPPackageOneEnterKeyframes {
   0% {
     opacity: 0;
+    bottom: 353px;
   }
+
   100% {
-    opacity: 1;
+      opacity: 1;
+      bottom: 150px;
   }
 
 }
+
+.TOOPPackageMoveTwo {
+    animation: TOOPPackageMoveTwoEnterKeyframes 8.2s 2s;
+}
+
+@keyframes TOOPPackageMoveTwoEnterKeyframes {
+  0% {
+    left: 6575px;
+    opacity: 1;
+    bottom: 150px;
+  }
+25% {
+    opacity: 1;
+    background-size: 100% 100%;
+    left: 7295px;
+    bottom: 150px;
+  }
+  50% {
+    opacity: 1;
+    background-size: 100% 100%;
+    left: 7295px;
+    bottom: 150px;
+  }
+  75% {
+    opacity: 1;
+    background-size: 100% 100%;
+    left: 7295px;
+    bottom: 150px;
+  }
+  100% {
+    opacity: 1;
+    background-size: 65% 65%;
+    bottom: 150px;
+    left: 7840px;
+  }
+
+}
+
+.TOOPPackageMoveThree {
+    animation: TOOPPackageMoveThreeEnterKeyframes 2.1s 2s;
+}
+
+@keyframes TOOPPackageMoveThreeEnterKeyframes {
+  0% {
+    opacity: 1;
+    background-size: 100% 100%;
+    bottom: 150px;
+    left: 7840px;
+    }
+  100% {
+    opacity: 1;
+    background-size: 100% 100%;
+    bottom: 150px;
+    left: 8895px;
+    }
+  }
+
+#TOOPPackageTwo {
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 7245px;
+  bottom: 150px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.TOOPPackageMoveTwoTwo {
+  animation: TOOPPackageMoveTwoTwoEnterKeyframes 8s 2s;
+}
+
+@keyframes TOOPPackageMoveTwoTwoEnterKeyframes {
+  0% {
+    opacity: 0;
+    background-size: 100% 100%;
+    bottom: 353px;
+    left: 7245px;
+  }
+
+  25% {
+    opacity: 1;
+    background-size: 100% 100%;
+    left: 7245px;
+    bottom: 150px;
+  }
+  50% {
+    opacity: 1;
+    background-size: 100% 100%;
+    left: 7245px;
+    bottom: 150px;
+  }
+  75% {
+    opacity: 1;
+    background-size: 100% 100%;
+    left: 7245px;
+    bottom: 150px;
+  }
+
+  100% {
+    opacity: 1;
+    background-size: 65% 65%;
+    bottom: 150px;
+    left: 7810px;
+  }
+
+}
+
+.TOOPPackageMoveThreeThree {
+    animation: TOOPPackageMoveThreeThreeEnterKeyframes 2.2s 2s;
+}
+
+@keyframes TOOPPackageMoveThreeThreeEnterKeyframes {
+  0% {
+    opacity: 1;
+    background-size: 100% 100%;
+    bottom: 150px;
+    left: 7810px;
+    }
+  100% {
+    opacity: 1;
+    background-size: 100% 100%;
+    bottom: 150px;
+    left: 8845px;
+    }
+  }
 
 #SemanticMappingOne {
   background: url('../images/Semantic-mapping-FT.png') no-repeat left;
@@ -625,16 +879,15 @@ opacity: 1;
   height: 389px;
   z-index: 1;
   background-size: 100% 100%;
-  opacity: 0;
-  animation: SemanticMappingOneEnterKeyframes 4s 4s;
+  opacity: .1;
   animation-fill-mode: forwards;
+  animation: SemanticMappingOneEnterKeyframes 4s 5s;
   animation-timing-function: linear;
 }
 
-
 @keyframes SemanticMappingOneEnterKeyframes {
   0% {
-    opacity: 0;
+    opacity: .1;
     transform: rotate(0deg);
   }
 
@@ -642,81 +895,6 @@ opacity: 1;
     opacity: 1;
     transform: rotate(360deg);
   }
-
-}
-
-#TruckTOOPBMTwo {
-  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
-  left: 7300px;
-  bottom: 71px;
-  position: absolute;
-  width: 281px;
-  height: 145px;
-  z-index: 1;
-  background-size: 0% 0%;
-  animation: TruckTOOPBMTwoEnterKeyframes 2s 7s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TruckTOOPBMTwoEnterKeyframes {
-  0% {
-    left: 0px;
-    background-size: 0% 0%;
-  }
-
-  100% {
-    left: 6480px;
-    background-size: 100% 100%;
-  }
-
-}
-
-#FreePackageThree {
-  background: url('../images/Freedonia-package.png') no-repeat left;
-  left: 6625px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: FreePackageThreeEnterKeyframes 2s 9s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes FreePackageThreeEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-
-}
-
-#TOOPPackageOne{
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 6575px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: TOOPPackageOneEnterKeyframes 2s 9.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TOOPPackageOneEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-
 }
 
 /* EndOf Screen 5 Authentication screens */
@@ -746,7 +924,6 @@ opacity: 1;
     opacity: 1;
     background-size: 90% 90%;
   }
-
 }
 
 #TruckTOOPBMThree {
@@ -775,75 +952,6 @@ opacity: 1;
 
 }
 
-#FreePackageFour{
-  background: url('../images/Freedonia-package.png') no-repeat left;
-  left: 7345px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: FreePackageFourEnterKeyframes 2s 2.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes FreePackageFourEnterKeyframes {
-  0% {
-  opacity: 0;
-  }
-
-  100% {
-  opacity: 1;
-  }
-}
-
-#TOOPPackageTwo {
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 7295px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: TOOPPackageTwoEnterKeyframes 2s 3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TOOPPackageTwoEnterKeyframes {
-  0% {
-  opacity: 0;
-  }
-
-  100% {
-  opacity: 1;
-  }
-}
-
-#TOOPPackageThree {
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 7245px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: TOOPPackageThreeOneEnterKeyframes 2s 3.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TOOPPackageThreeOneEnterKeyframes {
- 0% {
-  opacity: 0;
-  }
-
-  100% {
-  opacity: 1;
-  }
-}
-
 #BaloonOne {
   background: url('../images/Baloon.png') no-repeat left;
   left: 7660px;
@@ -852,7 +960,7 @@ opacity: 1;
   width: 363px;
   height: 538px;
   z-index: 1;
-  animation: BaloonOneEnterKeyframes ease-in-out 1s alternate;
+  animation: BaloonOneEnterKeyframes ease-in-out 2s 6s alternate;
   transform-origin: center -20px;
   animation-fill-mode: forwards;
   animation-iteration-count: 5;
@@ -870,185 +978,11 @@ opacity: 1;
     }
 }
 
-#FreePackageFive{
-  background: url('../images/Freedonia-package.png') no-repeat left;
-  left: 7820px;
-  bottom: 180px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  background-size: 65% 65%;
-  animation: FreePackageFiveEnterKeyframes ease-in-out 1s infinite alternate;
-  transform-origin: center -20px;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 5;
-}
-
-@keyframes FreePackageFiveEnterKeyframes {
-   0% {
-    transform: rotate(3deg);
-  }
-  50% {
-    transform: rotate(-3deg);
-  }
-    100% {
-      transform: rotate(0deg);
-    }
-}
-
-#TOOPPackageFour {
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 7840px;
-  bottom: 150px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  background-size: 65% 65%;
-  animation: TOOPPackageFourEnterKeyframes ease-in-out 1s infinite alternate;
-  transform-origin: center -20px;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 5;
-}
-
-@keyframes TOOPPackageFourEnterKeyframes {
-   0% {
-    transform: rotate(3deg);
-  }
-  50% {
-    transform: rotate(-3deg);
-  }
-    100% {
-      transform: rotate(0deg);
-    }
-}
-
-#TOOPPackageFive{
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 7810px;
-  bottom: 150px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  background-size: 65% 65%;
-  animation: TOOPPackageFiveEnterKeyframes  ease-in-out 1s infinite alternate;
-  transform-origin: center -20px;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 5;
-}
-
-@keyframes TOOPPackageFiveEnterKeyframes {
-   0% {
-    transform: rotate(3deg);
-  }
-  50% {
-    transform: rotate(-3deg);
-  }
-    100% {
-      transform: rotate(0deg);
-    }
-}
-
 /* EndOf Screen 6 Authentication screens */
 
 /* Screen 7 Elonia Trip */
 
-#TruckTOOPBMFour {
-  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
-  left: 8000px;
-  bottom: 71px;
-  position: absolute;
-  width: 281px;
-  height: 145px;
-  z-index: 1;
-  background-size: 0% 0%;
-  animation: TruckTOOPBMFourEnterKeyframes 2s;
-  animation-fill-mode: forwards;
-}
 
-@keyframes TruckTOOPBMFourEnterKeyframes {
-  0% {
-    left: 0px;
-    background-size: 0% 0%;
-  }
-
-  100% {
-    left: 8300px;
-    background-size: 100% 100%;
-  }
-}
-
-#FreePackageSix {
-  background: url('../images/Freedonia-package.png') no-repeat left;
-  left: 8445px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: FreePackageSixEnterKeyframes 2s 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes FreePackageSixEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-
-}
-
-#TOOPPackageSix{
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 8395px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: TOOPPackageSixEnterKeyframes 2s 2.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TOOPPackageSixEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-#TOOPPackageSeven {
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 8345px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: TOOPPackageSevenEnterKeyframes 2s 3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TOOPPackageSevenEnterKeyframes {
-  0% {
-     opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-}
 
 #SemanticMappingTwo {
   background: url('../images/Semantic-mapping-TE.png') no-repeat left;
@@ -1060,7 +994,7 @@ opacity: 1;
   z-index: 1;
   background-size: 100% 100%;
   opacity: 0;
-  animation: SemanticMappingTwoEnterKeyframes 4s 5s;
+  animation: SemanticMappingTwoEnterKeyframes 3s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
@@ -1077,101 +1011,6 @@ opacity: 1;
   }
 }
 
-#TruckTOOPBMFive {
-  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
-  left: 8000px;
-  bottom: 71px;
-  position: absolute;
-  width: 281px;
-  height: 145px;
-  z-index: 1;
-  background-size: 0% 0%;
-  animation: TruckTOOPBMFiveEnterKeyframes 2s 5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TruckTOOPBMFiveEnterKeyframes {
-  0% {
-    left: 0px;
-    background-size: 0% 0%;
-  }
-
-  100% {
-    left: 8800px;
-    background-size: 100% 100%;
-  }
-
-}
-
-#FreePackageSeven {
-  background: url('../images/Freedonia-package.png') no-repeat left;
-  left: 8945px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: FreePackageSevenEnterKeyframes 2s 8s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes FreePackageSevenEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-}
-
-#TOOPPackageEight{
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 8895px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: TOOPPackageEightEnterKeyframes 2s 8.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TOOPPackageEightEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-}
-
-#TOOPPackageNine {
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 8845px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: TOOPPackageNineEnterKeyframes 2s 9s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TOOPPackageNineEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-}
-
 #EloniaPackageOne {
   background: url('../images/Elonia-package.png') no-repeat left;
   left: 8920px;
@@ -1181,21 +1020,26 @@ opacity: 1;
   height: 46px;
   z-index: 1;
   opacity: 0;
-  animation: EloniaPackageOneEnterKeyframes 2s 9.5s ease-in-out alternate;
   animation-iteration-count: 1;
   transform-origin: center -20px;
   animation-fill-mode: forwards;
 }
 
-@keyframes EloniaPackageOneEnterKeyframes {
+.EloniaPackageMoveOne {
+    animation: EloniaPackageMoveOneEnterKeyframes 2s 3s ease-in-out alternate;
+}
+@keyframes EloniaPackageMoveOneEnterKeyframes {
   0% {
     opacity: 0;
+    bottom: 403px;
     transform: rotate(3deg);
   }
   50% {
+    bottom: 403px;
     transform: rotate(-3deg);
   }
   100% {
+      bottom: 203px;
       opacity: 1;
       transform: rotate(0deg);
   }

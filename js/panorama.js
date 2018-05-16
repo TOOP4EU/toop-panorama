@@ -15,35 +15,47 @@ function items(offset) {
   if (offset.x >= 4098) { spawnItem('GetCompanyInfoOk'); }
   if (offset.x >= 4098) { spawnItem('Consent'); }
 
-  if (offset.x >= 5464) { spawnItem('TruckFreeBMOne'); }
-  if (offset.x >= 5464) { spawnItem('FreePackageOne'); }
-  if (offset.x >= 5464) { spawnItem('TruckTOOPBMOne'); }
-  if (offset.x >= 5464) { spawnItem('FreePackageTwo'); }
-  if (offset.x >= 5464) { spawnItem('SemanticMappingOne'); }
-  if (offset.x >= 5464) { spawnItem('TruckTOOPBMTwo'); }
-  if (offset.x >= 5464) { spawnItem('FreePackageThree'); }
-  if (offset.x >= 5464) { spawnItem('TOOPPackageOne'); }
 
+
+  // if (offset.x >= 5464) { spawnItem('FreePackageTwo'); }
+  //if (offset.x >= 5464) { spawnItem('TruckTOOPBMTwo'); }
+  //if (offset.x >= 5464) { spawnItem('FreePackageThree'); }
+  if (offset.x >= 5464) { spawnItem('TruckFreeBMOne'); }
+  if (offset.x >= 5464) { spawnItem('SemanticMappingOne'); }
+  if (offset.x >= 5464) { spawnItem('TruckTOOPBMOne', 'TruckTOOPBMMoveOne'); }
+  if (offset.x >= 5464) { spawnItem('FreePackageOne', 'FreePackageMoveOne'); }
+  if (offset.x >= 5464) { spawnItem('TOOPPackageOne', 'TOOPPackageMoveOne'); }
+
+  //if (offset.x >= 6830) { spawnItem('TruckTOOPBMThree'); }
+  //if (offset.x >= 6830) { spawnItem('FreePackageFour'); }
+  //if (offset.x >= 6830) { spawnItem('FreePackageFive'); }
   if (offset.x >= 6830) { spawnItem('DataDiscoveryOne'); }
-  if (offset.x >= 6830) { spawnItem('TruckTOOPBMThree'); }
-  if (offset.x >= 6830) { spawnItem('FreePackageFour'); }
-  if (offset.x >= 6830) { spawnItem('TOOPPackageTwo'); }
   if (offset.x >= 6830) { spawnItem('TOOPPackageThree'); }
   if (offset.x >= 6830) { spawnItem('BaloonOne'); }
-  if (offset.x >= 6830) { spawnItem('FreePackageFive'); }
   if (offset.x >= 6830) { spawnItem('TOOPPackageFour'); }
   if (offset.x >= 6830) { spawnItem('TOOPPackageFive'); }
 
-  if (offset.x >= 8196) { spawnItem('TruckTOOPBMFour'); }
-  if (offset.x >= 8196) { spawnItem('FreePackageSix'); }
-  if (offset.x >= 8196) { spawnItem('TOOPPackageSix'); }
-  if (offset.x >= 8196) { spawnItem('TOOPPackageSeven'); }
+  if (offset.x >= 6830) { spawnItem('TOOPPackageTwo', 'TOOPPackageMoveTwoTwo'); }
+  if (offset.x >= 6830) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveTwo'); }
+  if (offset.x >= 6830) { changeAnimation('FreePackageOne', 'FreePackageMoveTwo'); }
+  if (offset.x >= 6830) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveTwo'); }
+
+  //if (offset.x >= 8196) { spawnItem('TruckTOOPBMFour'); }
+  //if (offset.x >= 8196) { spawnItem('FreePackageSix'); }
+  //if (offset.x >= 8196) { spawnItem('TOOPPackageSix'); }
+  //if (offset.x >= 8196) { spawnItem('TOOPPackageSeven'); }
+  //if (offset.x >= 8196) { spawnItem('TruckTOOPBMFive'); }
+  //if (offset.x >= 8196) { spawnItem('TOOPPackageEight'); }
+  //if (offset.x >= 8196) { spawnItem('TOOPPackageNine'); }
+
+  if (offset.x >= 8196) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveThree'); }
+  if (offset.x >= 8196) { changeAnimation('FreePackageOne', 'FreePackageMoveThree'); }
+  if (offset.x >= 8196) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveThree'); }
+  if (offset.x >= 8196) { changeAnimation('TOOPPackageTwo', 'TOOPPackageMoveThreeThree'); }
+  if (offset.x >= 8196) { spawnItem('EloniaPackageOne', 'EloniaPackageMoveOne'); }
+
   if (offset.x >= 8196) { spawnItem('SemanticMappingTwo'); }
-  if (offset.x >= 8196) { spawnItem('TruckTOOPBMFive'); }
   if (offset.x >= 8196) { spawnItem('FreePackageSeven'); }
-  if (offset.x >= 8196) { spawnItem('TOOPPackageEight'); }
-  if (offset.x >= 8196) { spawnItem('TOOPPackageNine'); }
-  if (offset.x >= 8196) { spawnItem('EloniaPackageOne'); }
 
   if (offset.x >= 9562) { spawnItem('TruckTOOPBMSix'); }
   if (offset.x >= 9562) { spawnItem('FreePackageEight'); }
@@ -91,6 +103,7 @@ function items(offset) {
   if (offset.x >= 16392) { spawnItem('SuccessScr'); }
   if (offset.x >= 16392) { spawnItem('eIDASNodeOKTwo'); }
   if (offset.x >= 16392) { spawnItem('eIDASNodeOKTwoLeft'); }
+
 }
 
 function panorama(content) {
@@ -108,12 +121,31 @@ function panorama(content) {
   });
 }
 
-function spawnItem(id) {
+function spawnItem(id, defaultAnimationClass) {
   if ($('#' + id).length == 0) {
     var newDiv = $('<div>');
     newDiv.attr('id', id);
+    if (defaultAnimationClass) {
+      newDiv.addClass(defaultAnimationClass);
+    }
     $('#panoramaContent').append(newDiv);
+    return newDiv;
+  } else {
+    return $('#' + id);
   }
+}
+
+function changeAnimation(id, animationClass) {
+
+  var elm = $('#'+id);
+
+  if (elm.hasClass(animationClass)) {
+    return;
+  }
+
+  elm.addClass(animationClass);
+  var newone = elm.clone(true);
+  elm.replaceWith(newone);
 }
 
 function scrollToNextSlice() {

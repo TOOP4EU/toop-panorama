@@ -30,11 +30,32 @@ p {
   background-size: 100% 100%;
   width: 17758px;
   height: 750px;
+  padding-right: 750px;
 
   /* Vertically center the panorama */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+#panoramaContent2 {
+  /* bg pattern*/
+  background: repeating-linear-gradient(
+    to right,
+    #e3e3e2,
+    #e3e3e2 1px,
+    #ececea 3px,
+    #ececea 6px
+  );
+    /* end of bg pattern*/
+  background-size: 100% 100%;
+  width: 17758px;
+  height: 750px;
+  margin-bottom: 500px;
+
+  /* Vertically center the panorama */
+  position: absolute;
+  top: 100%;
+  /*transform: translateY(-50%);*/
 }
 
 #background-wrap {

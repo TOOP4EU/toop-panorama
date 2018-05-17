@@ -388,3 +388,128 @@
       opacity: 1;
   }
 }
+
+#TruckTOOPBMSix {
+  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
+  left: 8800px;
+  bottom: 71px;
+  position: absolute;
+  width: 281px;
+  height: 145px;
+  z-index: 1;
+  background-size: 0% 0%;
+  animation: TruckTOOPBMSixEnterKeyframes 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TruckTOOPBMSixEnterKeyframes {
+  0% {
+    left: 0px;
+    background-size: 0% 0%;
+  }
+
+  100% {
+    left: 9600px;
+    background-size: 100% 100%;
+  }
+
+}
+
+
+#FreePackageEight {
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 9745px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation: FreePackageEightEnterKeyframes 2s 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes FreePackageEightEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+#TOOPPackageTen {
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 9695px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation: TOOPPackageTenEnterKeyframes 2s 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageTenEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+#TOOPPackageEleven {
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 9645px;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation: TOOPPackageElevenEnterKeyframes 2s 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPPackageElevenEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+#EloniaPackageTwo {
+  background: url('../images/Elonia-package.png') no-repeat left;
+  left: 9720px;
+  bottom: 203px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 1;
+  opacity: 0;
+  animation: EloniaPackageTwoEnterKeyframes 2s 3.5s ease-in-out alternate;
+  animation-iteration-count: 1;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+}
+
+@keyframes EloniaPackageTwoEnterKeyframes {
+  0% {
+    opacity: 0;
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+      opacity: 1;
+      transform: rotate(0deg);
+  }
+}

@@ -647,6 +647,24 @@ opacity: 1;
   }
 }
 
+.FreePackageMoveFour {
+  animation: FreePackageMoveFourEnterKeyframes 1s 1s;
+}
+@keyframes FreePackageMoveFourEnterKeyframes {
+  0% {
+    opacity: 1;
+    left: 8945px;
+    bottom: 150px;
+    background-size: 100% 100%;
+  }
+  100% {
+    opacity: 1;
+    left: 9745px;
+    bottom: 150px;
+    background-size: 100% 100%;
+  }
+}
+
 #TruckTOOPBMOne {
   background: url('../images/TOOP-Truck-MP.png') no-repeat left;
   left: 0px;
@@ -711,6 +729,20 @@ opacity: 1;
 
   100% {
     left: 8800px;
+  }
+}
+
+.TruckTOOPBMMoveFour {
+    animation: TruckTOOPBMMoveFourEnterKeyframes 1s 1s;
+}
+
+@keyframes TruckTOOPBMMoveFourEnterKeyframes {
+  0% {
+    left: 8800px;
+  }
+
+  100% {
+    left: 9600px;
   }
 }
 
@@ -799,6 +831,26 @@ opacity: 1;
     }
   }
 
+  .TOOPPackageMoveFour {
+    animation: TOOPPackageMoveFourEnterKeyframes 1s 1s;
+}
+
+@keyframes TOOPPackageMoveFourEnterKeyframes {
+  0% {
+    opacity: 1;
+    background-size: 100% 100%;
+    bottom: 150px;
+    left: 8895px;
+    }
+  100% {
+    opacity: 1;
+    background-size: 100% 100%;
+    bottom: 150px;
+    left: 9695px;
+    }
+  }
+
+
 #TOOPPackageTwo {
   background: url('../images/TOOP-package.png') no-repeat left;
   left: 7245px;
@@ -812,7 +864,7 @@ opacity: 1;
 }
 
 .TOOPPackageMoveTwoTwo {
-  animation: TOOPPackageMoveTwoTwoEnterKeyframes 8s 2s;
+  animation: TOOPPackageMoveTwoTwoEnterKeyframes 9.5s 2s;
 }
 
 @keyframes TOOPPackageMoveTwoTwoEnterKeyframes {
@@ -824,10 +876,10 @@ opacity: 1;
   }
 
   25% {
-    opacity: 1;
+    opacity: 0;
     background-size: 100% 100%;
     left: 7245px;
-    bottom: 150px;
+    bottom: 353px;
   }
   50% {
     opacity: 1;
@@ -867,6 +919,25 @@ opacity: 1;
     background-size: 100% 100%;
     bottom: 150px;
     left: 8845px;
+    }
+  }
+
+  .TOOPPackageMoveFourFour {
+    animation: TOOPPackageMoveFourFourEnterKeyframes 1s 1s;
+}
+
+@keyframes TOOPPackageMoveFourFourEnterKeyframes {
+  0% {
+    opacity: 1;
+    background-size: 100% 100%;
+    bottom: 150px;
+    left: 8845px;
+    }
+  100% {
+    opacity: 1;
+    background-size: 100% 100%;
+    bottom: 150px;
+    left: 9645px;
     }
   }
 
@@ -1013,7 +1084,7 @@ opacity: 1;
 
 #EloniaPackageOne {
   background: url('../images/Elonia-package.png') no-repeat left;
-  left: 8920px;
+  left: 8760px;
   bottom: 203px;
   position: absolute;
   width: 46px;
@@ -1032,147 +1103,41 @@ opacity: 1;
   0% {
     opacity: 0;
     bottom: 403px;
-    transform: rotate(3deg);
+    left: 8760px;
   }
   50% {
+    opacity: 0;
     bottom: 403px;
-    transform: rotate(-3deg);
+    left: 8760px;
   }
   100% {
-      bottom: 203px;
-      opacity: 1;
-      transform: rotate(0deg);
+    opacity: 1;
+    bottom: 200 px;
+    left: 8920px;
   }
 }
 
+  .EloniaPackageMoveTwo {
+    animation: EloniaPackageMoveTwoEnterKeyframes 1s 1s;
+  }
+@keyframes EloniaPackageMoveTwoEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 200px;
+    left: 8760px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9720px;
+  }
+}
 /* EndOf Screen 7 Elonia Trip */
 
 
 /* Screen 8 */
 
-#TruckTOOPBMSix {
-  background: url('../images/TOOP-Truck-MP.png') no-repeat left;
-  left: 8800px;
-  bottom: 71px;
-  position: absolute;
-  width: 281px;
-  height: 145px;
-  z-index: 1;
-  background-size: 0% 0%;
-  animation: TruckTOOPBMSixEnterKeyframes 2s;
-  animation-fill-mode: forwards;
-}
 
-@keyframes TruckTOOPBMSixEnterKeyframes {
-  0% {
-    left: 0px;
-    background-size: 0% 0%;
-  }
-
-  100% {
-    left: 9600px;
-    background-size: 100% 100%;
-  }
-
-}
-
-#FreePackageEight {
-  background: url('../images/Freedonia-package.png') no-repeat left;
-  left: 9745px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: FreePackageEightEnterKeyframes 2s 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes FreePackageEightEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-}
-
-#TOOPPackageTen {
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 9695px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: TOOPPackageTenEnterKeyframes 2s 2.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TOOPPackageTenEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-}
-
-#TOOPPackageEleven {
-  background: url('../images/TOOP-package.png') no-repeat left;
-  left: 9645px;
-  bottom: 153px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: TOOPPackageElevenEnterKeyframes 2s 3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes TOOPPackageElevenEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
-}
-
-#EloniaPackageTwo {
-  background: url('../images/Elonia-package.png') no-repeat left;
-  left: 9720px;
-  bottom: 203px;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  z-index: 1;
-  opacity: 0;
-  animation: EloniaPackageTwoEnterKeyframes 2s 3.5s ease-in-out alternate;
-  animation-iteration-count: 1;
-  transform-origin: center -20px;
-  animation-fill-mode: forwards;
-}
-
-@keyframes EloniaPackageTwoEnterKeyframes {
-  0% {
-    opacity: 0;
-    transform: rotate(3deg);
-  }
-  50% {
-    transform: rotate(-3deg);
-  }
-  100% {
-      opacity: 1;
-      transform: rotate(0deg);
-  }
-}
 
 /* Elonias Truck */
 

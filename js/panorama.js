@@ -57,11 +57,19 @@ function items(offset) {
   if (offset.x >= 8196) { spawnItem('SemanticMappingTwo'); }
   if (offset.x >= 8196) { spawnItem('FreePackageSeven'); }
 
-  if (offset.x >= 9562) { spawnItem('TruckTOOPBMSix'); }
-  if (offset.x >= 9562) { spawnItem('FreePackageEight'); }
-  if (offset.x >= 9562) { spawnItem('TOOPPackageTen'); }
-  if (offset.x >= 9562) { spawnItem('TOOPPackageEleven'); }
-  if (offset.x >= 9562) { spawnItem('EloniaPackageTwo'); }
+  //if (offset.x >= 9562) { spawnItem('TruckTOOPBMSix'); }
+  //if (offset.x >= 9562) { spawnItem('FreePackageEight'); }
+  //if (offset.x >= 9562) { spawnItem('TOOPPackageTen'); }
+  //if (offset.x >= 9562) { spawnItem('TOOPPackageEleven'); }
+  //if (offset.x >= 9562) { spawnItem('EloniaPackageTwo'); }
+
+  if (offset.x >= 9562) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveFour'); }
+  if (offset.x >= 9562) { changeAnimation('FreePackageOne', 'FreePackageMoveFour'); }
+  if (offset.x >= 9562) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveFour'); }
+  if (offset.x >= 9562) { changeAnimation('TOOPPackageTwo', 'TOOPPackageMoveFourFour'); }
+  if (offset.x >= 9562) { changeAnimation('EloniaPackageOne', 'EloniaPackageMoveTwo'); }
+
+
   if (offset.x >= 9562) { spawnItem('TruckEloniaBMOne'); }
   if (offset.x >= 9562) { spawnItem('FreePackageNine'); }
   if (offset.x >= 9562) { spawnItem('TOOPPackageTwelve'); }

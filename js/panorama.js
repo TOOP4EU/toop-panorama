@@ -1,5 +1,5 @@
 var sliceWidth = 1366;
-var currentFloor = 0;
+var currentFloor = getUrlParameter('floor') || 0;
 
 function items(offset) {
   console.log(offset.x); // Logs the current horizontal scroll offset
@@ -203,3 +203,18 @@ function scrollToBottom() {
   var newScrollTop = $(window).height() - ($(window).height() - $('#panoramaContent').height()) / 2;
   $('html, body').animate({scrollTop: newScrollTop}, 800);
 }
+
+function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};

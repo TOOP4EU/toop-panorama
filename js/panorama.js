@@ -5,7 +5,7 @@ function items(offset) {
   console.log(offset.x); // Logs the current horizontal scroll offset
 
   if (currentFloor == 0) {
-    
+
     if (offset.x >= 1366) { spawnItem('AuthenticationMethOne'); }
     if (offset.x >= 1366) { spawnItem('AuthenticationMethTwo'); }
     if (offset.x >= 1366) { spawnItem('AuthenticationMethThree'); }
@@ -63,10 +63,11 @@ function items(offset) {
     //if (offset.x >= 9562) { spawnItem('TruckTOOPBMSix'); }
     //if (offset.x >= 9562) { spawnItem('FreePackageEight'); }
     //if (offset.x >= 9562) { spawnItem('TOOPPackageTen'); }
-    //if (offset.x >= 9562) { spawnItem('TOOPPackageEleven'); }
+    //if (offset.x >= 9562) { spawnItem('TOOPPackageTenOPPackageEleven'); }
     //if (offset.x >= 9562) { spawnItem('EloniaPackageTwo'); }
     // if (offset.x >= 9562) { spawnItem('FreePackageNine'); }
     // if (offset.x >= 9562) { spawnItem('EloniaPackageThree'); }
+
 
     if (offset.x >= 9562) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveFour'); }
     if (offset.x >= 9562) { changeAnimation('FreePackageOne', 'FreePackageMoveFour'); }
@@ -74,27 +75,26 @@ function items(offset) {
     if (offset.x >= 9562) { changeAnimation('TOOPPackageTwo', 'TOOPPackageMoveFourFour'); }
     if (offset.x >= 9562) { changeAnimation('EloniaPackageOne', 'EloniaPackageMoveTwo'); }
     if (offset.x >= 9562) { spawnItem('TruckEloniaBMOne', 'TruckEloniaBMMoveOne'); }
+    if (offset.x >= 9562) { spawnItem('DataPackageOne', 'DataPackageOneMoveOne'); }
 
     if (offset.x >= 9562) { spawnItem('TOOPPackageTwelve'); }
 
-    if (offset.x >= 10928) { spawnItem('TruckEloniaBMTwo'); }
-    if (offset.x >= 10928) { spawnItem('FreePackageTen'); }
-    if (offset.x >= 10928) { spawnItem('TOOPPackageThirteen'); }
-    if (offset.x >= 10928) { spawnItem('EloniaPackageFour'); }
-    if (offset.x >= 10928) { spawnItem('DataPackageOne'); }
-    if (offset.x >= 10928) { spawnItem('TruckTOOPBMSeven'); }
-    if (offset.x >= 10928) { spawnItem('FreePackageEleven'); }
-    if (offset.x >= 10928) { spawnItem('TOOPPackageFourteen'); }
-    if (offset.x >= 10928) { spawnItem('EloniaPackageFive'); }
-    if (offset.x >= 10928) { spawnItem('DataPackageTwo'); }
+    //if (offset.x >= 10928) { spawnItem('FreePackageTen'); }
+    //if (offset.x >= 10928) { spawnItem('TOOPPackageThirteen'); }
+    //if (offset.x >= 10928) { spawnItem('EloniaPackageFour'); }
+    //if (offset.x >= 10928) { spawnItem('TruckTOOPBMSeven'); }
+    //if (offset.x >= 10928) { spawnItem('FreePackageEleven'); }
+    //if (offset.x >= 10928) { spawnItem('TOOPPackageFourteen'); }
+    //if (offset.x >= 10928) { spawnItem('EloniaPackageFive'); }
+    //if (offset.x >= 10928) { spawnItem('DataPackageTwo'); }
 
-    if (offset.x >= 12294) { spawnItem('DataDiscoveryTwo'); }
-    if (offset.x >= 12294) { spawnItem('BaloonTwo'); }
-    if (offset.x >= 12294) { spawnItem('FreePackageTwelve'); }
-    if (offset.x >= 12294) { spawnItem('TOOPPackageFifteen'); }
-    if (offset.x >= 12294) { spawnItem('TOOPPackageSixteen'); }
-    if (offset.x >= 12294) { spawnItem('EloniaPackageSix'); }
-    if (offset.x >= 12294) { spawnItem('DataPackageThree'); }
+    //if (offset.x >= 12294) { spawnItem('DataDiscoveryTwo'); }
+    //if (offset.x >= 12294) { spawnItem('BaloonTwo'); }
+   // if (offset.x >= 12294) { spawnItem('FreePackageTwelve'); }
+    //if (offset.x >= 12294) { spawnItem('TOOPPackageFifteen'); }
+   // if (offset.x >= 12294) { spawnItem('TOOPPackageSixteen'); }
+    //if (offset.x >= 12294) { spawnItem('EloniaPackageSix'); }
+    //if (offset.x >= 12294) { spawnItem('DataPackageThree'); }
 
     if (offset.x >= 13660) { spawnItem('TruckTOOPBMEight'); }
     if (offset.x >= 13660) { spawnItem('FreePackageThirteen'); }
@@ -117,8 +117,12 @@ function items(offset) {
   }
 
   if (currentFloor == 1) {
-    if (offset.x <= 16392) { spawnItem('TEST'); }
-    if (offset.x <= 15026) { spawnItem('TEST2'); }
+
+    if (offset.x <= 9562) { spawnItem('TruckEloniaBMF', 'TruckEloniaBMFMoveOne'); }
+
+    if (offset.x <= 9562) { spawnItem('TEST'); }
+    if (offset.x <= 9562) { spawnItem('TEST2'); }
+
   }
 }
 

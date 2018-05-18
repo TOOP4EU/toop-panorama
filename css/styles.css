@@ -27,8 +27,11 @@ p {
     #ececea 6px
   );
     /* end of bg pattern*/
+
   background-size: 100% 100%;
   width: 17758px;
+
+ /* width: 10930px;*/
   height: 750px;
   padding-right: 750px;
 
@@ -47,8 +50,11 @@ p {
     #ececea 6px
   );
     /* end of bg pattern*/
+
   background-size: 100% 100%;
   width: 17758px;
+
+ /* width: 10930px;*/
   height: 750px;
   margin-bottom: 500px;
 
@@ -135,24 +141,6 @@ p {
   height: 549px;
 }
 
-#CraneThree {
-  background: url('../images/crane.png') no-repeat left;
-  left: 11300px;
-  bottom: 71px;
-  position: absolute;
-  width: 436px;
-  height: 549px;
-}
-
-#CraneFour {
-  background: url('../images/crane.png') no-repeat left;
-  left: 13920px;
-  bottom: 71px;
-  position: absolute;
-  width: 436px;
-  height: 549px;
-}
-
 /* Sceneries */
 #SceneryOne {
   background: url('../images/scenery-1.png') no-repeat left;
@@ -207,6 +195,7 @@ p {
   width: 330px;
   height: 424px;
 }
+/*
 
 #ScenerySeven {
   background: url('../images/scenery-7.png') no-repeat left;
@@ -216,6 +205,7 @@ p {
   width: 987px;
   height: 494px;
 }
+*/
 
 /* ENDOF Sceneries */
 
@@ -247,42 +237,6 @@ p {
   height: 105px;
 }
 
-/*#ScreenFiveFreedoniaPin {
-background: url('../images/Freedonia-flag-pin.png') no-repeat left;
-left: 4380px;
-bottom: 71px;
-position: absolute;
-width: 74px;
-height: 105px;
-}*/
-
-#ScreenElevenFreedoniaPin {
-  background: url('../images/Freedonia-flag-pin-r.png') no-repeat left;
-  left: 14950px;
-  bottom: 71px;
-  position: absolute;
-  width: 74px;
-  height: 105px;
-}
-
-#ScreenTwelveFreedoniaPin {
-  background: url('../images/Freedonia-flag-pin.png') no-repeat left;
-  left: 15040px;
-  bottom: 71px;
-  position: absolute;
-  width: 74px;
-  height: 105px;
-}
-
-#ScreenThirteenFreedoniaPin {
-  background: url('../images/Freedonia-flag-pin.png') no-repeat left;
-  left: 16400px;
-  bottom: 71px;
-  position: absolute;
-  width: 74px;
-  height: 105px;
-}
-
 #ScreenSevenEloniaPin {
   background: url('../images/Elonia-flag-pin.png') no-repeat left;
   left: 8200px;
@@ -292,6 +246,7 @@ height: 105px;
   height: 105px;
 }
 
+/*
 #ScreenNineEloniaPin {
   background: url('../images/Elonia-flag-pin-r.png') no-repeat left;
   left: 12210px;
@@ -300,6 +255,7 @@ height: 105px;
   width: 74px;
   height: 105px;
 }
+*/
 
 #ScreenSixFreedoniaPinBorder {
   background: url('../images/Freedonia-border-r.png') no-repeat left;
@@ -319,6 +275,7 @@ height: 105px;
   height: 317px;
 }
 
+/*
 #ScreenTenFreedoniaPinBorder {
   background: url('../images/Freedonia-border-r.png') no-repeat left;
   left: 13000px;
@@ -328,6 +285,7 @@ height: 105px;
   height: 317px;
 }
 
+
 #ScreenTenEloniaPinBorder {
   background: url('../images/Elonia-border-l.png') no-repeat left;
   left: 13500px;
@@ -336,6 +294,7 @@ height: 105px;
   width: 160px;
   height: 317px;
 }
+*/
 /*ENDOF Pins*/
 
 /* Roads*/
@@ -366,6 +325,7 @@ height: 105px;
   height: 70px;
 }
 
+/*
 #ScreenElevenFreedoniaRoad {
   background: url('../images/road-freedonia.png') repeat-x left;
   left: 13650px;
@@ -374,16 +334,6 @@ height: 105px;
   width: 4100px;
   height: 70px;
 }
-
-#ScreenSevenThreeEloniaRoad {
-  background: url('../images/road-elonia.png') repeat-x left;
-  left: 8198px;
-  bottom: 0;
-  position: absolute;
-  width: 4100px;
-  height: 70px;
-}
-
 #ScreenTenEloniaRoad {
   background: url('../images/road-elonia.png') repeat-x left;
   left: 12300px;
@@ -392,7 +342,292 @@ height: 105px;
   width: 700px;
   height: 70px;
 }
+*/
+
+#ScreenSevenThreeEloniaRoad {
+  background: url('../images/road-elonia.png') repeat-x left;
+  left: 8198px;
+  bottom: 0;
+  position: absolute;
+  width: 2730px;
+  height: 70px;
+}
+
+
 /* ENDOF Roads*/
+
+/* Downstairs */
+
+#CraneThree {
+  background: url('../images/crane-f.png') no-repeat left;
+  left: 9740px;
+  bottom: 71;
+  position: absolute;
+  width: 436px;
+  height: 549px;
+  z-index: 10;
+}
+
+#CraneFour {
+  background: url('../images/crane-f.png') no-repeat left;
+  left: 7580px;
+  bottom: 71px;
+  position: absolute;
+  width: 436px;
+  height: 549px;
+}
+
+#FloorTwoEloniaRoadOne {
+  background: url('../images/road-elonia.png') repeat-x left;
+  left: 8990px;
+  bottom: 0;
+  position: absolute;
+  width: 1940px;
+  height: 70px;
+}
+
+/*#FloorTwoScenerySix {
+  background: url('../images/scenery-6.png') no-repeat left;
+  left: 9200px;
+  bottom: 70px;
+  position: absolute;
+  width: 330px;
+  height: 424px;
+}*/
+
+#FloorTwoEloniaPin {
+  background: url('../images/Elonia-flag-pin.png') no-repeat left;
+  left: 9000px;
+  bottom: 71px;
+  position: absolute;
+  width: 74px;
+  height: 105px;
+}
+
+#FloorTwoEloniaPinBorder {
+  background: url('../images/Elonia-border-l.png') no-repeat left;
+  left: 8835px;
+  bottom: 0;
+  position: absolute;
+  width: 160px;
+  height: 317px;
+}
+
+#FloorTwoFreedoniaPinBorder {
+  background: url('../images/Freedonia-border-r.png') no-repeat left;
+  left: 8210px;
+  bottom: 0;
+  position: absolute;
+  width: 160px;
+  height: 317px;
+}
+
+#FloorTwoFreedoniaRoad {
+  background: url('../images/road-freedonia.png') repeat-x left;
+  left: 4100px;
+  bottom: 0;
+  position: absolute;
+  width: 4110px;
+  height: 70px;
+}
+
+#FloorTwoSceneryFive {
+  background: url('../images/scenery-5.png') no-repeat left;
+  left: 6200px;
+  bottom: 70px;
+  position: absolute;
+  width: 435px;
+  height: 185px;
+}
+
+#FloorTwoSceneryFour {
+  background: url('../images/scenery-4.png') no-repeat left;
+  left: 3900px;
+  bottom: 70px;
+  position: absolute;
+  width: 1608px;
+  height: 426px;
+}
+
+#FloorTwoFreedoniaPin {
+  background: url('../images/Freedonia-flag-pin.png') no-repeat left;
+  left: 6840px;
+  bottom: 71px;
+  position: absolute;
+  width: 74px;
+  height: 105px;
+}
+
+/*
+#FloorTwoThreeEloniaRoad {
+  background: url('../images/road-elonia.png') repeat-x left;
+  left: 2334px;
+  bottom: 0;
+  position: absolute;
+  width: 1040px;
+  height: 70px;
+}
+
+#FloorTwoSceneryThree {
+  background: url('../images/scenery-3.png') no-repeat left;
+  left: 2840px;
+  bottom: 70px;
+  position: absolute;
+  width: 417px;
+  height: 325px;
+}
+
+#FloorTwoSceneryTwo {
+  background: url('../images/scenery-2.png') no-repeat left;
+  left: 2100px;
+  bottom: 70px;
+  position: absolute;
+  width: 566px;
+  height: 308px;
+}
+
+#FloorTwoEloniaPinTwo {
+  background: url('../images/Elonia-flag-pin.png') no-repeat left;
+  left: 2340px;
+  bottom: 71px;
+  position: absolute;
+  width: 74px;
+  height: 105px;
+}
+
+#FloorTwoFreedoniaRoadTwo {
+  background: url('../images/road-freedonia.png') repeat-x left;
+  left: 1366px;
+  bottom: 0;
+  position: absolute;
+  width: 970px;
+  height: 70px;
+}*/
+
+/*#FloorTwoFreedoniaPinTwo {
+  background: url('../images/Freedonia-flag-pin.png') no-repeat left;
+  left: 1370px;
+  bottom: 71px;
+  position: absolute;
+  width: 74px;
+  height: 105px;
+}
+*/
+
+#FloorTwoEloniasBusinessRegisterTwo {
+background: url('../images/Business-Register.png') no-repeat left;
+left: 10400px;
+top: 120px;
+position: absolute;
+width: 509px;
+height: 356px;
+}
+
+#FloorTwoFreedoniaPinL {
+  background: url('../images/Freedonia-flag-pin.png') no-repeat left;
+  left: 6840px;
+  bottom: 71px;
+  position: absolute;
+  width: 74px;
+  height: 105px;
+}
+
+#FloorTwoFreedoniaPinR {
+  background: url('../images/Freedonia-flag-pin-r.png') no-repeat left;
+  left: 6750px;
+  bottom: 71px;
+  position: absolute;
+  width: 74px;
+  height: 105px;
+}
+
+#FloorTwoFreedoniaPinRRR {
+  background: url('../images/Freedonia-flag-pin-r.png') no-repeat left;
+  left: 8120;
+  bottom: 71px;
+  position: absolute;
+  width: 74px;
+  height: 105px;
+}
+
+#FloorTwoFreedoniaPinLL {
+  background: url('../images/Freedonia-flag-pin.png') no-repeat left;
+  left: 4100px;
+  bottom: 71px;
+  position: absolute;
+  width: 74px;
+  height: 105px;
+}
+
+#FloorTwoFreedoniaPinRR {
+  background: url('../images/Freedonia-flag-pin-r.png') no-repeat left;
+  left: 5390px;
+  bottom: 71px;
+  position: absolute;
+  width: 74px;
+  height: 105px;
+}
+
+.TitleFifteen {
+  left: 10500;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleFourteen {
+  left: 9860px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleSixteen {
+  left: 9050px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleSeventeen {
+  left: 8250px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleEightteen {
+  left: 8650px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleNineteen {
+  left: 7000px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwenty {
+  left: 7580px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwentyOne {
+  left: 6300px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwentyTwo {
+  left: 5700px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwentyThree {
+  left: 4700px;
+  top: 20px;
+  position: absolute;
+}
+/* ENDOF Downstairs */
 
 /* Titles */
 
@@ -475,66 +710,6 @@ height: 105px;
 
 .TitleThirtenn {
   left: 10500px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleFourteen {
-  left: 11300px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleFifteen {
-  left: 11900px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleSixteen {
-  left: 12400px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleSeventeen {
-  left: 13000px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleEightteen {
-  left: 13400px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleNineteen {
-  left: 13850px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleTwenty {
-  left: 14550px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleTwentyOne {
-  left: 15230px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleTwentyTwo {
-  left: 15860px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleTwentyThree {
-  left: 16950px;
   top: 20px;
   position: absolute;
 }

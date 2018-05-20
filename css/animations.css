@@ -683,7 +683,6 @@ opacity: 1;
   }
 }
 
-
 #TruckTOOPBMOne {
   background: url('../images/TOOP-Truck-MP.png') no-repeat left;
   left: 0px;
@@ -1015,15 +1014,15 @@ opacity: 1;
   height: 389px;
   z-index: 1;
   background-size: 100% 100%;
-  opacity: .1;
-  animation-fill-mode: forwards;
+  opacity: 0;
   animation: SemanticMappingOneEnterKeyframes 4s;
+  animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
 @keyframes SemanticMappingOneEnterKeyframes {
   0% {
-    opacity: .1;
+    opacity: 0;
     transform: rotate(0deg);
   }
 
@@ -1157,7 +1156,6 @@ opacity: 1;
   z-index: 1;
   opacity: 0;
   animation-iteration-count: 1;
-  transform-origin: center -20px;
   animation-fill-mode: forwards;
 }
 
@@ -1252,34 +1250,919 @@ opacity: 1;
 
 }
 
+/* Floor One */
+
 #TruckEloniaBMF {
   background: url('../images/Elonia-Truck-BM-f.png') no-repeat left;
-  left: 10800px;
+  left: 0;
   bottom: 71px;
   position: absolute;
   width: 281px;
   height: 146px;
   z-index: 1;
-  background-size: 100% 100%;
   animation-fill-mode: forwards;
 }
 
 .TruckEloniaBMFMoveOne {
-    animation: TruckEloniaBMFOneEnterKeyframes 2s 5s;
+    animation: TruckEloniaBMFOneEnterKeyframes 1s;
 }
 
 @keyframes TruckEloniaBMFOneEnterKeyframes {
   0% {
-    left: 10400px;
-    background-size: 0% 0%;
+    left: 10928px;
   }
 
   100% {
-    left: 9600px;
+    left: 10200px;
+
+  }
+}
+
+#TruckTOOPFloorOneOne {
+  background: url('../images/TOOP-Truck-MP-f.png') no-repeat left;
+  left: 0;
+  bottom: 71px;
+  position: absolute;
+  width: 281px;
+  height: 145px;
+  z-index: 1;
+  animation-fill-mode: forwards;
+}
+
+.TruckTOOPFloorOneOneMoveOne {
+    animation: TruckTOOPFloorOneOneMoveOneEnterKeyframes 1s 2s;
+}
+
+@keyframes TruckTOOPFloorOneOneMoveOneEnterKeyframes {
+  0% {
+    left: 10928px;
+  }
+
+  100% {
+    left: 9650px;
+
+  }
+}
+
+.TruckTOOPFloorOneOneMoveTwo {
+    animation: TruckTOOPFloorOneOneMoveTwoEnterKeyframes 1s 1s;
+}
+
+@keyframes TruckTOOPFloorOneOneMoveTwoEnterKeyframes {
+  0% {
+    left: 10928px;
+  }
+
+  100% {
+    left: 9000px;
+
+  }
+}
+
+.TruckTOOPFloorOneOneMoveThree {
+    animation: TruckTOOPFloorOneOneMoveThreeEnterKeyframes 1s 1s;
+}
+
+@keyframes TruckTOOPFloorOneOneMoveThreeEnterKeyframes {
+  0% {
+    left: 9650px;
+  }
+
+  100% {
+    left: 7820px;
+
+  }
+}
+
+#TruckFreedoniaBMF {
+  background: url('../images/Freedonia-Truck-BM-f.png') no-repeat left;
+  left: 0;
+  bottom: 71px;
+  position: absolute;
+  width: 282px;
+  height: 145px;
+  z-index: 1;
+  animation-fill-mode: forwards;
+}
+
+.TruckFreedoniaBMFMoveOne {
+    animation: TruckFreedoniaBMFMoveOneEnterKeyframes 1s 3s;
+}
+
+@keyframes TruckFreedoniaBMFMoveOneEnterKeyframes {
+  0% {
+    left: 9650px;
+  }
+
+  100% {
+    left: 7360px;
+
+  }
+}
+
+#DataPackageOneFloorOne {
+  background: url('../images/data.png') no-repeat left;
+  left: 0;
+  bottom: 150px;
+  position: absolute;
+  width: 54;
+  height: 67px;
+  opacity: 1;
+  z-index: 5;
+  animation-fill-mode: forwards;
+}
+
+.DataPackageOneFloorOneMoveOne {
+    animation: DataPackageOneFloorOneMoveOneEnterKeyframes 7s;
+  }
+
+  @keyframes DataPackageOneFloorOneMoveOneEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 150px;
+    left: 10928px;
+  }
+  14% {
+    opacity: 1;
+    bottom: 150px;
+    left: 10425px;
+  }
+  20% {
+    opacity: 1;
+    bottom: 150px;
+    left: 10425px;
+  }
+  78% {
+    opacity: .5;
+    bottom: 350px;
+    left: 9830px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9880px;
+  }
+}
+
+.DataPackageOneFloorOneMoveTwo {
+    animation: DataPackageOneFloorOneMoveTwoEnterKeyframes 4s 1s;
+  }
+
+  @keyframes DataPackageOneFloorOneMoveTwoEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9880px;
+    background-size: 100% 100%;
+  }
+  25% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9220px;
     background-size: 100% 100%;
   }
 
+  50% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9220px;
+    background-size: 100% 100%;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 210px;
+    left: 8525px;
+    background-size: 65% 65%;
+  }
 }
+
+.DataPackageOneFloorOneMoveThree {
+    animation: DataPackageOneFloorOneMoveThreeEnterKeyframes 4s 1s;
+  }
+
+  @keyframes DataPackageOneFloorOneMoveThreeEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9650px;
+    background-size: 100% 100%;
+  }
+25% {
+    opacity: 1;
+    bottom: 150px;
+    left: 8030px;
+    background-size: 100% 100%;
+}
+
+85% {
+  opacity: 1;
+  bottom: 150px;
+  left: 8030px;
+  background-size: 100% 100%;
+}
+  100% {
+    opacity: 1;
+    bottom: 150px;
+    left: 7570px;
+    background-size: 100% 100%;
+  }
+}
+
+#TOOPPackageFloorOne{
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 0;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  opacity: 1;
+  z-index: 5;
+  animation-fill-mode: forwards;
+}
+.TOOPPackageFloorOneMoveOne {
+    animation: TOOPPackageFloorOneMoveOneEnterKeyframes 7s;
+}
+
+@keyframes TOOPPackageFloorOneMoveOneEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 150px;
+    left: 10928px;
+  }
+  14% {
+    opacity: 1;
+    bottom: 150px;
+    left: 10295px;
+  }
+  26% {
+    opacity: 1;
+    bottom: 150px;
+    left: 10295px;
+  }
+  70% {
+    opacity: .5;
+    bottom: 350px;
+    left: 9830px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9745px;
+  }
+}
+
+.TOOPPackageFloorOneMoveTwo {
+    animation: TOOPPackageFloorOneMoveTwoEnterKeyframes 4s 1s;
+}
+
+@keyframes TOOPPackageFloorOneMoveTwoEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9745px;
+    background-size: 100% 100%;
+  }
+  25% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9105px;
+    background-size: 100% 100%;
+  }
+
+  50% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9105px;
+    background-size: 100% 100%;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 150px;
+    left: 8510px;
+    background-size: 65% 65%;
+  }
+}
+
+.TOOPPackageFloorOneMoveThree {
+    animation: TOOPPackageFloorOneMoveThreeEnterKeyframes 4s 1s;
+}
+
+@keyframes TOOPPackageFloorOneMoveThreeEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9650px;
+    background-size: 100% 100%;
+  }
+  25% {
+    opacity: 1;
+    bottom: 150px;
+    left: 7920px;
+    background-size: 100% 100%;
+  }
+  80% {
+    opacity: 1;
+    bottom: 150px;
+    left: 7920px;
+    background-size: 100% 100%;
+  }
+
+  100% {
+    opacity: 0;
+    bottom: 300px;
+    left: 7920px;
+    background-size: 180% 180%;
+  }
+}
+
+#TOOPPackageFloorOneTwo{
+  background: url('../images/TOOP-package.png') no-repeat left;
+  left: 0;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  opacity: 1;
+  z-index: 5;
+  animation-fill-mode: forwards;
+}
+
+.TOOPPackageFloorOneMoveTwoTwo {
+    animation: TOOPPackageFloorOneMoveTwoTwoEnterKeyframes 1s 2s;
+}
+
+@keyframes TOOPPackageFloorOneMoveTwoTwoEnterKeyframes {
+  0% {
+    opacity: 0;
+    bottom: 400px;
+    left: 9105px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9105px;
+  }
+}
+
+.TOOPPackageFloorOneMoveTwoTwo {
+    animation: TOOPPackageFloorOneMoveTwoTwoEnterKeyframes 4s 1s;
+}
+
+@keyframes TOOPPackageFloorOneMoveTwoTwoEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9780px;
+    background-size: 100% 100%;
+  }
+  25% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9105px;
+    background-size: 100% 100%;
+  }
+  50% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9105px;
+    background-size: 100% 100%;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 180px;
+    left: 8510px;
+    background-size: 65% 65%;
+  }
+}
+
+.TOOPPackageFloorOneMoveTwoThree{
+    animation: TOOPPackageFloorOneMoveTwoThreeEnterKeyframes 4s 1s;
+}
+
+@keyframes TOOPPackageFloorOneMoveTwoThreeEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9650px;
+    background-size: 100% 100%;
+  }
+  25% {
+    opacity: 1;
+    bottom: 200px;
+    left: 7920;
+    background-size: 100% 100%;
+  }
+  80%{
+    opacity: 1;
+    bottom: 200px;
+    left: 7920;
+    background-size: 100% 100%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 300px;
+    left: 7920;
+    background-size: 180% 180%;
+  }
+}
+
+#FreePackageOneFloorOne {
+  background: url('../images/Freedonia-package.png') no-repeat left;
+  left: 0;
+  bottom: 153px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  opacity: 1px;
+  z-index: 5;
+  animation-fill-mode: forwards;
+}
+.FreePackageOneFloorOneMoveOne {
+  animation: FreePackageOneFloorOneMoveOneEnterKeyframes 7s;
+}
+@keyframes FreePackageOneFloorOneMoveOneEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 150px;
+    left: 10928px;
+  }
+  14% {
+    opacity: 1;
+    bottom: 150px;
+    left: 10350px;
+  }
+  24% {
+    opacity: 1;
+    bottom: 150px;
+    left: 10350px;
+  }
+  80% {
+    opacity: .5;
+    bottom: 350px;
+    left: 9830px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9800px;
+  }
+}
+
+.FreePackageOneFloorOneMoveTwo {
+  animation: FreePackageOneFloorOneMoveTwoEnterKeyframes 4s 1s;
+}
+@keyframes FreePackageOneFloorOneMoveTwoEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9800px;
+    background-size: 100% 100%;
+  }
+  25% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9155px;
+    background-size: 100% 100%;
+  }
+
+  50% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9155px;
+    background-size: 100% 100%;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 150px;
+    left: 8540px;
+    background-size: 65% 65%;
+  }
+}
+
+.FreePackageOneFloorOneMoveThree {
+  animation: FreePackageOneFloorOneMoveThreeEnterKeyframes 4s 1s;
+}
+@keyframes FreePackageOneFloorOneMoveThreeEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 150px;
+    left: 9650px;
+    background-size: 100% 100%;
+  }
+  25% {
+    opacity: 1;
+    bottom: 150px;
+    left: 7970px;
+    background-size: 100% 100%;
+  }
+
+  85%
+  {
+    opacity: 1;
+    bottom: 150px;
+    left: 7970px;
+    background-size: 100% 100%;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 150px;
+    left: 7490px;
+    background-size: 100% 100%;
+  }
+}
+
+#EloniaPackageOneFloorOne {
+  background: url('../images/Elonia-package.png') no-repeat left;
+  left: 0;
+  bottom: 200px;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  opacity: 1;
+  z-index: 5;
+  animation-fill-mode: forwards;
+}
+
+.EloniaPackageFloorOneMoveOne {
+    animation: EloniaPackageFloorOneMoveOneEnterKeyframes 7s;
+  }
+
+  @keyframes EloniaPackageFloorOneMoveOneEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 200px;
+    left: 10928px;
+  }
+  14% {
+    opacity: 1;
+    bottom: 200px;
+    left: 10325px;
+  }
+  22% {
+    opacity: 1;
+    bottom: 200px;
+    left: 10325px;
+  }
+  76% {
+    opacity: .5;
+    bottom: 350px;
+    left: 9830px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9780px;
+  }
+}
+
+.EloniaPackageFloorOneMoveTwo {
+    animation: EloniaPackageFloorOneMoveTwoEnterKeyframes 4s 1s;
+  }
+
+  @keyframes EloniaPackageFloorOneMoveTwoEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9780px;
+    background-size: 100% 100%;
+  }
+
+  25% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9155px;
+    background-size: 100% 100%;
+  }
+
+  50% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9155px;
+    background-size: 100% 100%;
+  }
+
+  100% {
+    opacity: 1;
+    bottom: 180px;
+    left: 8540px;
+    background-size: 65% 65%;
+  }
+}
+
+.EloniaPackageFloorOneMoveThree {
+    animation: EloniaPackageFloorOneMoveThreeEnterKeyframes 4s 1s;
+  }
+
+  @keyframes EloniaPackageFloorOneMoveThreeEnterKeyframes {
+  0% {
+    opacity: 1;
+    bottom: 200px;
+    left: 9650px;
+    background-size: 100% 100%;
+  }
+
+  25% {
+    opacity: 1;
+    bottom: 200px;
+    left: 7970px;
+    background-size: 100% 100%;
+  }
+  80% {
+    opacity: 1;
+    bottom: 200px;
+    left: 7970px;
+    background-size: 100% 100%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 300px;
+    left: 7970px;
+    background-size: 180% 180%;
+  }
+}
+
+#DataDiscoveryFloorOne {
+  background: url('../images/Data-Discovery.png') no-repeat left;
+  left: 8950px;
+  top: 120px;
+  position: absolute;
+  width: 655px;
+  height: 391px;
+  z-index: 1;
+  opacity: 0;
+  background-size: 0% 0%;
+  animation-fill-mode: forwards;
+}
+
+.DataDiscoveryFloorOneMoveOne {
+  animation: DataDiscoveryFloorOneEnterKeyframes 1s;
+}
+
+@keyframes DataDiscoveryFloorOneEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    background-size: 90% 90%;
+  }
+}
+
+#BaloonTwoFloorOne {
+  background: url('../images/Baloon.png') no-repeat left;
+  left: 8360px;
+  top: 71px;
+  position: absolute;
+  width: 363px;
+  height: 538px;
+  z-index: 1;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5, 1;
+  opacity: 0;
+}
+
+.BaloonTwoMoveOne {
+    animation: BaloonTwoMoveOneEnterKeyframes ease-in-out 1s 3s infinite alternate, BaloonTwoMoveOneOpacity 1s 3s;
+}
+@keyframes BaloonTwoMoveOneOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes BaloonTwoMoveOneEnterKeyframes {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+#RegWEEEOne {
+background: url('../images/Reg-WEEE-screen.png') no-repeat left;
+left: 6910px;
+top: 100px;
+position: absolute;
+width: 421px;
+height: 530px;
+z-index: 1;
+opacity: 0;
+animation-fill-mode: forwards;
+}
+
+.RegWEEEOneMoveOne {
+  animation: RegWEEEOneMoveOneEnterKeyframes 2s 6s;
+}
+@keyframes RegWEEEOneMoveOneEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+opacity: 1;
+box-shadow: 0px 6px 5px 0px #C4C4C4;
+  }
+}
+
+#eIDASNodeOKFloorOne {
+  background: url('../images/ok-right.png') no-repeat left;
+  left: 7330px;
+  top: 260px;
+  position: absolute;
+  width: 130px;
+  height: 171px;
+  opacity: 0;
+  z-index: 2;
+  animation-fill-mode: forwards;
+}
+.eIDASNodeOKFloorOneMoveOne {
+    animation: eIDASNodeOKFloorOneMoveOneEnterKeyframes 2s 6s;
+}
+
+@keyframes eIDASNodeOKFloorOneMoveOneEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#RegWEEETwo {
+  background: url('../images/Reg-WEEE-screen-2.png') no-repeat left;
+  left: 6220px;
+  top: 120px;
+  position: absolute;
+  width: 423px;
+  height: 267px;
+  opacity: 0;
+  z-index: 2;
+  animation-fill-mode: forwards;
+}
+.RegWEEETwoFloorOneMoveOne {
+    animation: RegWEEETwoFloorOneMoveOneEnterKeyframes 2s 1s;
+}
+
+@keyframes RegWEEETwoFloorOneMoveOneEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0px 6px 5px 0px #C4C4C4;
+  }
+}
+
+#SubmissionFloorOne {
+  background: url('../images/Submission-screen.png') no-repeat left;
+  left: 5630px;
+  top: 80px;
+  position: absolute;
+  width: 425px;
+  height: 562px;
+  opacity: 0;
+  z-index: 2;
+  animation-fill-mode: forwards;
+}
+.SubmissionFloorOneMoveOne {
+    animation: SubmissionFloorOneMoveOneEnterKeyframes 2s 2s;
+}
+
+@keyframes SubmissionFloorOneMoveOneEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0px 6px 5px 0px #C4C4C4;
+  }
+}
+
+#SuccessScr {
+background: url('../images/success-screen.png') no-repeat left;
+left: 4550px;
+top: 100px;
+position: absolute;
+width: 426px;
+height: 407px;
+opacity: 0;
+animation-fill-mode: forwards;
+}
+
+.SuccessScrMoveOne {
+  animation: SuccessScrMoveOneEnterKeyframes 2s 1s;
+}
+
+@keyframes SuccessScrMoveOneEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    box-shadow: 0px 6px 5px 0px #C4C4C4;
+  }
+}
+
+#SuccessScrOkLeft{
+  background: url('../images/ok-left.png') no-repeat left;
+  left: 4420px;
+  top: 180px;
+  position: absolute;
+  width: 130px;
+  height: 171px;
+  z-index: 2;
+  background-size: 0% 0%;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.SuccessScrOkLeftMoveOne {
+    animation: SuccessScrOkLeftMoveOneEnterKeyframes 1.5s 1.5s;
+}
+
+@keyframes SuccessScrOkLeftMoveOneEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+    opacity: 0;
+  }
+  100% {
+    background-size: 100% 100%;
+    opacity: 1;
+  }
+}
+
+#SuccessScrOkRight{
+  background: url('../images/ok-right.png') no-repeat left;
+  left: 4975px;
+  top: 180px;
+  position: absolute;
+  width: 130px;
+  height: 171px;
+  z-index: 2;
+  background-size: 0% 0%;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.SuccessScrOkRightMoveOne {
+    animation: SuccessScrOkRightMoveOneEnterKeyframes 1.5s 1.5s;
+}
+
+@keyframes SuccessScrOkRightMoveOneEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+    opacity: 0;
+  }
+  100% {
+    background-size: 100% 100%;
+    opacity: 1;
+  }
+}
+
+#Applause{
+  background: url('../images/applause.png') no-repeat left;
+  left: 4340px;
+  bottom: 70px;
+  position: absolute;
+  width: 858px;
+  height: 285px;
+  z-index: 2;
+  background-size: 0% 0%;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.ApplauseMoveOne {
+    animation: ApplauseMoveOneEnterKeyframes 1.5s 1.5s;
+}
+
+@keyframes ApplauseMoveOneEnterKeyframes {
+  0% {
+    background-size: 0% 0%;
+    opacity: 0;
+  }
+  100% {
+    background-size: 100% 100%;
+    opacity: 1;
+  }
+}
+/* ENDOF Floor One */
 
 #DataPackageOne {
   background: url('../images/data.png') no-repeat left;
@@ -1353,6 +2236,3 @@ position: absolute;
 width: 509px;
 height: 356px;
 }
-
-
-

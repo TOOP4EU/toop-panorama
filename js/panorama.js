@@ -119,9 +119,38 @@ function items(offset) {
   if (currentFloor == 1) {
 
     if (offset.x <= 9562) { spawnItem('TruckEloniaBMF', 'TruckEloniaBMFMoveOne'); }
+    if (offset.x <= 9562) { spawnItem('DataPackageOneFloorOne', 'DataPackageOneFloorOneMoveOne'); }
+    if (offset.x <= 9562) { spawnItem('EloniaPackageOneFloorOne', 'EloniaPackageFloorOneMoveOne'); }
+    if (offset.x <= 9562) { spawnItem('TOOPPackageFloorOne', 'TOOPPackageFloorOneMoveOne'); }
+    if (offset.x <= 9562) { spawnItem('FreePackageOneFloorOne', 'FreePackageOneFloorOneMoveOne'); }
+    if (offset.x <= 9562) { spawnItem('TruckTOOPFloorOneOne', 'TruckTOOPFloorOneOneMoveOne'); }
 
-    if (offset.x <= 9562) { spawnItem('TEST'); }
-    if (offset.x <= 9562) { spawnItem('TEST2'); }
+    if (offset.x <= 8196) { spawnItem('DataDiscoveryFloorOne', 'DataDiscoveryFloorOneMoveOne'); }
+    if (offset.x <= 8196) { changeAnimation('TruckTOOPFloorOneOne', 'TruckTOOPFloorOneOneMoveTwo'); }
+    if (offset.x <= 8196) { changeAnimation('DataPackageOneFloorOne', 'DataPackageOneFloorOneMoveTwo'); }
+    if (offset.x <= 8196) { changeAnimation('FreePackageOneFloorOne', 'FreePackageOneFloorOneMoveTwo'); }
+    if (offset.x <= 8196) { changeAnimation('EloniaPackageOneFloorOne', 'EloniaPackageFloorOneMoveTwo'); }
+    if (offset.x <= 8196) { changeAnimation('TOOPPackageFloorOne', 'TOOPPackageFloorOneMoveTwo'); }
+    if (offset.x <= 8196) { spawnItem('TOOPPackageFloorOneTwo', 'TOOPPackageFloorOneMoveTwoTwo'); }
+    if (offset.x <= 8196) { spawnItem('BaloonTwoFloorOne', 'BaloonTwoMoveOne'); }
+
+    if (offset.x <= 6830) { changeAnimation('TruckTOOPFloorOneOne', 'TruckTOOPFloorOneOneMoveThree'); }
+    if (offset.x <= 6830) { changeAnimation('DataPackageOneFloorOne', 'DataPackageOneFloorOneMoveThree'); }
+    if (offset.x <= 6830) { changeAnimation('FreePackageOneFloorOne', 'FreePackageOneFloorOneMoveThree'); }
+    if (offset.x <= 6830) { changeAnimation('TOOPPackageFloorOne', 'TOOPPackageFloorOneMoveThree'); }
+    if (offset.x <= 6830) { changeAnimation('TOOPPackageFloorOneTwo', 'TOOPPackageFloorOneMoveTwoThree'); }
+    if (offset.x <= 6830) { changeAnimation('EloniaPackageOneFloorOne', 'EloniaPackageFloorOneMoveThree'); }
+    if (offset.x <= 6830) { spawnItem('TruckFreedoniaBMF', 'TruckFreedoniaBMFMoveOne'); }
+    if (offset.x <= 6830) { spawnItem('RegWEEEOne', 'RegWEEEOneMoveOne'); }
+    if (offset.x <= 6830) { spawnItem('eIDASNodeOKFloorOne', 'eIDASNodeOKFloorOneMoveOne'); }
+
+    if (offset.x <= 5464) { spawnItem('RegWEEETwo', 'RegWEEETwoFloorOneMoveOne'); }
+    if (offset.x <= 5464) { spawnItem('SubmissionFloorOne', 'SubmissionFloorOneMoveOne'); }
+
+    if (offset.x <= 4098) { spawnItem('SuccessScr', 'SuccessScrMoveOne'); }
+    if (offset.x <= 4098) { spawnItem('SuccessScrOkLeft', 'SuccessScrOkLeftMoveOne'); }
+    if (offset.x <= 4098) { spawnItem('SuccessScrOkRight', 'SuccessScrOkRightMoveOne'); }
+    if (offset.x <= 4098) { spawnItem('Applause', 'ApplauseMoveOne'); }
 
   }
 }

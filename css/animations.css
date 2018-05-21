@@ -397,25 +397,26 @@ opacity: 1;
 
 #eIDASNodeOK{
   background: url('../images/ok-right.png') no-repeat left;
-  left: 2800px;
+  left: 3200px;
   top: 150px;
   position: absolute;
   width: 130px;
   height: 171px;
   z-index: 2;
   background-size: 0% 0%;
-  animation: eIDASNodeOKEnterKeyframes 2s 1s;
+  opacity: 0;
+  animation: eIDASNodeOKEnterKeyframes 2s;
   animation-fill-mode: forwards;
 }
 
 @keyframes eIDASNodeOKEnterKeyframes {
   0% {
     background-size: 0% 0%;
-    left: 2800px;
+    opacity: 0;
   }
   100% {
     background-size: 100% 100%;
-    left: 3200px;
+    opacity: 1;
   }
 }
 
@@ -428,7 +429,7 @@ opacity: 1;
   height: 512px;
   z-index: 2;
   background-size: 0% 0%;
-  animation: MaxsAuthenticatedEnterKeyframes 2s 4s;
+  animation: MaxsAuthenticatedEnterKeyframes 2s 2s;
   animation-fill-mode: forwards;
 }
 
@@ -470,24 +471,25 @@ opacity: 1;
 
 #GetCompanyInfoOk {
   background: url('../images/check-list.png') no-repeat left;
-  left: 0px;
+  left: 4550px;
   top: 180px;
   position: absolute;
   width: 281px;
   height: 247px;
   z-index: 1;
   background-size: 0% 0%;
+  opacity: 0;
   animation: GetCompanyInfoOkEnterKeyframes 2s 1.5s;
   animation-fill-mode: forwards;
 }
 
 @keyframes GetCompanyInfoOkEnterKeyframes {
   0% {
-    left: 4500px;
+    opacity: 0;
     background-size: 0% 0%;
   }
   100% {
-    left: 4550px;
+    opacity: 1;
     background-size: 100% 100%;
   }
 }
@@ -553,42 +555,48 @@ opacity: 1;
   width: 46px;
   height: 46px;
   opacity: 0;
-  z-index: 1;
+  z-index: 5;
   animation-fill-mode: forwards;
 }
 
 .FreePackageMoveOne {
-  animation: FreePackageOneEnterKeyframes 7.2s 2s;
+  animation: FreePackageOneEnterKeyframes 8s 2s;
 }
 
 @keyframes FreePackageOneEnterKeyframes {
   0% {
-    opacity: 0;
-    left: 5635px;
-  }
-
-  30% {
-    opacity: .5;
-    left: 5635px;
-  }
-  40% {
-    left: 6085px;
-    opacity: .5;
-  }
-
-  60% {
     opacity: 1;
-    left: 6085px;
+    left: 5600px;
+    bottom: 150px;
   }
 
-  80% {
-    opacity: .5;
+  25% {
+    opacity: 1;
+    left: 5635px;
+    bottom: 150px;
+  }
+  35% {
+    opacity: 1;
+    left: 6020px;
+    bottom: 400px;
+  }
+
+  50% {
+    opacity: 1;
+    left: 6080px;
+    bottom: 150px;
+  }
+
+  75% {
+    opacity: 1;
     left: 6625px;
+    bottom: 150px;
   }
 
   100% {
     opacity: 1;
     left: 6625px;
+    bottom: 150px;
   }
 }
 
@@ -635,7 +643,7 @@ opacity: 1;
 @keyframes FreePackageMoveThreeEnterKeyframes {
   0% {
     opacity: 1;
-    left: 7200px;
+    left: 7400px;
     bottom: 150px;
     background-size: 100% 100%;
   }
@@ -712,8 +720,8 @@ opacity: 1;
     left: 5940px;
   }
 
-75% {
-  left: 6480px;
+  75% {
+    left: 6480px;
   }
 
 100% {
@@ -771,7 +779,7 @@ opacity: 1;
   position: absolute;
   width: 46px;
   height: 46px;
-  z-index: 1;
+  z-index: 5;
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -839,7 +847,7 @@ opacity: 1;
     opacity: 1;
     background-size: 100% 100%;
     bottom: 150px;
-    left: 7200px;
+    left: 7300px;
     }
   100% {
     opacity: 1;
@@ -894,7 +902,7 @@ opacity: 1;
   position: absolute;
   width: 46px;
   height: 46px;
-  z-index: 1;
+  z-index: 5;
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -959,7 +967,7 @@ opacity: 1;
   }
 
 .TOOPPackageMoveFourFour {
-    animation: TOOPPackageMoveFourFourEnterKeyframes 10s 1s;
+    animation: TOOPPackageMoveFourFourEnterKeyframes 8s 1s;
 }
 
 @keyframes TOOPPackageMoveFourFourEnterKeyframes {
@@ -971,7 +979,7 @@ opacity: 1;
     width: 46px;
     height: 46px;
     }
-  10% {
+  15% {
     opacity: 1;
     background-size: 100% 100%;
     bottom: 150px;
@@ -998,7 +1006,7 @@ opacity: 1;
   100% {
     opacity: 0;
     background-size: 100% 100%;
-    bottom: 450px;
+    bottom: 250px;
     left: 9645px;
     width: 200px;
     height: 200px;
@@ -1149,7 +1157,7 @@ opacity: 1;
 #EloniaPackageOne {
   background: url('../images/Elonia-package.png') no-repeat left;
   left: 8760px;
-  bottom: 203px;
+  bottom: 200px;
   position: absolute;
   width: 46px;
   height: 46px;
@@ -1175,7 +1183,7 @@ opacity: 1;
   }
   100% {
     opacity: 1;
-    bottom: 200 px;
+    bottom: 200px;
     left: 8920px;
   }
 }

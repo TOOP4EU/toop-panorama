@@ -704,12 +704,12 @@ opacity: 1;
 }
 
 .TruckTOOPBMMoveOne {
-    animation: TruckTOOPBMOneEnterKeyframes 8s 2s;
+    animation: TruckTOOPBMOneEnterKeyframes 8s;
 }
 
 @keyframes TruckTOOPBMOneEnterKeyframes {
   0% {
-    left: 0px;
+    left: 5940px;
   }
 
   25% {
@@ -721,7 +721,7 @@ opacity: 1;
   }
 
   75% {
-    left: 6480px;
+    left: 5940px;
   }
 
 100% {
@@ -1023,7 +1023,7 @@ opacity: 1;
   z-index: 1;
   background-size: 100% 100%;
   opacity: 0;
-  animation: SemanticMappingOneEnterKeyframes 4s;
+  animation: SemanticMappingOneEnterKeyframes 4s 6.5s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
@@ -1242,13 +1242,13 @@ opacity: 1;
 }
 
 .TruckEloniaBMMoveOne {
-    animation: TruckEloniaBMMoveOneEnterKeyframes 2s 5s;
+    animation: TruckEloniaBMMoveOneEnterKeyframes 2s;
 }
 
 @keyframes TruckEloniaBMMoveOneEnterKeyframes {
   0% {
-    left: 0px;
-    background-size: 0% 0%;
+    left: 10200px;
+    background-size: 100% 100%;
   }
 
   100% {
@@ -1298,12 +1298,12 @@ opacity: 1;
 }
 
 .TruckTOOPFloorOneOneMoveOne {
-    animation: TruckTOOPFloorOneOneMoveOneEnterKeyframes 1s 2s;
+    animation: TruckTOOPFloorOneOneMoveOneEnterKeyframes 2s;
 }
 
 @keyframes TruckTOOPFloorOneOneMoveOneEnterKeyframes {
   0% {
-    left: 10928px;
+    left: 9650px;
   }
 
   100% {
@@ -1318,7 +1318,7 @@ opacity: 1;
 
 @keyframes TruckTOOPFloorOneOneMoveTwoEnterKeyframes {
   0% {
-    left: 10928px;
+    left: 9650px;
   }
 
   100% {
@@ -1354,12 +1354,12 @@ opacity: 1;
 }
 
 .TruckFreedoniaBMFMoveOne {
-    animation: TruckFreedoniaBMFMoveOneEnterKeyframes 1s 3s;
+    animation: TruckFreedoniaBMFMoveOneEnterKeyframes 1s;
 }
 
 @keyframes TruckFreedoniaBMFMoveOneEnterKeyframes {
   0% {
-    left: 9650px;
+    left: 7360px;
   }
 
   100% {
@@ -1395,7 +1395,8 @@ opacity: 1;
     bottom: 150px;
     left: 10425px;
   }
-  20% {
+
+  40% {
     opacity: 1;
     bottom: 150px;
     left: 10425px;
@@ -1562,26 +1563,30 @@ opacity: 1;
     opacity: 1;
     bottom: 150px;
     left: 9650px;
-    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
   }
   25% {
     opacity: 1;
     bottom: 150px;
     left: 7920px;
-    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
   }
   80% {
     opacity: 1;
     bottom: 150px;
     left: 7920px;
-    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
   }
 
   100% {
     opacity: 0;
     bottom: 300px;
     left: 7920px;
-    background-size: 180% 180%;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -1620,14 +1625,14 @@ opacity: 1;
 
 @keyframes TOOPPackageFloorOneMoveTwoTwoEnterKeyframes {
   0% {
-    opacity: 1;
-    bottom: 200px;
-    left: 9780px;
+    opacity: 0;
+    bottom: 400px;
+    left: 9105px;
     background-size: 100% 100%;
   }
   25% {
-    opacity: 1;
-    bottom: 200px;
+    opacity: 0;
+    bottom: 400px;
     left: 9105px;
     background-size: 100% 100%;
   }
@@ -1655,25 +1660,29 @@ opacity: 1;
     opacity: 1;
     bottom: 200px;
     left: 9650px;
-    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
   }
   25% {
     opacity: 1;
     bottom: 200px;
     left: 7920;
-    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
   }
   80%{
     opacity: 1;
     bottom: 200px;
     left: 7920;
-    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
   }
   100% {
     opacity: 0;
     bottom: 300px;
-    left: 7920;
-    background-size: 180% 180%;
+    left: 7920px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -1816,11 +1825,12 @@ opacity: 1;
     bottom: 200px;
     left: 10325px;
   }
-  76% {
+  60% {
     opacity: .5;
     bottom: 350px;
     left: 9830px;
   }
+
   100% {
     opacity: 1;
     bottom: 200px;
@@ -1871,26 +1881,30 @@ opacity: 1;
     opacity: 1;
     bottom: 200px;
     left: 9650px;
-    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
   }
 
   25% {
     opacity: 1;
     bottom: 200px;
     left: 7970px;
-    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
   }
   80% {
     opacity: 1;
     bottom: 200px;
     left: 7970px;
-    background-size: 100% 100%;
+    width: 46px;
+    height: 46px;
   }
   100% {
     opacity: 0;
     bottom: 300px;
     left: 7970px;
-    background-size: 180% 180%;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -2011,59 +2025,9 @@ box-shadow: 0px 6px 5px 0px #C4C4C4;
   }
 }
 
-#RegWEEETwo {
-  background: url('../images/Reg-WEEE-screen-2.png') no-repeat left;
-  left: 6220px;
-  top: 120px;
-  position: absolute;
-  width: 423px;
-  height: 267px;
-  opacity: 0;
-  z-index: 2;
-  animation-fill-mode: forwards;
-}
-.RegWEEETwoFloorOneMoveOne {
-    animation: RegWEEETwoFloorOneMoveOneEnterKeyframes 2s 1s;
-}
-
-@keyframes RegWEEETwoFloorOneMoveOneEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    box-shadow: 0px 6px 5px 0px #C4C4C4;
-  }
-}
-
-#SubmissionFloorOne {
-  background: url('../images/Submission-screen.png') no-repeat left;
-  left: 5630px;
-  top: 80px;
-  position: absolute;
-  width: 425px;
-  height: 562px;
-  opacity: 0;
-  z-index: 2;
-  animation-fill-mode: forwards;
-}
-.SubmissionFloorOneMoveOne {
-    animation: SubmissionFloorOneMoveOneEnterKeyframes 2s 2s;
-}
-
-@keyframes SubmissionFloorOneMoveOneEnterKeyframes {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    box-shadow: 0px 6px 5px 0px #C4C4C4;
-  }
-}
-
 #SuccessScr {
 background: url('../images/success-screen.png') no-repeat left;
-left: 4550px;
+left: 5950px;
 top: 100px;
 position: absolute;
 width: 426px;
@@ -2089,7 +2053,7 @@ animation-fill-mode: forwards;
 
 #SuccessScrOkLeft{
   background: url('../images/ok-left.png') no-repeat left;
-  left: 4420px;
+  left: 5820px;
   top: 180px;
   position: absolute;
   width: 130px;
@@ -2117,7 +2081,7 @@ animation-fill-mode: forwards;
 
 #SuccessScrOkRight{
   background: url('../images/ok-right.png') no-repeat left;
-  left: 4975px;
+  left: 6375px;
   top: 180px;
   position: absolute;
   width: 130px;
@@ -2145,13 +2109,12 @@ animation-fill-mode: forwards;
 
 #Applause{
   background: url('../images/applause.png') no-repeat left;
-  left: 4340px;
-  bottom: 70px;
+  left: 5700px;
+  bottom: 0;
   position: absolute;
   width: 858px;
   height: 285px;
   z-index: 2;
-  background-size: 0% 0%;
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -2162,11 +2125,11 @@ animation-fill-mode: forwards;
 
 @keyframes ApplauseMoveOneEnterKeyframes {
   0% {
-    background-size: 0% 0%;
+    bottom: 0;
     opacity: 0;
   }
   100% {
-    background-size: 100% 100%;
+    bottom: 70px;
     opacity: 1;
   }
 }

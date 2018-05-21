@@ -29,9 +29,7 @@ p {
     /* end of bg pattern*/
 
   background-size: 100% 100%;
-
-  /*width: 17758px;*/
- width: 10178px;
+  width: 10928px;
   height: 750px;
   padding-right: 750px;
 
@@ -52,8 +50,6 @@ p {
     /* end of bg pattern*/
 
   background-size: 100% 100%;
-
-  /*width: 17758px;*/
   width: 10928px;
   height: 750px;
   margin-bottom: 500px;
@@ -552,16 +548,7 @@ height: 356px;
 
 #FloorTwoFreedoniaPinLL {
   background: url('../images/Freedonia-flag-pin.png') no-repeat left;
-  left: 4100px;
-  bottom: 71px;
-  position: absolute;
-  width: 74px;
-  height: 105px;
-}
-
-#FloorTwoFreedoniaPinRR {
-  background: url('../images/Freedonia-flag-pin-r.png') no-repeat left;
-  left: 5390px;
+  left: 5490px;
   bottom: 71px;
   position: absolute;
   width: 74px;
@@ -610,20 +597,8 @@ height: 356px;
   position: absolute;
 }
 
-.TitleTwentyOne {
-  left: 6300px;
-  top: 20px;
-  position: absolute;
-}
-
-.TitleTwentyTwo {
-  left: 5700px;
-  top: 20px;
-  position: absolute;
-}
-
 .TitleTwentyThree {
-  left: 4700px;
+  left: 6100px;
   top: 20px;
   position: absolute;
 }

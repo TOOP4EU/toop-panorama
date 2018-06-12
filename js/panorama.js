@@ -1,5 +1,6 @@
 var sliceWidth = 1366;
 var currentFloor = getUrlParameter('floor') || 0;
+var stopScrollingLeftAtX = 4098;
 
 function items(offset) {
   console.log(offset.x); // Logs the current horizontal scroll offset
@@ -180,6 +181,7 @@ function items(offset) {
     if (offset.x <= 4098) { changeAnimation('CreditsSU', 'CreditsSUSE'); }
     if (offset.x <= 4098) { changeAnimation('CreditsEditors', 'CreditsEditorsAll'); }
     if (offset.x <= 4098) { changeAnimation('newssub', 'newssubAll'); }
+    if (offset.x <= 4098) { changeAnimation('restart', 'restartAll'); }
     if (offset.x <= 4098) { changeAnimation('brand', 'brandAll'); }
   }
 }
@@ -190,7 +192,16 @@ function panorama(content) {
   $('body').scrollLeft(0);
 
   scrollConverter.activate(items);
-
+  
+  $( "#restart" ).click(function() {
+    $('body').scrollLeft(0);
+    $('body').scrollTop(0);
+    setTimeout(function() {
+      location.reload();
+    }, 50);
+    return;
+  });
+  
   $(document).click(function(e) {
     // Check for left button
     if (e.button == 0) {
@@ -248,6 +259,9 @@ function scrollToNextSlice() {
     }
   } else {
     var newScrollLeft = currentSliceIndex * sliceWidth - sliceWidth;
+    if (newScrollLeft < stopScrollingLeftAtX) {
+        newScrollLeft = stopScrollingLeftAtX;
+    }
     $('html, body').animate({scrollLeft: newScrollLeft - edgeWidth}, 800);
     items({x: newScrollLeft});
   }

@@ -3114,6 +3114,32 @@ height: 50px;
   }
 }
 
+#restart {
+  left: 4660px;
+  top: 600px;
+  position: absolute;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  background-color: #a6325f;
+  border: 1px solid #d2b9c6;
+  padding: 7px;
+  color: #ffffff;
+}
+
+.restartAll {
+  font-size: 1rem;
+  font-weight: bold;
+  animation: restartAllEnterKeyframes 2s 3s;
+}
+@keyframes restartAllEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #brand {
  left: 4500px;
   top: 720px;

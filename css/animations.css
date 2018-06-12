@@ -271,6 +271,16 @@ opacity: 0;
 }
 
 
+#ScreenOneArrow {
+  background: url('../images/arrow-r.png') no-repeat left;
+  left: 1270px;
+  bottom: 0;
+  position: absolute;
+  width: 93px;
+  height: 79px;
+}
+
+
 /* EndOf Screen 1 Maps of Freedonia and Elonia entrance */
 
 
@@ -896,12 +906,12 @@ opacity: 1;
 
 
 #TOOPPackageTwo {
-  background: url('../images/TOOP-package.png') no-repeat left;
+  background: url('../images/compass.png') no-repeat left;
   left: 7245px;
   bottom: 150px;
   position: absolute;
-  width: 46px;
-  height: 46px;
+  width: 49px;
+  height: 53px;
   z-index: 5;
   opacity: 0;
   animation-fill-mode: forwards;
@@ -941,8 +951,8 @@ opacity: 1;
   100% {
     opacity: 1;
     background-size: 65% 65%;
-    bottom: 150px;
-    left: 7810px;
+    bottom: 144px;
+    left: 7807px;
   }
 
 }
@@ -1591,12 +1601,12 @@ opacity: 1;
 }
 
 #TOOPPackageFloorOneTwo{
-  background: url('../images/TOOP-package.png') no-repeat left;
+  background: url('../images/compass.png') no-repeat left;
   left: 0;
   bottom: 153px;
   position: absolute;
-  width: 46px;
-  height: 46px;
+  width: 49px;
+  height: 53px;
   opacity: 1;
   z-index: 5;
   animation-fill-mode: forwards;
@@ -2207,3 +2217,922 @@ position: absolute;
 width: 509px;
 height: 356px;
 }
+
+#WaveOne {
+background: url('../images/waves.png') no-repeat left;
+left: 7510px;
+top: 690px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: slidein 2.5s infinite alternate;
+  -moz-animation: slidein 2.5s infinite alternate;
+  animation: slidein 2.5s infinite alternate;
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#WaveTwo {
+background: url('../images/waves.png') no-repeat left;
+left: 7610px;
+top: 670px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: slideinTwo 2s infinite alternate;
+  -moz-animation: slideinTwo 2s infinite alternate;
+  animation: slideinTwo 2s infinite alternate;
+}
+@-webkit-keyframes slideinTwo {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slideinTwo {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes slideinTwo {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#WaveThree {
+background: url('../images/waves.png') no-repeat left;
+left: 7720px;
+top: 690px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: slideinThree 2.5s infinite alternate;
+  -moz-animation: slideinThree 2.5s infinite alternate;
+  animation: slideinThree 2.5s infinite alternate;
+}
+@-webkit-keyframes slideinThree {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slideinThree {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes slideinThree {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#WaveFour {
+background: url('../images/waves.png') no-repeat left;
+left: 7830px;
+top: 670px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: slideinFour 2s infinite alternate;
+  -moz-animation: slideinFour 2s infinite alternate;
+  animation: slideinFour 2s infinite alternate;
+}
+@-webkit-keyframes slideinFour {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slideinFour {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes slideinTwo {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#WaveFive {
+background: url('../images/waves.png') no-repeat left;
+left: 7940px;
+top: 690px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: slideinFive 2.5s infinite alternate;
+  -moz-animation: slideinFive 2.5s infinite alternate;
+  animation: slideinFive 2.5s infinite alternate;
+}
+@-webkit-keyframes slideinFive {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slideinFive {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes slideinFive {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#WaveSix {
+background: url('../images/waves.png') no-repeat left;
+left: 8040px;
+top: 670px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: slideinSix 2s infinite alternate;
+  -moz-animation: slideinSix 2s infinite alternate;
+  animation: slideinSix 2s infinite alternate;
+}
+@-webkit-keyframes slideinSix {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slideinSix {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes slideinSix {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+
+#BoatOne {
+  background: url('../images/boat.png') no-repeat left;
+  left: 7560px;
+  top: 570px;
+  position: absolute;
+  width: 63px;
+  height: 115px;
+  background-size: 90% 90%;
+  z-index: 5;
+  animation: BoatOneEnterKeyframes ease-in-out 2s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+}
+
+@keyframes BoatOneEnterKeyframes {
+   0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+#BoatTwo {
+  background: url('../images/boat.png') no-repeat left;
+  left: 7670px;
+  top: 570px;
+  position: absolute;
+  width: 63px;
+  height: 115px;
+  background-size: 70% 70%;
+  z-index: 5;
+  animation: BoatTwoEnterKeyframes ease-in-out 2.2s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+}
+
+@keyframes BoatTwoEnterKeyframes {
+   0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+#BoatThree {
+  background: url('../images/boat.png') no-repeat left;
+  left: 7980px;
+  top: 570px;
+  position: absolute;
+  width: 63px;
+  height: 115px;
+  background-size: 90% 90%;
+  z-index: 5;
+  animation: BoatThreeEnterKeyframes ease-in-out 2s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+}
+
+@keyframes BoatThreeEnterKeyframes {
+   0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+#BoatFour {
+  background: url('../images/boat.png') no-repeat left;
+  left: 8100px;
+  top: 570px;
+  position: absolute;
+  width: 63px;
+  height: 115px;
+  background-size: 70% 70%;
+  z-index: 5;
+  animation: BoatFourEnterKeyframes ease-in-out 2.2s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+}
+
+@keyframes BoatFourEnterKeyframes {
+   0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+
+/* Floor Two Port animation */
+
+#WaveFloorOneOne {
+background: url('../images/waves.png') no-repeat left;
+left: 8740px;
+top: 690px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: WaveFloorOneOneslidein 2.5s infinite alternate;
+  -moz-animation: WaveFloorOneOneslidein 2.5s infinite alternate;
+  animation: WaveFloorOneOneslidein 2.5s infinite alternate;
+}
+@-webkit-keyframes WaveFloorOneOneslidein {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes WaveFloorOneOneslidein {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes WaveFloorOneOneslidein {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#WaveFloorOneTwo {
+background: url('../images/waves.png') no-repeat left;
+left: 8640px;
+top: 670px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: WaveFloorOneslideinTwo 2s infinite alternate;
+  -moz-animation: WaveFloorOneslideinTwo 2s infinite alternate;
+  animation: WaveFloorOneslideinTwo 2s infinite alternate;
+}
+@-webkit-keyframes WaveFloorOneslideinTwo {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes WaveFloorOneslideinTwo {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes WaveFloorOneslideinTwo {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#WaveFloorOneThree {
+background: url('../images/waves.png') no-repeat left;
+left: 8540px;
+top: 690px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: WaveFloorOnelideinThree 2.5s infinite alternate;
+  -moz-animation: WaveFloorOnelideinThree 2.5s infinite alternate;
+  animation: WaveFloorOnelideinThree 2.5s infinite alternate;
+}
+@-webkit-keyframes WaveFloorOnelideinThree {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes WaveFloorOnelideinThree {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes WaveFloorOnelideinThree {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#WaveFloorOneFour {
+background: url('../images/waves.png') no-repeat left;
+left: 8440px;
+top: 670px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: WaveFloorOneslideinFour 2s infinite alternate;
+  -moz-animation: WaveFloorOneslideinFour 2s infinite alternate;
+  animation: WaveFloorOneslideinFour 2s infinite alternate;
+}
+@-webkit-keyframes WaveFloorOneslideinFour {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes WaveFloorOneslideinFour {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes slideinTwo {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#WaveFloorOneFive {
+background: url('../images/waves.png') no-repeat left;
+left: 8340px;
+top: 690px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: WaveFloorOneslideinFive 2.5s infinite alternate;
+  -moz-animation: WaveFloorOneslideinFive 2.5s infinite alternate;
+  animation: WaveFloorOneslideinFive 2.5s infinite alternate;
+}
+@-webkit-keyframes WaveFloorOneslideinFive {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes WaveFloorOneslideinFive {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes WaveFloorOneslideinFive {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#WaveFloorOneSix {
+background: url('../images/waves.png') no-repeat left;
+left: 8240px;
+top: 670px;
+position: absolute;
+width: 100px;
+height: 50px;
+  -webkit-animation: WaveFloorOneslideinSix 2s infinite alternate;
+  -moz-animation: WaveFloorOneslideinSix 2s infinite alternate;
+  animation: WaveFloorOneslideinSix 2s infinite alternate;
+}
+@-webkit-keyframes WaveFloorOneslideinSix {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes WaveFloorOneslideinSix {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+@keyframes WaveFloorOneslideinSix {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 40px;
+    width: 100%;
+  }
+}
+
+#BoatFloorOneOne {
+  background: url('../images/boat.png') no-repeat left;
+  left: 8280px;
+  top: 570px;
+  position: absolute;
+  width: 63px;
+  height: 115px;
+  background-size: 90% 90%;
+  z-index: 5;
+  animation: BoatFloorOneEnterKeyframes ease-in-out 2s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+}
+
+@keyframes BoatFloorOneEnterKeyframes {
+   0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+#BoatFloorOneTwo {
+  background: url('../images/boat.png') no-repeat left;
+  left: 8400px;
+  top: 590px;
+  position: absolute;
+  width: 63px;
+  height: 115px;
+  background-size: 70% 70%;
+  z-index: 5;
+  animation: BoatFloorOneTwoEnterKeyframes ease-in-out 2.2s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+}
+
+@keyframes BoatFloorOneTwoEnterKeyframes {
+   0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+#BoatFloorOneThree {
+  background: url('../images/boat.png') no-repeat left;
+  left: 8700px;
+  top: 570px;
+  position: absolute;
+  width: 63px;
+  height: 115px;
+  background-size: 90% 90%;
+  z-index: 5;
+  animation: BoatFloorOneThreeEnterKeyframes ease-in-out 2s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+}
+
+@keyframes BoatFloorOneThreeEnterKeyframes {
+   0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+#BoatFloorOneFour {
+  background: url('../images/boat.png') no-repeat left;
+  left: 8800px;
+  top: 590px;
+  position: absolute;
+  width: 63px;
+  height: 115px;
+  background-size: 70% 70%;
+  z-index: 5;
+  animation: BoatFloorOneFourEnterKeyframes ease-in-out 2.2s infinite alternate;
+  transform-origin: center -20px;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 5;
+}
+
+@keyframes BoatFloorOneFourEnterKeyframes {
+   0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+/* ENDOF Port 2 animation */
+
+/* Credits */
+
+#TOOPLogo {
+  background: url('../images/toopLogo.png') no-repeat left;
+  left: 4500px;
+  top: 70px;
+  position: absolute;
+  width: 401px;
+  height: 139px;
+  z-index: 5;
+  opacity: 0;
+  animation: TOOPLogoEnterKeyframes 2s 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes TOOPLogoEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#CreditsSU {
+  left: 4500px;
+  top: 200px;
+  position: absolute;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.CreditsSUSE {
+  font-size: 1rem;
+  font-weight: bold;
+  animation: CreditsSUEnterKeyframes 2s 2s;
+}
+@keyframes CreditsSUEnterKeyframes {
+  0% {
+    opacity: 0;
+    top: 200px;
+  }
+  100% {
+    opacity: 1;
+    top: 300px;
+  }
+}
+
+#CreditsEditors {
+  left: 4500px;
+  top: 400px;
+  position: absolute;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.CreditsEditorsAll {
+  font-size: 1rem;
+  font-weight: bold;
+  animation: CreditsEditorsEnterKeyframes 2s 3s;
+}
+@keyframes CreditsEditorsEnterKeyframes {
+  0% {
+    opacity: 0;
+    top: 550px;
+  }
+  100% {
+    opacity: 1;
+    top: 450px;
+  }
+}
+
+#newssub {
+  left: 4500px;
+  top: 600px;
+  position: absolute;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  background-color: #a6325f;
+  border: 1px solid #d2b9c6;
+  padding: 7px;
+  color: #ffffff;
+}
+
+#newssub a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#newssub:hover {
+  background-color: #940039;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.newssubAll {
+  font-size: 1rem;
+  font-weight: bold;
+  animation: newssubAllEnterKeyframes 2s 3s;
+}
+@keyframes newssubAllEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#brand {
+ left: 4500px;
+  top: 720px;
+  position: absolute;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+  #brand a {
+  color: #000000;
+  }
+
+  #brand a:hover {
+    text-decoration: none;
+  }
+
+.brandAll {
+  font-size: 1rem;
+  font-weight: bold;
+  animation: newssubAllEnterKeyframes 2s 3s;
+}
+/* ENDOF Credits */

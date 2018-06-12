@@ -38,6 +38,17 @@ function items(offset) {
     if (offset.x >= 6830) { spawnItem('TOOPPackageFour'); }
     if (offset.x >= 6830) { spawnItem('TOOPPackageFive'); }
 
+    if (offset.x >= 6830) { spawnItem('WaveOne'); }
+    if (offset.x >= 6830) { spawnItem('WaveTwo'); }
+    if (offset.x >= 6830) { spawnItem('WaveThree'); }
+    if (offset.x >= 6830) { spawnItem('WaveFour'); }
+    if (offset.x >= 6830) { spawnItem('WaveFive'); }
+    if (offset.x >= 6830) { spawnItem('WaveSix'); }
+    if (offset.x >= 6830) { spawnItem('BoatOne'); }
+    if (offset.x >= 6830) { spawnItem('BoatTwo'); }
+    if (offset.x >= 6830) { spawnItem('BoatThree'); }
+    if (offset.x >= 6830) { spawnItem('BoatFour'); }
+
     if (offset.x >= 6830) { spawnItem('TOOPPackageTwo', 'TOOPPackageMoveTwoTwo'); }
     if (offset.x >= 6830) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveTwo'); }
     if (offset.x >= 6830) { changeAnimation('FreePackageOne', 'FreePackageMoveTwo'); }
@@ -134,6 +145,18 @@ function items(offset) {
     if (offset.x <= 8196) { spawnItem('TOOPPackageFloorOneTwo', 'TOOPPackageFloorOneMoveTwoTwo'); }
     if (offset.x <= 8196) { spawnItem('BaloonTwoFloorOne', 'BaloonTwoMoveOne'); }
 
+    if (offset.x <= 8196) { spawnItem('WaveFloorOneOne'); }
+    if (offset.x <= 8196) { spawnItem('WaveFloorOneTwo'); }
+    if (offset.x <= 8196) { spawnItem('WaveFloorOneThree'); }
+    if (offset.x <= 8196) { spawnItem('WaveFloorOneFour'); }
+    if (offset.x <= 8196) { spawnItem('WaveFloorOneFive'); }
+    if (offset.x <= 8196) { spawnItem('WaveFloorOneSix'); }
+
+        if (offset.x <= 8196) { spawnItem('BoatFloorOneOne'); }
+    if (offset.x <= 8196) { spawnItem('BoatFloorOneTwo'); }
+    if (offset.x <= 8196) { spawnItem('BoatFloorOneThree'); }
+    if (offset.x <= 8196) { spawnItem('BoatFloorOneFour'); }
+
     if (offset.x <= 6830) { changeAnimation('TruckTOOPFloorOneOne', 'TruckTOOPFloorOneOneMoveThree'); }
     if (offset.x <= 6830) { changeAnimation('DataPackageOneFloorOne', 'DataPackageOneFloorOneMoveThree'); }
     if (offset.x <= 6830) { changeAnimation('FreePackageOneFloorOne', 'FreePackageOneFloorOneMoveThree'); }
@@ -152,6 +175,12 @@ function items(offset) {
     if (offset.x <= 5464) { spawnItem('SuccessScrOkRight', 'SuccessScrOkRightMoveOne'); }
     if (offset.x <= 5464) { spawnItem('Applause', 'ApplauseMoveOne'); }
 
+    if (offset.x <= 4098) { spawnItem('TOOPLogo'); }
+
+    if (offset.x <= 4098) { changeAnimation('CreditsSU', 'CreditsSUSE'); }
+    if (offset.x <= 4098) { changeAnimation('CreditsEditors', 'CreditsEditorsAll'); }
+    if (offset.x <= 4098) { changeAnimation('newssub', 'newssubAll'); }
+    if (offset.x <= 4098) { changeAnimation('brand', 'brandAll'); }
   }
 }
 

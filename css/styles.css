@@ -53,6 +53,7 @@ p {
   width: 10928px;
   height: 750px;
   margin-bottom: 500px;
+  padding-right: 750px;
 
   /* Vertically center the panorama */
   position: absolute;
@@ -378,7 +379,7 @@ p {
   left: 8900px;
   bottom: 0;
   position: absolute;
-  width: 1940px;
+  width: 2028px;
   height: 70px;
 }
 
@@ -420,10 +421,10 @@ p {
 
 #FloorTwoFreedoniaRoad {
   background: url('../images/road-freedonia.png') repeat-x left;
-  left: 4100px;
+  left: 5490px;
   bottom: 0;
   position: absolute;
-  width: 4110px;
+  width: 2720px;
   height: 70px;
 }
 
@@ -555,6 +556,10 @@ height: 356px;
   height: 105px;
 }
 
+#TitlesFloorOne {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 .TitleFifteen {
   left: 10500;
   top: 20px;
@@ -574,15 +579,24 @@ height: 356px;
 }
 
 .TitleSeventeen {
-  left: 8250px;
-  top: 20px;
+  left: 8200px;
+  top: 80px;
   position: absolute;
+  font-size: 1.3rem;
 }
 
 .TitleEightteen {
-  left: 8650px;
+  left: 8750px;
+  top: 80px;
+  position: absolute;
+  font-size: 1.3rem;
+  text-align: right;
+}
+.TitleSecureFloorOne {
+  left: 8300px;
   top: 20px;
   position: absolute;
+  font-size: 1.5rem;
 }
 
 .TitleNineteen {
@@ -636,7 +650,7 @@ height: 356px;
 }
 
 .TitleFive {
-  left: 4990px;
+  left: 4870px;
   top: 20px;
   position: absolute;
 }
@@ -661,16 +675,25 @@ height: 356px;
 
 .TitleNine {
   left: 7500px;
-  top: 20px;
+  top: 80px;
   position: absolute;
+  font-size: 1.3rem;
 }
 
 .TitleTen {
-  left: 7900px;
-  top: 20px;
+  left: 8040px;
+  top: 80px;
   position: absolute;
+  font-size: 1.3rem;
+  text-align: right;
 }
 
+.TitleSecure {
+  left: 7620px;
+  top: 20px;
+  position: absolute;
+  font-size: 1.5rem;
+}
 .TitleEleven {
   left: 8550px;
   top: 20px;

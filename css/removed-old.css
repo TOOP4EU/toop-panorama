@@ -1441,4 +1441,64 @@ animation-fill-mode: forwards;
   }
 }
 
-/* EndOf Screen 14 */
+.TitleTwentyOne {
+  left: 6300px;
+  top: 20px;
+  position: absolute;
+}
+
+.TitleTwentyTwo {
+  left: 5700px;
+  top: 20px;
+  position: absolute;
+}
+
+#SubmissionFloorOne {
+  background: url('../images/Submission-screen.png') no-repeat left;
+  left: 5630px;
+  top: 80px;
+  position: absolute;
+  width: 425px;
+  height: 562px;
+  opacity: 0;
+  z-index: 2;
+  animation-fill-mode: forwards;
+}
+.SubmissionFloorOneMoveOne {
+    animation: SubmissionFloorOneMoveOneEnterKeyframes 2s 2s;
+}
+
+@keyframes SubmissionFloorOneMoveOneEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0px 6px 5px 0px #C4C4C4;
+  }
+}
+
+#RegWEEETwo {
+  background: url('../images/Reg-WEEE-screen-2.png') no-repeat left;
+  left: 6220px;
+  top: 120px;
+  position: absolute;
+  width: 423px;
+  height: 267px;
+  opacity: 0;
+  z-index: 2;
+  animation-fill-mode: forwards;
+}
+.RegWEEETwoFloorOneMoveOne {
+    animation: RegWEEETwoFloorOneMoveOneEnterKeyframes 2s 1s;
+}
+
+@keyframes RegWEEETwoFloorOneMoveOneEnterKeyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0px 6px 5px 0px #C4C4C4;
+  }
+}

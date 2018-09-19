@@ -1,6 +1,7 @@
 var sliceWidth = 1366;
 var currentFloor = getUrlParameter('floor') || 0;
 var stopScrollingLeftAtX = 4098;
+var lastSlideReached = false;
 
 function items(offset) {
   console.log(offset.x); // Logs the current horizontal scroll offset
@@ -19,26 +20,17 @@ function items(offset) {
     if (offset.x >= 4098) { spawnItem('GetCompanyInfoOk'); }
     if (offset.x >= 4098) { spawnItem('Consent'); }
 
-
-
-    // if (offset.x >= 5464) { spawnItem('FreePackageTwo'); }
-    //if (offset.x >= 5464) { spawnItem('TruckTOOPBMTwo'); }
-    //if (offset.x >= 5464) { spawnItem('FreePackageThree'); }
     if (offset.x >= 5464) { spawnItem('TruckFreeBMOne'); }
     if (offset.x >= 5464) { spawnItem('SemanticMappingOne'); }
     if (offset.x >= 5464) { spawnItem('TruckTOOPBMOne', 'TruckTOOPBMMoveOne'); }
     if (offset.x >= 5464) { spawnItem('FreePackageOne', 'FreePackageMoveOne'); }
     if (offset.x >= 5464) { spawnItem('TOOPPackageOne', 'TOOPPackageMoveOne'); }
 
-    //if (offset.x >= 6830) { spawnItem('TruckTOOPBMThree'); }
-    //if (offset.x >= 6830) { spawnItem('FreePackageFour'); }
-    //if (offset.x >= 6830) { spawnItem('FreePackageFive'); }
     if (offset.x >= 6830) { spawnItem('DataDiscoveryOne'); }
     if (offset.x >= 6830) { spawnItem('TOOPPackageThree'); }
     if (offset.x >= 6830) { spawnItem('BaloonOne'); }
     if (offset.x >= 6830) { spawnItem('TOOPPackageFour'); }
     if (offset.x >= 6830) { spawnItem('TOOPPackageFive'); }
-
     if (offset.x >= 6830) { spawnItem('WaveOne'); }
     if (offset.x >= 6830) { spawnItem('WaveTwo'); }
     if (offset.x >= 6830) { spawnItem('WaveThree'); }
@@ -49,37 +41,18 @@ function items(offset) {
     if (offset.x >= 6830) { spawnItem('BoatTwo'); }
     if (offset.x >= 6830) { spawnItem('BoatThree'); }
     if (offset.x >= 6830) { spawnItem('BoatFour'); }
-
     if (offset.x >= 6830) { spawnItem('TOOPPackageTwo', 'TOOPPackageMoveTwoTwo'); }
     if (offset.x >= 6830) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveTwo'); }
     if (offset.x >= 6830) { changeAnimation('FreePackageOne', 'FreePackageMoveTwo'); }
     if (offset.x >= 6830) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveTwo'); }
-
-    //if (offset.x >= 8196) { spawnItem('TruckTOOPBMFour'); }
-    //if (offset.x >= 8196) { spawnItem('FreePackageSix'); }
-    //if (offset.x >= 8196) { spawnItem('TOOPPackageSix'); }
-    //if (offset.x >= 8196) { spawnItem('TOOPPackageSeven'); }
-    //if (offset.x >= 8196) { spawnItem('TruckTOOPBMFive'); }
-    //if (offset.x >= 8196) { spawnItem('TOOPPackageEight'); }
-    //if (offset.x >= 8196) { spawnItem('TOOPPackageNine'); }
 
     if (offset.x >= 8196) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveThree'); }
     if (offset.x >= 8196) { changeAnimation('FreePackageOne', 'FreePackageMoveThree'); }
     if (offset.x >= 8196) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveThree'); }
     if (offset.x >= 8196) { changeAnimation('TOOPPackageTwo', 'TOOPPackageMoveThreeThree'); }
     if (offset.x >= 8196) { spawnItem('EloniaPackageOne', 'EloniaPackageMoveOne'); }
-
     if (offset.x >= 8196) { spawnItem('SemanticMappingTwo'); }
     if (offset.x >= 8196) { spawnItem('FreePackageSeven'); }
-
-    //if (offset.x >= 9562) { spawnItem('TruckTOOPBMSix'); }
-    //if (offset.x >= 9562) { spawnItem('FreePackageEight'); }
-    //if (offset.x >= 9562) { spawnItem('TOOPPackageTen'); }
-    //if (offset.x >= 9562) { spawnItem('TOOPPackageTenOPPackageEleven'); }
-    //if (offset.x >= 9562) { spawnItem('EloniaPackageTwo'); }
-    // if (offset.x >= 9562) { spawnItem('FreePackageNine'); }
-    // if (offset.x >= 9562) { spawnItem('EloniaPackageThree'); }
-
 
     if (offset.x >= 9562) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveFour'); }
     if (offset.x >= 9562) { changeAnimation('FreePackageOne', 'FreePackageMoveFour'); }
@@ -88,25 +61,7 @@ function items(offset) {
     if (offset.x >= 9562) { changeAnimation('EloniaPackageOne', 'EloniaPackageMoveTwo'); }
     if (offset.x >= 9562) { spawnItem('TruckEloniaBMOne', 'TruckEloniaBMMoveOne'); }
     if (offset.x >= 9562) { spawnItem('DataPackageOne', 'DataPackageOneMoveOne'); }
-
     if (offset.x >= 9562) { spawnItem('TOOPPackageTwelve'); }
-
-    //if (offset.x >= 10928) { spawnItem('FreePackageTen'); }
-    //if (offset.x >= 10928) { spawnItem('TOOPPackageThirteen'); }
-    //if (offset.x >= 10928) { spawnItem('EloniaPackageFour'); }
-    //if (offset.x >= 10928) { spawnItem('TruckTOOPBMSeven'); }
-    //if (offset.x >= 10928) { spawnItem('FreePackageEleven'); }
-    //if (offset.x >= 10928) { spawnItem('TOOPPackageFourteen'); }
-    //if (offset.x >= 10928) { spawnItem('EloniaPackageFive'); }
-    //if (offset.x >= 10928) { spawnItem('DataPackageTwo'); }
-
-    //if (offset.x >= 12294) { spawnItem('DataDiscoveryTwo'); }
-    //if (offset.x >= 12294) { spawnItem('BaloonTwo'); }
-   // if (offset.x >= 12294) { spawnItem('FreePackageTwelve'); }
-    //if (offset.x >= 12294) { spawnItem('TOOPPackageFifteen'); }
-   // if (offset.x >= 12294) { spawnItem('TOOPPackageSixteen'); }
-    //if (offset.x >= 12294) { spawnItem('EloniaPackageSix'); }
-    //if (offset.x >= 12294) { spawnItem('DataPackageThree'); }
 
     if (offset.x >= 13660) { spawnItem('TruckTOOPBMEight'); }
     if (offset.x >= 13660) { spawnItem('FreePackageThirteen'); }
@@ -145,15 +100,13 @@ function items(offset) {
     if (offset.x <= 8196) { changeAnimation('TOOPPackageFloorOne', 'TOOPPackageFloorOneMoveTwo'); }
     if (offset.x <= 8196) { spawnItem('TOOPPackageFloorOneTwo', 'TOOPPackageFloorOneMoveTwoTwo'); }
     if (offset.x <= 8196) { spawnItem('BaloonTwoFloorOne', 'BaloonTwoMoveOne'); }
-
     if (offset.x <= 8196) { spawnItem('WaveFloorOneOne'); }
     if (offset.x <= 8196) { spawnItem('WaveFloorOneTwo'); }
     if (offset.x <= 8196) { spawnItem('WaveFloorOneThree'); }
     if (offset.x <= 8196) { spawnItem('WaveFloorOneFour'); }
     if (offset.x <= 8196) { spawnItem('WaveFloorOneFive'); }
     if (offset.x <= 8196) { spawnItem('WaveFloorOneSix'); }
-
-        if (offset.x <= 8196) { spawnItem('BoatFloorOneOne'); }
+    if (offset.x <= 8196) { spawnItem('BoatFloorOneOne'); }
     if (offset.x <= 8196) { spawnItem('BoatFloorOneTwo'); }
     if (offset.x <= 8196) { spawnItem('BoatFloorOneThree'); }
     if (offset.x <= 8196) { spawnItem('BoatFloorOneFour'); }
@@ -168,16 +121,12 @@ function items(offset) {
     if (offset.x <= 6830) { spawnItem('RegWEEEOne', 'RegWEEEOneMoveOne'); }
     if (offset.x <= 6830) { spawnItem('eIDASNodeOKFloorOne', 'eIDASNodeOKFloorOneMoveOne'); }
 
-    //if (offset.x <= 5464) { spawnItem('RegWEEETwo', 'RegWEEETwoFloorOneMoveOne'); }
-    //if (offset.x <= 5464) { spawnItem('SubmissionFloorOne', 'SubmissionFloorOneMoveOne'); }
-
     if (offset.x <= 5464) { spawnItem('SuccessScr', 'SuccessScrMoveOne'); }
     if (offset.x <= 5464) { spawnItem('SuccessScrOkLeft', 'SuccessScrOkLeftMoveOne'); }
     if (offset.x <= 5464) { spawnItem('SuccessScrOkRight', 'SuccessScrOkRightMoveOne'); }
     if (offset.x <= 5464) { spawnItem('Applause', 'ApplauseMoveOne'); }
 
     if (offset.x <= 4098) { spawnItem('TOOPLogo'); }
-
     if (offset.x <= 4098) { changeAnimation('CreditsSU', 'CreditsSUSE'); }
     if (offset.x <= 4098) { changeAnimation('CreditsEditors', 'CreditsEditorsAll'); }
     if (offset.x <= 4098) { changeAnimation('newssub', 'newssubAll'); }
@@ -192,20 +141,20 @@ function panorama(content) {
   $('body').scrollLeft(0);
 
   scrollConverter.activate(items);
-  
+
   $( "#restart" ).click(function() {
     $('body').scrollLeft(0);
     $('body').scrollTop(0);
-    setTimeout(function() {
-      location.reload();
-    }, 50);
+    location.reload();
     return;
   });
-  
+
   $(document).click(function(e) {
-    // Check for left button
-    if (e.button == 0) {
-      scrollToNextSlice();
+    if (!lastSlideReached) {
+        // Check for left button
+        if (e.button == 0) {
+          scrollToNextSlice();
+        }
     }
   });
 }
@@ -259,9 +208,11 @@ function scrollToNextSlice() {
     }
   } else {
     var newScrollLeft = currentSliceIndex * sliceWidth - sliceWidth;
-    if (newScrollLeft < stopScrollingLeftAtX) {
+    if (newScrollLeft <= stopScrollingLeftAtX) {
+        lastSlideReached = true;
         newScrollLeft = stopScrollingLeftAtX;
     }
+
     $('html, body').animate({scrollLeft: newScrollLeft - edgeWidth}, 800);
     items({x: newScrollLeft});
   }

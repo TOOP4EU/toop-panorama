@@ -208,7 +208,15 @@ function panorama(content) {
   });
 
   $(document).click(function(e) {
-    if (!lastSlideReached) {
+
+    if (!panoramaStarted) {
+
+      if (audioFiles[0] !== undefined) {
+        playAudio(audioFiles[0]);
+      }
+
+      panoramaStarted = true;
+    } else if (!lastSlideReached) {
         // Check for left button
         if (e.button == 0) {
           scrollToNextSlice();

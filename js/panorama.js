@@ -2,6 +2,64 @@ var sliceWidth = 1366;
 var currentFloor = getUrlParameter('floor') || 0;
 var stopScrollingLeftAtX = 4098;
 var lastSlideReached = false;
+var panoramaStarted = false;
+
+var audioFiles = [
+  "audio/that was easy.wav",
+  "audio/Start clicking.wav",
+  "audio/that was easy.wav",
+  "audio/Start clicking.wav",
+  "audio/that was easy.wav",
+  "audio/Start clicking.wav",
+  "audio/that was easy.wav",
+  "audio/Start clicking.wav",
+  "audio/that was easy.wav",
+  "audio/Start clicking.wav",
+  "audio/that was easy.wav",
+  "audio/Start clicking.wav",
+  "audio/that was easy.wav",
+  "audio/Start clicking.wav",
+  "audio/that was easy.wav",
+  "audio/Start clicking.wav",
+  "audio/that was easy.wav",
+  "audio/Start clicking.wav",
+  "audio/that was easy.wav",
+  "audio/Start clicking.wav"
+];
+
+function preloadAudio(url) {
+    var audio = new Audio();
+    // once this file loads, it will call loadedAudio()
+    // the file will be kept by the browser as cache
+    audio.addEventListener('canplaythrough', loadedAudio, false);
+    audio.src = url;
+}
+
+var audioLoaded = 0;
+function loadedAudio() {
+    // this will be called every time an audio file is loaded
+    // we keep track of the loaded files vs the requested files
+    audioLoaded++;
+    if (audioLoaded == audioFiles.length) {
+      // all have loaded
+      console.log("All audio files cached");
+      $('#overlay').hide();
+    }
+}
+
+// we start preloading all the audio files
+for (var i in audioFiles) {
+    preloadAudio(audioFiles[i]);
+}
+
+function playAudio(url) {
+  $('#audioPlayer')[0].pause();
+  $('#audioPlayer')[0].currentTime = 0;
+  if (url !== undefined) {
+    $('#audioPlayer')[0].src = url;
+    $('#audioPlayer')[0].play();
+  }
+}
 
 function items(offset) {
   console.log(offset.x); // Logs the current horizontal scroll offset
@@ -194,7 +252,27 @@ function scrollToNextSlice() {
 
   var viewportWidth = $(window).width();
   var edgeWidth = Math.floor((viewportWidth - sliceWidth) / 2);
+
+  var nSlices = $('#panoramaContent').width() / sliceWidth;
+  var currentSlice = Math.floor(($("body").scrollLeft() + edgeWidth) / sliceWidth);
+  currentSlice += (currentFloor === 1 ? 1 : 0);
+  currentSlice = (currentFloor === 1 ? nSlices + nSlices - currentSlice : currentSlice);
+  var nextSlice = currentSlice + 1;
+
+  if (audioFiles[nextSlice] !== undefined) {
+    playAudio(audioFiles[nextSlice]);
+  }
+
+  //Math.floor(($("body").scrollLeft() + edgeWidth) / sliceWidth);
+  //currentSlice += currentFloor * (numberOfSlices-Math.floor(($("body").scrollLeft() + edgeWidth) / sliceWidth));
+
+  //console.log("numberOfSlices", numberOfSlices);
+
   var currentSliceIndex = Math.floor(($("body").scrollLeft() + edgeWidth) / sliceWidth);
+  //var currentSliceIndexCorrected = currentSliceIndex + 
+  //console.log("currentSliceIndex", currentSliceIndex);
+
+  console.log("currentSlice: " + currentSlice + " -> " + nextSlice);
 
   if (currentFloor == 0) {
     var newScrollLeft = currentSliceIndex * sliceWidth + sliceWidth;
@@ -216,6 +294,7 @@ function scrollToNextSlice() {
     $('html, body').animate({scrollLeft: newScrollLeft - edgeWidth}, 800);
     items({x: newScrollLeft});
   }
+
 }
 
 $(document).ready(function() {

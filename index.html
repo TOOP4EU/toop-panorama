@@ -1,202 +1,211 @@
 <html>
-  <head>
+    <head>
 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Stockholm University | eGovlab" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Stockholm University | eGovlab" />
 
-    <title>TOOP Panorama</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scroll-converter.js"></script>
-    <script type="text/javascript" src="js/panorama.js"></script>
-  </head>
-  <body>
-<!-- Template
-    <div class="lineZero"></div>
-    <div class="lineOne"></div>
-    <div class="lineTwo"></div>
-    <div class="lineThree"></div>
-    <div class="lineFour"></div>
-    <div class="lineFive"></div>
-    <div class="lineSix"></div>
-    <div class="lineSeven"></div>
-    <div class="lineEight"></div>
+        <title>TOOP Panorama</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/scroll-converter.js"></script>
+        <script type="text/javascript" src="js/panorama.js"></script>
+    </head>
+    <body>
 
-EndOf Template -->
+        <audio id="audioPlayer" autoplay>
+            <source src="audio/that was easy.wav" type="audio/mpeg">
+            <!--<source src="audiofile.ogg" type="audio/ogg">-->
+            <!-- fallback for non supporting browsers goes here -->
+            <p>Your browser does not support HTML5 audio</p>
+        </audio>
+    <!-- Template
+        <div class="lineZero"></div>
+        <div class="lineOne"></div>
+        <div class="lineTwo"></div>
+        <div class="lineThree"></div>
+        <div class="lineFour"></div>
+        <div class="lineFive"></div>
+        <div class="lineSix"></div>
+        <div class="lineSeven"></div>
+        <div class="lineEight"></div>
 
-    <div id="panoramaContent">
+    EndOf Template -->
 
-<!-- Clouds
-  <div id="clouds">
-    <div class="cloud1"></div>
-    <div class="cloud2"></div>
-    <div class="cloud3"></div>
-  </div>
-  <div id="clouds2">
-    <div class="cloud1"></div>
-    <div class="cloud2"></div>
-    <div class="cloud3"></div>
-  </div>-->
+        <div id="panoramaContent">
 
-
-
-<div id="background-wrap">
-    <div class="x1">
-        <div class="cloud"></div>
-    </div>
-
-    <div class="x2">
-        <div class="cloud"></div>
-    </div>
-
-    <div class="x3">
-        <div class="cloud"></div>
-    </div>
-
-    <div class="x4">
-        <div class="cloud"></div>
-    </div>
-
-    <div class="x5">
-        <div class="cloud"></div>
-    </div>
-</div>
-
-<!-- EndOf Clouds -->
-
-      <div id="MaxsHome">
-        <div id="MaxsFoto"><img src="images/max.png" height="202px" width="202px"></div>
-      <div id="MaxsIntro">
-        <p>Maximillian is from Elonia, he is the CEO of Zizi Mat Ltd, an electronic equipment manufacturing business.</p>
-        <p>Zizi Mat wants to expand their trade to Freedonia, they have assigned Max to register with the WEEE environmental data base in Freedonia in compliance with EC regulations.</p>
-      </div>
-    </div>
-
-    <div id="Titles">
-        <div class="TitleOne">Presenting eID Credentials</div>
-        <div class="TitleTwo">Elonia eIDAS Node</div>
-        <div class="TitleThree">Maximillian's personal details are confirmed</div>
-        <div class="TitleFour">Once-only principle in action</div>
-        <div class="TitleFive">Explicit request to retrieve information from TOOP</div>
-        <div class="TitleSix">Freedonia’s TOOP Interface</div>
-        <div class="TitleSeven">Semantic Mapping</div>
-        <div class="TitleEight">Data Discovery and <br>TOOP Message Composition</div>
-        <div class="TitleNine">Freedonia’s<br>AS4 Gateway</div>
-        <div class="TitleTen">Elonia’s<br>AS4 Gateway</div>
-        <div class="TitleSecure">Secure And Reliable Message Exchange</div>
-        <div class="TitleEleven">Semantic Mapping</div>
-        <div class="TitleTwelve">Elonia’s TOOP Interface</div>
-        <div class="TitleThirtenn">Elonia’s Business register</div>
-    </div>
-
-    <div id="SceneryOne"></div>
-    <div id="SceneryTwo"></div>
-    <div id="SceneryThree"></div>
-    <div id="SceneryFour"></div>
-    <div id="SceneryFive"></div>
-    <div id="ScenerySix"></div>
-    <div id="ScenerySeven"></div>
-
-    <div id="FreedMap"></div>
-    <div id="FreedMapTitle">Freedonia</div>
-    <div id="FreedoniaPin"></div>
-
-    <div id="EloniaMap"></div>
-    <div id="EloniaMapTitle">Elonia</div>
-    <div id="EloniaPin"></div>
-    <div id="MapsLine"></div>
-
-    <div id="DCUIOne"></div>
-    <div id="DCUITwo"></div>
-    <div id="DCUIThree"></div>
-
-    <div id="ScreenOneDots"> </div>
-    <div id="ScreenOneArrow"></div>
-
-    <div id="ScreenTwoFreedoniaPin"></div>
-    <div id="ScreenTwoEloniaPin"></div>
-    <div id="ScreenFourFreedoniaPin"></div>
-    <div id="ScreenFiveFreedoniaPin"></div>
-    <div id="ScreenSevenEloniaPin"></div>
-    <div id="ScreenNineEloniaPin"></div>
-    <div id="ScreenTwoFreedoniaRoad"></div>
-    <div id="ScreenTwoThreeEloniaRoad"></div>
-    <div id="ScreenThreeSixFreedoniaRoad"></div>
-    <div id="ScreenSevenThreeEloniaRoad"></div>
-    <div id="ScreenTenEloniaRoad"></div>
-    <div id="ScreenElevenFreedoniaRoad"></div>
-
-    <div id="CraneOne"></div>
-    <div id="CraneTwo"></div>
-
-    <div id="EloniasBusinessRegisterOne"></div>
-
-    <div id="ScreenSixFreedoniaPinBorder"></div>
-    <div id="ScreenSixEloniaPinBorder"></div>
-
-    <div id="ScreenTenFreedoniaPinBorder"></div>
-    <div id="ScreenTenEloniaPinBorder"></div>
-
-</div>
-
-<div id="panoramaContent2">
-    <div id="CraneThree"></div>
-    <div id="CraneFour"></div>
-    <div id="FloorTwoEloniaRoadOne"></div>
-    <div id="FloorTwoScenerySix"></div>
-    <div id="FloorTwoEloniaPin"></div>
-    <div id="FloorTwoEloniaPinBorder"></div>
-    <div id="FloorTwoFreedoniaPinBorder"></div>
-    <div id="FloorTwoFreedoniaRoad"></div>
-    <div id="FloorTwoSceneryFive"></div>
-    <div id="FloorTwoSceneryFour"></div>
-    <div id="FloorTwoFreedoniaPin"></div>
-    <div id="FloorTwoThreeEloniaRoad"></div>
-    <div id="FloorTwoSceneryThree"></div>
-    <div id="FloorTwoSceneryTwo"></div>
-    <div id="FloorTwoEloniaPinTwo"></div>
-    <div id="FloorTwoFreedoniaRoadTwo"></div>
-    <div id="FloorTwoFreedoniaPinTwo"></div>
-    <div id="FloorTwoEloniasBusinessRegisterTwo"></div>
-    <div id="FloorTwoFreedoniaPinR"></div>
-    <div id="FloorTwoFreedoniaPinL"></div>
-    <div id="FloorTwoFreedoniaPinLL"></div>
-    <div id="FloorTwoFreedoniaPinRR"></div>
-    <div id="FloorTwoFreedoniaPinRRR"></div>
-
-<div id="TitlesFloorOne">
-    <div class="TitleFourteen">Elonia’s TOOP Interface</div>
-    <div class="TitleFifteen">Elonia’s Business register</div>
-    <div class="TitleSixteen">Data discovery and <br>TOOP message composition</div>
-    <div class="TitleSeventeen">Freedonia’s<br>AS4 Gateway</div>
-    <div class="TitleEightteen">Elonia’s<br>AS4 Gateway</div>
-    <div class="TitleSecureFloorOne">Secure And Reliable Message Exchange</div>
-    <div class="TitleNineteen">Preview of retrieved information</div>
-    <div class="TitleTwenty">Freedonia’s TOOP Interface</div>
-    <div class="TitleTwentyThree">Job done!</div>
-</div>
-
-<div id="CreditsSU">
-        Created by: Stockholm University | eGovlab<br><br>
-        Team:<br>
-        Project leader: Gunnar Westergren | Stockholm University | eGovlab<br>
-        Developer: Anton Wiklund | Stockholm University | eGovlab<br>
-        Design & Frontend: Maria Petritsopoulou | Stockholm University | eGovlab
-</div>
-
-<div id="CreditsEditors">
-        Editors:<br>
-        David Mitzman | InfoCamere<br>
-        Lefteris Leontaridis |  UnionCamere<br>
-        Jerry Dimitriou | University of Piraeus
-</div>
-
-<div id="newssub"><a href="http://www.toop.eu/newsletter/subscribe" target="_blank">Let's keep in touch</a></div>
-<div id="restart">Restart Panorama</div>
-
-<div id="brand"><a href="http://www.toop.eu" target="_blank">Website</a> | <a href="https://www.facebook.com/onceonlyprinciple/?fref=ts" target="_blank">Facebook</a> | <a href="https://twitter.com/toop4eu" target="_blank">Twitter</a> | <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fgroups%2F13514511" target="_blank">LinkedIn</a>
-</div>
+        <!-- Clouds
+          <div id="clouds">
+            <div class="cloud1"></div>
+            <div class="cloud2"></div>
+            <div class="cloud3"></div>
+          </div>
+          <div id="clouds2">
+            <div class="cloud1"></div>
+            <div class="cloud2"></div>
+            <div class="cloud3"></div>
+          </div>-->
 
 
-  </body>
+
+            <div id="background-wrap">
+                <div class="x1">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="x2">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="x3">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="x4">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="x5">
+                    <div class="cloud"></div>
+                </div>
+            </div>
+
+        <!-- EndOf Clouds -->
+
+              <div id="MaxsHome">
+                <div id="MaxsFoto"><img src="images/max.png" height="202px" width="202px"></div>
+              <div id="MaxsIntro">
+                <p>Maximillian is from Elonia, he is the CEO of Zizi Mat Ltd, an electronic equipment manufacturing business.</p>
+                <p>Zizi Mat wants to expand their trade to Freedonia, they have assigned Max to register with the WEEE environmental data base in Freedonia in compliance with EC regulations.</p>
+              </div>
+            </div>
+
+            <div id="Titles">
+                <div class="TitleOne">Presenting eID Credentials</div>
+                <div class="TitleTwo">Elonia eIDAS Node</div>
+                <div class="TitleThree">Maximillian's personal details are confirmed</div>
+                <div class="TitleFour">Once-only principle in action</div>
+                <div class="TitleFive">Explicit request to retrieve information from TOOP</div>
+                <div class="TitleSix">Freedonia’s TOOP Interface</div>
+                <div class="TitleSeven">Semantic Mapping</div>
+                <div class="TitleEight">Data Discovery and <br>TOOP Message Composition</div>
+                <div class="TitleNine">Freedonia’s<br>AS4 Gateway</div>
+                <div class="TitleTen">Elonia’s<br>AS4 Gateway</div>
+                <div class="TitleSecure">Secure And Reliable Message Exchange</div>
+                <div class="TitleEleven">Semantic Mapping</div>
+                <div class="TitleTwelve">Elonia’s TOOP Interface</div>
+                <div class="TitleThirtenn">Elonia’s Business register</div>
+            </div>
+
+            <div id="SceneryOne"></div>
+            <div id="SceneryTwo"></div>
+            <div id="SceneryThree"></div>
+            <div id="SceneryFour"></div>
+            <div id="SceneryFive"></div>
+            <div id="ScenerySix"></div>
+            <div id="ScenerySeven"></div>
+
+            <div id="FreedMap"></div>
+            <div id="FreedMapTitle">Freedonia</div>
+            <div id="FreedoniaPin"></div>
+
+            <div id="EloniaMap"></div>
+            <div id="EloniaMapTitle">Elonia</div>
+            <div id="EloniaPin"></div>
+            <div id="MapsLine"></div>
+
+            <div id="DCUIOne"></div>
+            <div id="DCUITwo"></div>
+            <div id="DCUIThree"></div>
+
+            <div id="ScreenOneDots"> </div>
+            <div id="ScreenOneArrow"></div>
+
+            <div id="ScreenTwoFreedoniaPin"></div>
+            <div id="ScreenTwoEloniaPin"></div>
+            <div id="ScreenFourFreedoniaPin"></div>
+            <div id="ScreenFiveFreedoniaPin"></div>
+            <div id="ScreenSevenEloniaPin"></div>
+            <div id="ScreenNineEloniaPin"></div>
+            <div id="ScreenTwoFreedoniaRoad"></div>
+            <div id="ScreenTwoThreeEloniaRoad"></div>
+            <div id="ScreenThreeSixFreedoniaRoad"></div>
+            <div id="ScreenSevenThreeEloniaRoad"></div>
+            <div id="ScreenTenEloniaRoad"></div>
+            <div id="ScreenElevenFreedoniaRoad"></div>
+
+            <div id="CraneOne"></div>
+            <div id="CraneTwo"></div>
+
+            <div id="EloniasBusinessRegisterOne"></div>
+
+            <div id="ScreenSixFreedoniaPinBorder"></div>
+            <div id="ScreenSixEloniaPinBorder"></div>
+
+            <div id="ScreenTenFreedoniaPinBorder"></div>
+            <div id="ScreenTenEloniaPinBorder"></div>
+
+        </div>
+
+        <div id="panoramaContent2">
+            <div id="CraneThree"></div>
+            <div id="CraneFour"></div>
+            <div id="FloorTwoEloniaRoadOne"></div>
+            <div id="FloorTwoScenerySix"></div>
+            <div id="FloorTwoEloniaPin"></div>
+            <div id="FloorTwoEloniaPinBorder"></div>
+            <div id="FloorTwoFreedoniaPinBorder"></div>
+            <div id="FloorTwoFreedoniaRoad"></div>
+            <div id="FloorTwoSceneryFive"></div>
+            <div id="FloorTwoSceneryFour"></div>
+            <div id="FloorTwoFreedoniaPin"></div>
+            <div id="FloorTwoThreeEloniaRoad"></div>
+            <div id="FloorTwoSceneryThree"></div>
+            <div id="FloorTwoSceneryTwo"></div>
+            <div id="FloorTwoEloniaPinTwo"></div>
+            <div id="FloorTwoFreedoniaRoadTwo"></div>
+            <div id="FloorTwoFreedoniaPinTwo"></div>
+            <div id="FloorTwoEloniasBusinessRegisterTwo"></div>
+            <div id="FloorTwoFreedoniaPinR"></div>
+            <div id="FloorTwoFreedoniaPinL"></div>
+            <div id="FloorTwoFreedoniaPinLL"></div>
+            <div id="FloorTwoFreedoniaPinRR"></div>
+            <div id="FloorTwoFreedoniaPinRRR"></div>
+
+            <div id="TitlesFloorOne">
+                <div class="TitleFourteen">Elonia’s TOOP Interface</div>
+                <div class="TitleFifteen">Elonia’s Business register</div>
+                <div class="TitleSixteen">Data discovery and <br>TOOP message composition</div>
+                <div class="TitleSeventeen">Freedonia’s<br>AS4 Gateway</div>
+                <div class="TitleEightteen">Elonia’s<br>AS4 Gateway</div>
+                <div class="TitleSecureFloorOne">Secure And Reliable Message Exchange</div>
+                <div class="TitleNineteen">Preview of retrieved information</div>
+                <div class="TitleTwenty">Freedonia’s TOOP Interface</div>
+                <div class="TitleTwentyThree">Job done!</div>
+            </div>
+
+            <div id="CreditsSU">
+                    Created by: Stockholm University | eGovlab<br><br>
+                    Team:<br>
+                    Project leader: Gunnar Westergren | Stockholm University | eGovlab<br>
+                    Developer: Anton Wiklund | Stockholm University | eGovlab<br>
+                    Design & Frontend: Maria Petritsopoulou | Stockholm University | eGovlab
+            </div>
+
+            <div id="CreditsEditors">
+                    Editors:<br>
+                    David Mitzman | InfoCamere<br>
+                    Lefteris Leontaridis |  UnionCamere<br>
+                    Jerry Dimitriou | University of Piraeus
+            </div>
+
+            <div id="newssub"><a href="http://www.toop.eu/newsletter/subscribe" target="_blank">Let's keep in touch</a></div>
+            <div id="restart">Restart Panorama</div>
+
+            <div id="brand"><a href="http://www.toop.eu" target="_blank">Website</a> | <a href="https://www.facebook.com/onceonlyprinciple/?fref=ts" target="_blank">Facebook</a> | <a href="https://twitter.com/toop4eu" target="_blank">Twitter</a> | <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fgroups%2F13514511" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+
+    </body>
 </html>

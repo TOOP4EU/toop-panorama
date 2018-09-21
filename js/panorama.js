@@ -5,26 +5,19 @@ var lastSlideReached = false;
 var panoramaStarted = false;
 
 var audioFiles = [
-  "audio/that was easy.wav",
-  "audio/Start clicking.wav",
-  "audio/that was easy.wav",
-  "audio/Start clicking.wav",
-  "audio/that was easy.wav",
-  "audio/Start clicking.wav",
-  "audio/that was easy.wav",
-  "audio/Start clicking.wav",
-  "audio/that was easy.wav",
-  "audio/Start clicking.wav",
-  "audio/that was easy.wav",
-  "audio/Start clicking.wav",
-  "audio/that was easy.wav",
-  "audio/Start clicking.wav",
-  "audio/that was easy.wav",
-  "audio/Start clicking.wav",
-  "audio/that was easy.wav",
-  "audio/Start clicking.wav",
-  "audio/that was easy.wav",
-  "audio/Start clicking.wav"
+  "audio/wav/Slide 1.wav",
+  "audio/wav/Slide 2.wav",
+  "audio/wav/Slide 3.wav",
+  "audio/wav/Slide 4.wav",
+  "audio/wav/Slide 5.wav",
+  "audio/wav/Slide 6.wav",
+  "audio/wav/Slide 7.wav",
+  "audio/wav/Slide 8.wav",
+  "audio/wav/Slide 9.wav",
+  "audio/wav/Slide 10.wav",
+  "audio/wav/Slide 11.wav",
+  "audio/wav/Slide 12.wav",
+  "audio/wav/that was easy.wav",
 ];
 
 function preloadAudio(url) {
@@ -277,7 +270,7 @@ function scrollToNextSlice() {
   //console.log("numberOfSlices", numberOfSlices);
 
   var currentSliceIndex = Math.floor(($("body").scrollLeft() + edgeWidth) / sliceWidth);
-  //var currentSliceIndexCorrected = currentSliceIndex + 
+  //var currentSliceIndexCorrected = currentSliceIndex +
   //console.log("currentSliceIndex", currentSliceIndex);
 
   console.log("currentSlice: " + currentSlice + " -> " + nextSlice);

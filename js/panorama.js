@@ -5,54 +5,22 @@ var lastSlideReached = false;
 var panoramaStarted = false;
 
 var audioFiles = [
-  "audio/wav/Slide 1.wav",
-  "audio/wav/Slide 2.wav",
-  "audio/wav/Slide 3.wav",
-  "audio/wav/Slide 4.wav",
-  "audio/wav/Slide 5.wav",
-  "audio/wav/Slide 6.wav",
-  "audio/wav/Slide 7.wav",
-  "audio/wav/Slide 8.wav",
-  "audio/wav/Slide 9.wav",
-  "audio/wav/Slide 10.wav",
-  "audio/wav/Slide 11.wav",
-  "audio/wav/Slide 12.wav",
-  "audio/wav/that was easy.wav",
+ // "audio/wav/Slide 1.wav",
+  //"audio/wav/Slide 2.wav",
+ // "audio/wav/Slide 3.wav",
+  //"audio/wav/Slide 4.wav",
+ // "audio/wav/Slide 5.wav",
+ // "audio/wav/Slide 6.wav",
+ // "audio/wav/Slide 7.wav",
+ // "audio/wav/Slide 8.wav",
+ // "audio/wav/Slide 9.wav",
+ // "audio/wav/Slide 10.wav",
+ // "audio/wav/Slide 11.wav",
+ // "audio/wav/Slide 12.wav",
+ // "audio/wav/that was easy.wav",
 ];
 
-function preloadAudio(url) {
-    var audio = new Audio();
-    // once this file loads, it will call loadedAudio()
-    // the file will be kept by the browser as cache
-    audio.addEventListener('canplaythrough', loadedAudio, false);
-    audio.src = url;
-}
 
-var audioLoaded = 0;
-function loadedAudio() {
-    // this will be called every time an audio file is loaded
-    // we keep track of the loaded files vs the requested files
-    audioLoaded++;
-    if (audioLoaded == audioFiles.length) {
-      // all have loaded
-      console.log("All audio files cached");
-      $('#overlay').hide();
-    }
-}
-
-// we start preloading all the audio files
-for (var i in audioFiles) {
-    preloadAudio(audioFiles[i]);
-}
-
-function playAudio(url) {
-  $('#audioPlayer')[0].pause();
-  $('#audioPlayer')[0].currentTime = 0;
-  if (url !== undefined) {
-    $('#audioPlayer')[0].src = url;
-    $('#audioPlayer')[0].play();
-  }
-}
 
 function items(offset) {
   console.log(offset.x); // Logs the current horizontal scroll offset
@@ -203,10 +171,6 @@ function panorama(content) {
   $(document).click(function(e) {
 
     if (!panoramaStarted) {
-
-      if (audioFiles[0] !== undefined) {
-        playAudio(audioFiles[0]);
-      }
 
       panoramaStarted = true;
     } else if (!lastSlideReached) {

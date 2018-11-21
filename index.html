@@ -6,14 +6,17 @@
 
         <title>TOOP Panorama</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/modal-pages.css">
         <script src="js/jquery-3.3.1.js"></script>
         <script src="js/scroll-converter.js"></script>
+        <script type="text/javascript" src="js/modal.js"></script>
         <script type="text/javascript" src="js/panorama.js"></script>
     </head>
     <body>
 
         <audio id="audioPlayer" autoplay>
-            <source src="audio/that was easy.wav" type="audio/mpeg">
+            <source type="audio/mpeg">
             <!--<source src="audiofile.ogg" type="audio/ogg">-->
             <!-- fallback for non supporting browsers goes here -->
             <p>Your browser does not support HTML5 audio</p>
@@ -207,5 +210,16 @@
 
         <div id="overlay"></div>
 
+        <div id="modal-overlay" class="modal-overlay"></div>
+        <div id="startModal" class="modal-container">
+            <div class="modal-content">
+                <div class="modal-page">
+                    <div id="page-1-welcome">Welcome</div>
+                    <div id="page-1-text">Here is some text</div>
+                    <button id="page-1-audio" onclick="playAudio('audio/wav/Slide 1.wav');">Play audio</button>
+                    <button id="page-1-close" onclick="modalClose(); panoramaActivate();">Close</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

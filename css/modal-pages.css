@@ -1,0 +1,24 @@
+#page-1-welcome {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  font-size: 36px;
+}
+
+#page-1-text {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+}
+
+#page-1-audio {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+#page-1-close {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+}

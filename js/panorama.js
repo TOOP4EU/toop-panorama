@@ -2,6 +2,7 @@ var sliceWidth = 1366;
 var currentFloor = getUrlParameter('floor') || 0;
 var stopScrollingLeftAtX = 4098;
 var lastSlideReached = false;
+var panoramaInactive = true;
 var panoramaStarted = false;
 
 var audioFiles = [
@@ -202,6 +203,8 @@ function panorama(content) {
 
   $(document).click(function(e) {
 
+    if (panoramaInactive) return;
+
     if (!panoramaStarted) {
 
       if (audioFiles[0] !== undefined) {
@@ -321,3 +324,7 @@ function getUrlParameter(sParam) {
         }
     }
 };
+
+function panoramaActivate() {
+  panoramaInactive = false;
+}

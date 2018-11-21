@@ -43,7 +43,7 @@ p {
     /* end of bg pattern*/
 
   background-size: 100% 100%;
-  width: 10928px;
+  width: calc(1366*8px);
   height: 750px;
   padding-right: 750px;
 
@@ -64,7 +64,7 @@ p {
     /* end of bg pattern*/
 
   background-size: 100% 100%;
-  width: 10928px;
+  width: calc(1366*8px);
   height: 750px;
   margin-bottom: 500px;
   padding-right: 750px;
@@ -88,7 +88,7 @@ p {
 
 #MaxsHome {
   background: url('../images/circuit.png') no-repeat #909e9f center;
-  left: 0;
+  left: calc(1366*0px);
   position: absolute;
   width: 300px;
   height: 100%;
@@ -117,7 +117,7 @@ p {
 
 #ScreenOneDots {
   background: url('../images/dot.png') repeat-x left;
-  left: 300px;
+  left: calc(1366*0px + 300px);
   bottom: 0;
   position: absolute;
   width: 960px;
@@ -127,7 +127,7 @@ p {
 
 #ScreenOneArrow {
   background: url('../images/arrow-r.png') no-repeat left;
-  left: 1270px;
+  left: calc(1366*0px + 1270px);
   bottom: 0;
   position: absolute;
   width: 93px;
@@ -136,7 +136,7 @@ p {
 
 #CraneOne {
   background: url('../images/crane.png') no-repeat left;
-  left: 5730px;
+  left: calc(1366*4px + 266px);
   bottom: 71px;
   position: absolute;
   width: 436px;
@@ -145,7 +145,7 @@ p {
 
 #CraneTwo {
   background: url('../images/crane.png') no-repeat left;
-  left: 9900px;
+  left: calc(1366*7px + 338px);
   bottom: 71px;
   position: absolute;
   width: 436px;
@@ -155,7 +155,7 @@ p {
 /* Sceneries */
 #SceneryOne {
   background: url('../images/scenery-1.png') no-repeat left;
-  left: 300px;
+  left: calc(1366*0px + 300px);
   bottom: 70px;
   position: absolute;
   width: 1256px;
@@ -164,7 +164,7 @@ p {
 
 #SceneryTwo {
   background: url('../images/scenery-2.png') no-repeat left;
-  left: 2100px;
+  left: calc(1366*1px + 734px);
   bottom: 70px;
   position: absolute;
   width: 566px;

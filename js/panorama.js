@@ -2,7 +2,7 @@ var sliceWidth = 1366;
 var currentFloor = getUrlParameter('floor') || 0;
 var stopScrollingLeftAtX = 4098;
 var lastSlideReached = false;
-var panoramaStarted = false;
+var panoramaStarted = true;
 
 var audioFiles = [
  // "audio/wav/Slide 1.wav",
@@ -27,130 +27,130 @@ function items(offset) {
 
   if (currentFloor == 0) {
 
-    if (offset.x >= 1366) { spawnItem('AuthenticationMethOne'); }
-    if (offset.x >= 1366) { spawnItem('AuthenticationMethTwo'); }
-    if (offset.x >= 1366) { spawnItem('AuthenticationMethThree'); }
+    if (offset.x >= 1366*1) { spawnItem('AuthenticationMethOne'); }
+    if (offset.x >= 1366*1) { spawnItem('AuthenticationMethTwo'); }
+    if (offset.x >= 1366*1) { spawnItem('AuthenticationMethThree'); }
 
-    if (offset.x >= 2732) { spawnItem('eIDASNode'); }
-    if (offset.x >= 2732) { spawnItem('eIDASNodeOK'); }
-    if (offset.x >= 2732) { spawnItem('MaxsAuthenticated'); }
+    if (offset.x >= 1366*2) { spawnItem('eIDASNode'); }
+    if (offset.x >= 1366*2) { spawnItem('eIDASNodeOK'); }
+    if (offset.x >= 1366*2) { spawnItem('MaxsAuthenticated'); }
 
-    if (offset.x >= 4098) { spawnItem('GetCompanyInfo'); }
-    if (offset.x >= 4098) { spawnItem('GetCompanyInfoOk'); }
-    if (offset.x >= 4098) { spawnItem('Consent'); }
+    if (offset.x >= 1366*3) { spawnItem('GetCompanyInfo'); }
+    if (offset.x >= 1366*3) { spawnItem('GetCompanyInfoOk'); }
+    if (offset.x >= 1366*3) { spawnItem('Consent'); }
 
-    if (offset.x >= 5464) { spawnItem('TruckFreeBMOne'); }
-    if (offset.x >= 5464) { spawnItem('SemanticMappingOne'); }
-    if (offset.x >= 5464) { spawnItem('TruckTOOPBMOne', 'TruckTOOPBMMoveOne'); }
-    if (offset.x >= 5464) { spawnItem('FreePackageOne', 'FreePackageMoveOne'); }
-    if (offset.x >= 5464) { spawnItem('TOOPPackageOne', 'TOOPPackageMoveOne'); }
+    if (offset.x >= 1366*4) { spawnItem('TruckFreeBMOne'); }
+    if (offset.x >= 1366*4) { spawnItem('SemanticMappingOne'); }
+    if (offset.x >= 1366*4) { spawnItem('TruckTOOPBMOne', 'TruckTOOPBMMoveOne'); }
+    if (offset.x >= 1366*4) { spawnItem('FreePackageOne', 'FreePackageMoveOne'); }
+    if (offset.x >= 1366*4) { spawnItem('TOOPPackageOne', 'TOOPPackageMoveOne'); }
 
-    if (offset.x >= 6830) { spawnItem('DataDiscoveryOne'); }
-    if (offset.x >= 6830) { spawnItem('TOOPPackageThree'); }
-    if (offset.x >= 6830) { spawnItem('BaloonOne'); }
-    if (offset.x >= 6830) { spawnItem('TOOPPackageFour'); }
-    if (offset.x >= 6830) { spawnItem('TOOPPackageFive'); }
-    if (offset.x >= 6830) { spawnItem('WaveOne'); }
-    if (offset.x >= 6830) { spawnItem('WaveTwo'); }
-    if (offset.x >= 6830) { spawnItem('WaveThree'); }
-    if (offset.x >= 6830) { spawnItem('WaveFour'); }
-    if (offset.x >= 6830) { spawnItem('WaveFive'); }
-    if (offset.x >= 6830) { spawnItem('WaveSix'); }
-    if (offset.x >= 6830) { spawnItem('BoatOne'); }
-    if (offset.x >= 6830) { spawnItem('BoatTwo'); }
-    if (offset.x >= 6830) { spawnItem('BoatThree'); }
-    if (offset.x >= 6830) { spawnItem('BoatFour'); }
-    if (offset.x >= 6830) { spawnItem('TOOPPackageTwo', 'TOOPPackageMoveTwoTwo'); }
-    if (offset.x >= 6830) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveTwo'); }
-    if (offset.x >= 6830) { changeAnimation('FreePackageOne', 'FreePackageMoveTwo'); }
-    if (offset.x >= 6830) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveTwo'); }
+    if (offset.x >= 1366*5) { spawnItem('DataDiscoveryOne'); }
+    if (offset.x >= 1366*5) { spawnItem('TOOPPackageThree'); }
+    if (offset.x >= 1366*5) { spawnItem('BaloonOne'); }
+    if (offset.x >= 1366*5) { spawnItem('TOOPPackageFour'); }
+    if (offset.x >= 1366*5) { spawnItem('TOOPPackageFive'); }
+    if (offset.x >= 1366*5) { spawnItem('WaveOne'); }
+    if (offset.x >= 1366*5) { spawnItem('WaveTwo'); }
+    if (offset.x >= 1366*5) { spawnItem('WaveThree'); }
+    if (offset.x >= 1366*5) { spawnItem('WaveFour'); }
+    if (offset.x >= 1366*5) { spawnItem('WaveFive'); }
+    if (offset.x >= 1366*5) { spawnItem('WaveSix'); }
+    if (offset.x >= 1366*5) { spawnItem('BoatOne'); }
+    if (offset.x >= 1366*5) { spawnItem('BoatTwo'); }
+    if (offset.x >= 1366*5) { spawnItem('BoatThree'); }
+    if (offset.x >= 1366*5) { spawnItem('BoatFour'); }
+    if (offset.x >= 1366*5) { spawnItem('TOOPPackageTwo', 'TOOPPackageMoveTwoTwo'); }
+    if (offset.x >= 1366*5) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveTwo'); }
+    if (offset.x >= 1366*5) { changeAnimation('FreePackageOne', 'FreePackageMoveTwo'); }
+    if (offset.x >= 1366*5) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveTwo'); }
 
-    if (offset.x >= 8196) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveThree'); }
-    if (offset.x >= 8196) { changeAnimation('FreePackageOne', 'FreePackageMoveThree'); }
-    if (offset.x >= 8196) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveThree'); }
-    if (offset.x >= 8196) { changeAnimation('TOOPPackageTwo', 'TOOPPackageMoveThreeThree'); }
-    if (offset.x >= 8196) { spawnItem('EloniaPackageOne', 'EloniaPackageMoveOne'); }
-    if (offset.x >= 8196) { spawnItem('SemanticMappingTwo'); }
-    if (offset.x >= 8196) { spawnItem('FreePackageSeven'); }
+    if (offset.x >= 1366*6) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveThree'); }
+    if (offset.x >= 1366*6) { changeAnimation('FreePackageOne', 'FreePackageMoveThree'); }
+    if (offset.x >= 1366*6) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveThree'); }
+    if (offset.x >= 1366*6) { changeAnimation('TOOPPackageTwo', 'TOOPPackageMoveThreeThree'); }
+    if (offset.x >= 1366*6) { spawnItem('EloniaPackageOne', 'EloniaPackageMoveOne'); }
+    if (offset.x >= 1366*6) { spawnItem('SemanticMappingTwo'); }
+    if (offset.x >= 1366*6) { spawnItem('FreePackageSeven'); }
 
-    if (offset.x >= 9562) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveFour'); }
-    if (offset.x >= 9562) { changeAnimation('FreePackageOne', 'FreePackageMoveFour'); }
-    if (offset.x >= 9562) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveFour'); }
-    if (offset.x >= 9562) { changeAnimation('TOOPPackageTwo', 'TOOPPackageMoveFourFour'); }
-    if (offset.x >= 9562) { changeAnimation('EloniaPackageOne', 'EloniaPackageMoveTwo'); }
-    if (offset.x >= 9562) { spawnItem('TruckEloniaBMOne', 'TruckEloniaBMMoveOne'); }
-    if (offset.x >= 9562) { spawnItem('DataPackageOne', 'DataPackageOneMoveOne'); }
-    if (offset.x >= 9562) { spawnItem('TOOPPackageTwelve'); }
+    if (offset.x >= 1366*7) { changeAnimation('TruckTOOPBMOne', 'TruckTOOPBMMoveFour'); }
+    if (offset.x >= 1366*7) { changeAnimation('FreePackageOne', 'FreePackageMoveFour'); }
+    if (offset.x >= 1366*7) { changeAnimation('TOOPPackageOne', 'TOOPPackageMoveFour'); }
+    if (offset.x >= 1366*7) { changeAnimation('TOOPPackageTwo', 'TOOPPackageMoveFourFour'); }
+    if (offset.x >= 1366*7) { changeAnimation('EloniaPackageOne', 'EloniaPackageMoveTwo'); }
+    if (offset.x >= 1366*7) { spawnItem('TruckEloniaBMOne', 'TruckEloniaBMMoveOne'); }
+    if (offset.x >= 1366*7) { spawnItem('DataPackageOne', 'DataPackageOneMoveOne'); }
+    if (offset.x >= 1366*7) { spawnItem('TOOPPackageTwelve'); }
 
-    if (offset.x >= 13660) { spawnItem('TruckTOOPBMEight'); }
-    if (offset.x >= 13660) { spawnItem('FreePackageThirteen'); }
-    if (offset.x >= 13660) { spawnItem('TOOPPackageSeventeen'); }
-    if (offset.x >= 13660) { spawnItem('TOOPPackageEighteen'); }
-    if (offset.x >= 13660) { spawnItem('EloniaPackageSeven'); }
-    if (offset.x >= 13660) { spawnItem('DataPackageFour'); }
-    if (offset.x >= 13660) { spawnItem('TruckFreeBMTwo'); }
-    if (offset.x >= 13660) { spawnItem('FreePackageFourteen'); }
-    if (offset.x >= 13660) { spawnItem('DataPackageFive'); }
-    if (offset.x >= 13660) { spawnItem('RegWEEEOne'); }
+    if (offset.x >= 1366*10) { spawnItem('TruckTOOPBMEight'); }
+    if (offset.x >= 1366*10) { spawnItem('FreePackageThirteen'); }
+    if (offset.x >= 1366*10) { spawnItem('TOOPPackageSeventeen'); }
+    if (offset.x >= 1366*10) { spawnItem('TOOPPackageEighteen'); }
+    if (offset.x >= 1366*10) { spawnItem('EloniaPackageSeven'); }
+    if (offset.x >= 1366*10) { spawnItem('DataPackageFour'); }
+    if (offset.x >= 1366*10) { spawnItem('TruckFreeBMTwo'); }
+    if (offset.x >= 1366*10) { spawnItem('FreePackageFourteen'); }
+    if (offset.x >= 1366*10) { spawnItem('DataPackageFive'); }
+    if (offset.x >= 1366*10) { spawnItem('RegWEEEOne'); }
 
-    if (offset.x >= 15026) { spawnItem('RegWEEETwo'); }
-    if (offset.x >= 15026) { spawnItem('SubmissionScr'); }
+    if (offset.x >= 1366*11) { spawnItem('RegWEEETwo'); }
+    if (offset.x >= 1366*11) { spawnItem('SubmissionScr'); }
 
-    if (offset.x >= 16392) { spawnItem('SuccessScr'); }
-    if (offset.x >= 16392) { spawnItem('eIDASNodeOKTwo'); }
-    if (offset.x >= 16392) { spawnItem('eIDASNodeOKTwoLeft'); }
+    if (offset.x >= 1366*12) { spawnItem('SuccessScr'); }
+    if (offset.x >= 1366*12) { spawnItem('eIDASNodeOKTwo'); }
+    if (offset.x >= 1366*12) { spawnItem('eIDASNodeOKTwoLeft'); }
 
   }
 
   if (currentFloor == 1) {
 
-    if (offset.x <= 9562) { spawnItem('TruckEloniaBMF', 'TruckEloniaBMFMoveOne'); }
-    if (offset.x <= 9562) { spawnItem('DataPackageOneFloorOne', 'DataPackageOneFloorOneMoveOne'); }
-    if (offset.x <= 9562) { spawnItem('EloniaPackageOneFloorOne', 'EloniaPackageFloorOneMoveOne'); }
-    if (offset.x <= 9562) { spawnItem('TOOPPackageFloorOne', 'TOOPPackageFloorOneMoveOne'); }
-    if (offset.x <= 9562) { spawnItem('FreePackageOneFloorOne', 'FreePackageOneFloorOneMoveOne'); }
-    if (offset.x <= 9562) { spawnItem('TruckTOOPFloorOneOne', 'TruckTOOPFloorOneOneMoveOne'); }
+    if (offset.x <= 1366*7) { spawnItem('TruckEloniaBMF', 'TruckEloniaBMFMoveOne'); }
+    if (offset.x <= 1366*7) { spawnItem('DataPackageOneFloorOne', 'DataPackageOneFloorOneMoveOne'); }
+    if (offset.x <= 1366*7) { spawnItem('EloniaPackageOneFloorOne', 'EloniaPackageFloorOneMoveOne'); }
+    if (offset.x <= 1366*7) { spawnItem('TOOPPackageFloorOne', 'TOOPPackageFloorOneMoveOne'); }
+    if (offset.x <= 1366*7) { spawnItem('FreePackageOneFloorOne', 'FreePackageOneFloorOneMoveOne'); }
+    if (offset.x <= 1366*7) { spawnItem('TruckTOOPFloorOneOne', 'TruckTOOPFloorOneOneMoveOne'); }
 
-    if (offset.x <= 8196) { spawnItem('DataDiscoveryFloorOne', 'DataDiscoveryFloorOneMoveOne'); }
-    if (offset.x <= 8196) { changeAnimation('TruckTOOPFloorOneOne', 'TruckTOOPFloorOneOneMoveTwo'); }
-    if (offset.x <= 8196) { changeAnimation('DataPackageOneFloorOne', 'DataPackageOneFloorOneMoveTwo'); }
-    if (offset.x <= 8196) { changeAnimation('FreePackageOneFloorOne', 'FreePackageOneFloorOneMoveTwo'); }
-    if (offset.x <= 8196) { changeAnimation('EloniaPackageOneFloorOne', 'EloniaPackageFloorOneMoveTwo'); }
-    if (offset.x <= 8196) { changeAnimation('TOOPPackageFloorOne', 'TOOPPackageFloorOneMoveTwo'); }
-    if (offset.x <= 8196) { spawnItem('TOOPPackageFloorOneTwo', 'TOOPPackageFloorOneMoveTwoTwo'); }
-    if (offset.x <= 8196) { spawnItem('BaloonTwoFloorOne', 'BaloonTwoMoveOne'); }
-    if (offset.x <= 8196) { spawnItem('WaveFloorOneOne'); }
-    if (offset.x <= 8196) { spawnItem('WaveFloorOneTwo'); }
-    if (offset.x <= 8196) { spawnItem('WaveFloorOneThree'); }
-    if (offset.x <= 8196) { spawnItem('WaveFloorOneFour'); }
-    if (offset.x <= 8196) { spawnItem('WaveFloorOneFive'); }
-    if (offset.x <= 8196) { spawnItem('WaveFloorOneSix'); }
-    if (offset.x <= 8196) { spawnItem('BoatFloorOneOne'); }
-    if (offset.x <= 8196) { spawnItem('BoatFloorOneTwo'); }
-    if (offset.x <= 8196) { spawnItem('BoatFloorOneThree'); }
-    if (offset.x <= 8196) { spawnItem('BoatFloorOneFour'); }
+    if (offset.x <= 1366*6) { spawnItem('DataDiscoveryFloorOne', 'DataDiscoveryFloorOneMoveOne'); }
+    if (offset.x <= 1366*6) { changeAnimation('TruckTOOPFloorOneOne', 'TruckTOOPFloorOneOneMoveTwo'); }
+    if (offset.x <= 1366*6) { changeAnimation('DataPackageOneFloorOne', 'DataPackageOneFloorOneMoveTwo'); }
+    if (offset.x <= 1366*6) { changeAnimation('FreePackageOneFloorOne', 'FreePackageOneFloorOneMoveTwo'); }
+    if (offset.x <= 1366*6) { changeAnimation('EloniaPackageOneFloorOne', 'EloniaPackageFloorOneMoveTwo'); }
+    if (offset.x <= 1366*6) { changeAnimation('TOOPPackageFloorOne', 'TOOPPackageFloorOneMoveTwo'); }
+    if (offset.x <= 1366*6) { spawnItem('TOOPPackageFloorOneTwo', 'TOOPPackageFloorOneMoveTwoTwo'); }
+    if (offset.x <= 1366*6) { spawnItem('BaloonTwoFloorOne', 'BaloonTwoMoveOne'); }
+    if (offset.x <= 1366*6) { spawnItem('WaveFloorOneOne'); }
+    if (offset.x <= 1366*6) { spawnItem('WaveFloorOneTwo'); }
+    if (offset.x <= 1366*6) { spawnItem('WaveFloorOneThree'); }
+    if (offset.x <= 1366*6) { spawnItem('WaveFloorOneFour'); }
+    if (offset.x <= 1366*6) { spawnItem('WaveFloorOneFive'); }
+    if (offset.x <= 1366*6) { spawnItem('WaveFloorOneSix'); }
+    if (offset.x <= 1366*6) { spawnItem('BoatFloorOneOne'); }
+    if (offset.x <= 1366*6) { spawnItem('BoatFloorOneTwo'); }
+    if (offset.x <= 1366*6) { spawnItem('BoatFloorOneThree'); }
+    if (offset.x <= 1366*6) { spawnItem('BoatFloorOneFour'); }
 
-    if (offset.x <= 6830) { changeAnimation('TruckTOOPFloorOneOne', 'TruckTOOPFloorOneOneMoveThree'); }
-    if (offset.x <= 6830) { changeAnimation('DataPackageOneFloorOne', 'DataPackageOneFloorOneMoveThree'); }
-    if (offset.x <= 6830) { changeAnimation('FreePackageOneFloorOne', 'FreePackageOneFloorOneMoveThree'); }
-    if (offset.x <= 6830) { changeAnimation('TOOPPackageFloorOne', 'TOOPPackageFloorOneMoveThree'); }
-    if (offset.x <= 6830) { changeAnimation('TOOPPackageFloorOneTwo', 'TOOPPackageFloorOneMoveTwoThree'); }
-    if (offset.x <= 6830) { changeAnimation('EloniaPackageOneFloorOne', 'EloniaPackageFloorOneMoveThree'); }
-    if (offset.x <= 6830) { spawnItem('TruckFreedoniaBMF', 'TruckFreedoniaBMFMoveOne'); }
-    if (offset.x <= 6830) { spawnItem('RegWEEEOne', 'RegWEEEOneMoveOne'); }
-    if (offset.x <= 6830) { spawnItem('eIDASNodeOKFloorOne', 'eIDASNodeOKFloorOneMoveOne'); }
+    if (offset.x <= 1366*5) { changeAnimation('TruckTOOPFloorOneOne', 'TruckTOOPFloorOneOneMoveThree'); }
+    if (offset.x <= 1366*5) { changeAnimation('DataPackageOneFloorOne', 'DataPackageOneFloorOneMoveThree'); }
+    if (offset.x <= 1366*5) { changeAnimation('FreePackageOneFloorOne', 'FreePackageOneFloorOneMoveThree'); }
+    if (offset.x <= 1366*5) { changeAnimation('TOOPPackageFloorOne', 'TOOPPackageFloorOneMoveThree'); }
+    if (offset.x <= 1366*5) { changeAnimation('TOOPPackageFloorOneTwo', 'TOOPPackageFloorOneMoveTwoThree'); }
+    if (offset.x <= 1366*5) { changeAnimation('EloniaPackageOneFloorOne', 'EloniaPackageFloorOneMoveThree'); }
+    if (offset.x <= 1366*5) { spawnItem('TruckFreedoniaBMF', 'TruckFreedoniaBMFMoveOne'); }
+    if (offset.x <= 1366*5) { spawnItem('RegWEEEOne', 'RegWEEEOneMoveOne'); }
+    if (offset.x <= 1366*5) { spawnItem('eIDASNodeOKFloorOne', 'eIDASNodeOKFloorOneMoveOne'); }
 
-    if (offset.x <= 5464) { spawnItem('SuccessScr', 'SuccessScrMoveOne'); }
-    if (offset.x <= 5464) { spawnItem('SuccessScrOkLeft', 'SuccessScrOkLeftMoveOne'); }
-    if (offset.x <= 5464) { spawnItem('SuccessScrOkRight', 'SuccessScrOkRightMoveOne'); }
-    if (offset.x <= 5464) { spawnItem('Applause', 'ApplauseMoveOne'); }
+    if (offset.x <= 1366*4) { spawnItem('SuccessScr', 'SuccessScrMoveOne'); }
+    if (offset.x <= 1366*4) { spawnItem('SuccessScrOkLeft', 'SuccessScrOkLeftMoveOne'); }
+    if (offset.x <= 1366*4) { spawnItem('SuccessScrOkRight', 'SuccessScrOkRightMoveOne'); }
+    if (offset.x <= 1366*4) { spawnItem('Applause', 'ApplauseMoveOne'); }
 
-    if (offset.x <= 4098) { spawnItem('TOOPLogo'); }
-    if (offset.x <= 4098) { changeAnimation('CreditsSU', 'CreditsSUSE'); }
-    if (offset.x <= 4098) { changeAnimation('CreditsEditors', 'CreditsEditorsAll'); }
-    if (offset.x <= 4098) { changeAnimation('newssub', 'newssubAll'); }
-    if (offset.x <= 4098) { changeAnimation('restart', 'restartAll'); }
-    if (offset.x <= 4098) { changeAnimation('brand', 'brandAll'); }
+    if (offset.x <= 1366*3) { spawnItem('TOOPLogo'); }
+    if (offset.x <= 1366*3) { changeAnimation('CreditsSU', 'CreditsSUSE'); }
+    if (offset.x <= 1366*3) { changeAnimation('CreditsEditors', 'CreditsEditorsAll'); }
+    if (offset.x <= 1366*3) { changeAnimation('newssub', 'newssubAll'); }
+    if (offset.x <= 1366*3) { changeAnimation('restart', 'restartAll'); }
+    if (offset.x <= 1366*3) { changeAnimation('brand', 'brandAll'); }
   }
 }
 
